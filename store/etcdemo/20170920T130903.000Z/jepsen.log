@@ -1,0 +1,1133 @@
+2017-09-20 13:09:03,595{GMT}	INFO	[jepsen test runner] jepsen.core: Running test:
+ {:nodes-file "/home/admin/nodes",
+ :concurrency 5,
+ :db
+ #object[jepsen.etcdemo.Etcd 0x3ee6dc82 "jepsen.etcdemo.Etcd@3ee6dc82"],
+ :name "etcdemo",
+ :start-time
+ #object[org.joda.time.DateTime 0x677cc4e8 "2017-09-20T13:09:03.000Z"],
+ :net
+ #object[jepsen.net$reify__187 0x64b73e0a "jepsen.net$reify__187@64b73e0a"],
+ :client
+ #object[jepsen.etcdemo$client$reify__2585 0x17884d "jepsen.etcdemo$client$reify__2585@17884d"],
+ :barrier
+ #object[java.util.concurrent.CyclicBarrier 0x340c5fb6 "java.util.concurrent.CyclicBarrier@340c5fb6"],
+ :ssh
+ {:username "admin",
+  :password "root",
+  :strict-host-key-checking false,
+  :private-key-path nil},
+ :checker
+ #object[jepsen.checker$unbridled_optimism$reify__3133 0x67eeb310 "jepsen.checker$unbridled_optimism$reify__3133@67eeb310"],
+ :nemesis
+ #object[jepsen.nemesis$reify__220 0x22c8ee48 "jepsen.nemesis$reify__220@22c8ee48"],
+ :active-histories #<Atom@4276ad40: #{}>,
+ :nodes
+ ["ec2-18-194-87-54.eu-central-1.compute.amazonaws.com"
+  "ec2-18-196-0-107.eu-central-1.compute.amazonaws.com"
+  "ec2-18-194-134-185.eu-central-1.compute.amazonaws.com"
+  "ec2-18-194-52-75.eu-central-1.compute.amazonaws.com"
+  "ec2-35-156-80-2.eu-central-1.compute.amazonaws.com"],
+ :test-count 1,
+ :generator
+ #object[jepsen.generator$time_limit$reify__1895 0x6e9a10cd "jepsen.generator$time_limit$reify__1895@6e9a10cd"],
+ :os
+ #object[jepsen.os.debian$reify__414 0x45d7495e "jepsen.os.debian$reify__414@45d7495e"],
+ :time-limit 60,
+ :model {}}
+
+2017-09-20 13:09:04,263{GMT}	INFO	[jepsen node ec2-18-196-0-107.eu-central-1.compute.amazonaws.com] jepsen.os.debian: ec2-18-196-0-107.eu-central-1.compute.amazonaws.com setting up debian
+2017-09-20 13:09:04,263{GMT}	INFO	[jepsen node ec2-18-194-134-185.eu-central-1.compute.amazonaws.com] jepsen.os.debian: ec2-18-194-134-185.eu-central-1.compute.amazonaws.com setting up debian
+2017-09-20 13:09:04,263{GMT}	INFO	[jepsen node ec2-18-194-52-75.eu-central-1.compute.amazonaws.com] jepsen.os.debian: ec2-18-194-52-75.eu-central-1.compute.amazonaws.com setting up debian
+2017-09-20 13:09:04,263{GMT}	INFO	[jepsen node ec2-18-194-87-54.eu-central-1.compute.amazonaws.com] jepsen.os.debian: ec2-18-194-87-54.eu-central-1.compute.amazonaws.com setting up debian
+2017-09-20 13:09:04,265{GMT}	INFO	[jepsen node ec2-35-156-80-2.eu-central-1.compute.amazonaws.com] jepsen.os.debian: ec2-35-156-80-2.eu-central-1.compute.amazonaws.com setting up debian
+2017-09-20 13:09:04,895{GMT}	WARN	[jepsen node ec2-18-194-87-54.eu-central-1.compute.amazonaws.com] jepsen.control: Encountered error with conn [:control "ec2-18-194-87-54.eu-central-1.compute.amazonaws.com"]; reopening
+2017-09-20 13:09:04,897{GMT}	WARN	[jepsen node ec2-18-194-134-185.eu-central-1.compute.amazonaws.com] jepsen.control: Encountered error with conn [:control "ec2-18-194-134-185.eu-central-1.compute.amazonaws.com"]; reopening
+2017-09-20 13:09:04,897{GMT}	WARN	[jepsen node ec2-18-196-0-107.eu-central-1.compute.amazonaws.com] jepsen.control: Encountered error with conn [:control "ec2-18-196-0-107.eu-central-1.compute.amazonaws.com"]; reopening
+2017-09-20 13:09:06,273{GMT}	INFO	[jepsen node ec2-18-194-52-75.eu-central-1.compute.amazonaws.com] jepsen.etcdemo: Tearing down etcd
+2017-09-20 13:09:06,273{GMT}	INFO	[jepsen node ec2-18-194-134-185.eu-central-1.compute.amazonaws.com] jepsen.etcdemo: Tearing down etcd
+2017-09-20 13:09:06,273{GMT}	INFO	[jepsen node ec2-18-194-87-54.eu-central-1.compute.amazonaws.com] jepsen.etcdemo: Tearing down etcd
+2017-09-20 13:09:06,273{GMT}	INFO	[jepsen node ec2-35-156-80-2.eu-central-1.compute.amazonaws.com] jepsen.etcdemo: Tearing down etcd
+2017-09-20 13:09:06,273{GMT}	INFO	[jepsen node ec2-18-194-134-185.eu-central-1.compute.amazonaws.com] jepsen.control.util: Stopping etcd
+2017-09-20 13:09:06,273{GMT}	INFO	[jepsen node ec2-18-196-0-107.eu-central-1.compute.amazonaws.com] jepsen.etcdemo: Tearing down etcd
+2017-09-20 13:09:06,274{GMT}	INFO	[jepsen node ec2-18-194-87-54.eu-central-1.compute.amazonaws.com] jepsen.control.util: Stopping etcd
+2017-09-20 13:09:06,274{GMT}	INFO	[jepsen node ec2-18-194-52-75.eu-central-1.compute.amazonaws.com] jepsen.control.util: Stopping etcd
+2017-09-20 13:09:06,274{GMT}	INFO	[jepsen node ec2-35-156-80-2.eu-central-1.compute.amazonaws.com] jepsen.control.util: Stopping etcd
+2017-09-20 13:09:06,274{GMT}	INFO	[jepsen node ec2-18-196-0-107.eu-central-1.compute.amazonaws.com] jepsen.control.util: Stopping etcd
+2017-09-20 13:09:06,577{GMT}	INFO	[jepsen node ec2-18-194-134-185.eu-central-1.compute.amazonaws.com] jepsen.etcdemo: Setting up etcd
+2017-09-20 13:09:06,578{GMT}	INFO	[jepsen node ec2-18-194-52-75.eu-central-1.compute.amazonaws.com] jepsen.etcdemo: Setting up etcd
+2017-09-20 13:09:06,578{GMT}	INFO	[jepsen node ec2-35-156-80-2.eu-central-1.compute.amazonaws.com] jepsen.etcdemo: Setting up etcd
+2017-09-20 13:09:06,578{GMT}	INFO	[jepsen node ec2-18-194-87-54.eu-central-1.compute.amazonaws.com] jepsen.etcdemo: Setting up etcd
+2017-09-20 13:09:06,578{GMT}	INFO	[jepsen node ec2-18-196-0-107.eu-central-1.compute.amazonaws.com] jepsen.etcdemo: Setting up etcd
+2017-09-20 13:09:07,993{GMT}	INFO	[jepsen node ec2-18-194-134-185.eu-central-1.compute.amazonaws.com] jepsen.control.util: starting etcd
+2017-09-20 13:09:07,993{GMT}	INFO	[jepsen node ec2-18-194-87-54.eu-central-1.compute.amazonaws.com] jepsen.control.util: starting etcd
+2017-09-20 13:09:07,995{GMT}	INFO	[jepsen node ec2-18-194-52-75.eu-central-1.compute.amazonaws.com] jepsen.control.util: starting etcd
+2017-09-20 13:09:07,995{GMT}	INFO	[jepsen node ec2-18-196-0-107.eu-central-1.compute.amazonaws.com] jepsen.control.util: starting etcd
+2017-09-20 13:09:07,996{GMT}	INFO	[jepsen node ec2-35-156-80-2.eu-central-1.compute.amazonaws.com] jepsen.control.util: starting etcd
+2017-09-20 13:09:18,205{GMT}	INFO	[jepsen nemesis] jepsen.core: Nemesis starting
+2017-09-20 13:09:18,205{GMT}	INFO	[jepsen nemesis] jepsen.core: nemesis done
+2017-09-20 13:09:18,206{GMT}	INFO	[jepsen worker 4] jepsen.core: Worker 4 starting
+2017-09-20 13:09:18,206{GMT}	INFO	[jepsen worker 2] jepsen.core: Worker 2 starting
+2017-09-20 13:09:18,206{GMT}	INFO	[jepsen worker 1] jepsen.core: Worker 1 starting
+2017-09-20 13:09:18,207{GMT}	INFO	[jepsen worker 3] jepsen.core: Worker 3 starting
+2017-09-20 13:09:18,207{GMT}	INFO	[jepsen worker 0] jepsen.core: Worker 0 starting
+2017-09-20 13:09:19,136{GMT}	INFO	[jepsen worker 0] jepsen.util: 0	:invoke	:read	nil
+2017-09-20 13:09:19,138{GMT}	INFO	[jepsen worker 0] jepsen.util: 		nil	nil
+2017-09-20 13:09:19,147{GMT}	WARN	[jepsen worker 0] jepsen.core: Process 0 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 936958179} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:19,381{GMT}	INFO	[jepsen worker 3] jepsen.util: 3	:invoke	:read	nil
+2017-09-20 13:09:19,382{GMT}	INFO	[jepsen worker 3] jepsen.util: 		nil	nil
+2017-09-20 13:09:19,382{GMT}	WARN	[jepsen worker 3] jepsen.core: Process 3 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 1180767571} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:19,452{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:invoke	:read	nil
+2017-09-20 13:09:19,452{GMT}	INFO	[jepsen worker 1] jepsen.util: 		nil	nil
+2017-09-20 13:09:19,453{GMT}	WARN	[jepsen worker 1] jepsen.core: Process 1 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 1251367961} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:19,917{GMT}	INFO	[jepsen worker 4] jepsen.util: 4	:invoke	:read	nil
+2017-09-20 13:09:19,917{GMT}	INFO	[jepsen worker 4] jepsen.util: 		nil	nil
+2017-09-20 13:09:19,918{GMT}	WARN	[jepsen worker 4] jepsen.core: Process 4 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 1716489374} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:20,136{GMT}	INFO	[jepsen worker 2] jepsen.util: 2	:invoke	:read	nil
+2017-09-20 13:09:20,136{GMT}	INFO	[jepsen worker 2] jepsen.util: 		nil	nil
+2017-09-20 13:09:20,137{GMT}	WARN	[jepsen worker 2] jepsen.core: Process 2 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 1935412737} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:20,159{GMT}	INFO	[jepsen worker 4] jepsen.util: 9	:invoke	:read	nil
+2017-09-20 13:09:20,160{GMT}	INFO	[jepsen worker 4] jepsen.util: 		nil	nil
+2017-09-20 13:09:20,160{GMT}	WARN	[jepsen worker 4] jepsen.core: Process 9 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 1958760506} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:20,591{GMT}	INFO	[jepsen worker 1] jepsen.util: 6	:invoke	:read	nil
+2017-09-20 13:09:20,591{GMT}	INFO	[jepsen worker 1] jepsen.util: 		nil	nil
+2017-09-20 13:09:20,592{GMT}	WARN	[jepsen worker 1] jepsen.core: Process 6 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 2390563076} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:20,879{GMT}	INFO	[jepsen worker 0] jepsen.util: 5	:invoke	:read	nil
+2017-09-20 13:09:20,880{GMT}	INFO	[jepsen worker 0] jepsen.util: 		nil	nil
+2017-09-20 13:09:20,880{GMT}	WARN	[jepsen worker 0] jepsen.core: Process 5 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 2678744428} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:20,919{GMT}	INFO	[jepsen worker 4] jepsen.util: 14	:invoke	:read	nil
+2017-09-20 13:09:20,919{GMT}	INFO	[jepsen worker 4] jepsen.util: 		nil	nil
+2017-09-20 13:09:20,919{GMT}	WARN	[jepsen worker 4] jepsen.core: Process 14 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 2717930421} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:21,186{GMT}	INFO	[jepsen worker 2] jepsen.util: 7	:invoke	:read	nil
+2017-09-20 13:09:21,187{GMT}	INFO	[jepsen worker 2] jepsen.util: 		nil	nil
+2017-09-20 13:09:21,187{GMT}	WARN	[jepsen worker 2] jepsen.core: Process 7 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 2985685855} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:21,201{GMT}	INFO	[jepsen worker 1] jepsen.util: 11	:invoke	:read	nil
+2017-09-20 13:09:21,202{GMT}	INFO	[jepsen worker 1] jepsen.util: 		nil	nil
+2017-09-20 13:09:21,202{GMT}	WARN	[jepsen worker 1] jepsen.core: Process 11 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 3000628971} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:21,211{GMT}	INFO	[jepsen worker 3] jepsen.util: 8	:invoke	:read	nil
+2017-09-20 13:09:21,211{GMT}	INFO	[jepsen worker 3] jepsen.util: 		nil	nil
+2017-09-20 13:09:21,211{GMT}	WARN	[jepsen worker 3] jepsen.core: Process 8 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 3010004656} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:21,752{GMT}	INFO	[jepsen worker 0] jepsen.util: 10	:invoke	:read	nil
+2017-09-20 13:09:21,752{GMT}	INFO	[jepsen worker 0] jepsen.util: 		nil	nil
+2017-09-20 13:09:21,753{GMT}	WARN	[jepsen worker 0] jepsen.core: Process 10 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 3551274783} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:22,029{GMT}	INFO	[jepsen worker 3] jepsen.util: 13	:invoke	:read	nil
+2017-09-20 13:09:22,029{GMT}	INFO	[jepsen worker 3] jepsen.util: 		nil	nil
+2017-09-20 13:09:22,029{GMT}	WARN	[jepsen worker 3] jepsen.core: Process 13 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 3827929117} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:22,275{GMT}	INFO	[jepsen worker 2] jepsen.util: 12	:invoke	:read	nil
+2017-09-20 13:09:22,275{GMT}	INFO	[jepsen worker 2] jepsen.util: 		nil	nil
+2017-09-20 13:09:22,275{GMT}	WARN	[jepsen worker 2] jepsen.core: Process 12 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 4073970571} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:22,429{GMT}	INFO	[jepsen worker 1] jepsen.util: 16	:invoke	:read	nil
+2017-09-20 13:09:22,430{GMT}	INFO	[jepsen worker 1] jepsen.util: 		nil	nil
+2017-09-20 13:09:22,431{GMT}	WARN	[jepsen worker 1] jepsen.core: Process 16 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 4228766390} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:22,561{GMT}	INFO	[jepsen worker 1] jepsen.util: 21	:invoke	:read	nil
+2017-09-20 13:09:22,561{GMT}	INFO	[jepsen worker 1] jepsen.util: 		nil	nil
+2017-09-20 13:09:22,562{GMT}	WARN	[jepsen worker 1] jepsen.core: Process 21 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 4360484168} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:22,585{GMT}	INFO	[jepsen worker 0] jepsen.util: 15	:invoke	:read	nil
+2017-09-20 13:09:22,585{GMT}	INFO	[jepsen worker 0] jepsen.util: 		nil	nil
+2017-09-20 13:09:22,586{GMT}	WARN	[jepsen worker 0] jepsen.core: Process 15 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 4384413630} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:22,647{GMT}	INFO	[jepsen worker 4] jepsen.util: 19	:invoke	:read	nil
+2017-09-20 13:09:22,647{GMT}	INFO	[jepsen worker 4] jepsen.util: 		nil	nil
+2017-09-20 13:09:22,647{GMT}	WARN	[jepsen worker 4] jepsen.core: Process 19 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 4445953741} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:23,070{GMT}	INFO	[jepsen worker 1] jepsen.util: 26	:invoke	:read	nil
+2017-09-20 13:09:23,070{GMT}	INFO	[jepsen worker 1] jepsen.util: 		nil	nil
+2017-09-20 13:09:23,070{GMT}	WARN	[jepsen worker 1] jepsen.core: Process 26 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 4869085421} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:23,752{GMT}	INFO	[jepsen worker 2] jepsen.util: 17	:invoke	:read	nil
+2017-09-20 13:09:23,752{GMT}	INFO	[jepsen worker 2] jepsen.util: 		nil	nil
+2017-09-20 13:09:23,752{GMT}	WARN	[jepsen worker 2] jepsen.core: Process 17 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 5551143866} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:23,803{GMT}	INFO	[jepsen worker 3] jepsen.util: 18	:invoke	:read	nil
+2017-09-20 13:09:23,803{GMT}	INFO	[jepsen worker 3] jepsen.util: 		nil	nil
+2017-09-20 13:09:23,803{GMT}	WARN	[jepsen worker 3] jepsen.core: Process 18 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 5602045727} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:24,097{GMT}	INFO	[jepsen worker 0] jepsen.util: 20	:invoke	:read	nil
+2017-09-20 13:09:24,098{GMT}	INFO	[jepsen worker 0] jepsen.util: 		nil	nil
+2017-09-20 13:09:24,098{GMT}	WARN	[jepsen worker 0] jepsen.core: Process 20 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 5896800917} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:24,186{GMT}	INFO	[jepsen worker 1] jepsen.util: 31	:invoke	:read	nil
+2017-09-20 13:09:24,186{GMT}	INFO	[jepsen worker 1] jepsen.util: 		nil	nil
+2017-09-20 13:09:24,187{GMT}	WARN	[jepsen worker 1] jepsen.core: Process 31 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 5985357930} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:24,279{GMT}	INFO	[jepsen worker 3] jepsen.util: 23	:invoke	:read	nil
+2017-09-20 13:09:24,279{GMT}	INFO	[jepsen worker 3] jepsen.util: 		nil	nil
+2017-09-20 13:09:24,280{GMT}	WARN	[jepsen worker 3] jepsen.core: Process 23 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 6078285251} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:24,281{GMT}	INFO	[jepsen worker 4] jepsen.util: 24	:invoke	:read	nil
+2017-09-20 13:09:24,281{GMT}	INFO	[jepsen worker 4] jepsen.util: 		nil	nil
+2017-09-20 13:09:24,281{GMT}	WARN	[jepsen worker 4] jepsen.core: Process 24 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 6080037949} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:24,301{GMT}	INFO	[jepsen worker 0] jepsen.util: 25	:invoke	:read	nil
+2017-09-20 13:09:24,301{GMT}	INFO	[jepsen worker 0] jepsen.util: 		nil	nil
+2017-09-20 13:09:24,301{GMT}	WARN	[jepsen worker 0] jepsen.core: Process 25 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 6099873215} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:24,397{GMT}	INFO	[jepsen worker 2] jepsen.util: 22	:invoke	:read	nil
+2017-09-20 13:09:24,397{GMT}	INFO	[jepsen worker 2] jepsen.util: 		nil	nil
+2017-09-20 13:09:24,398{GMT}	WARN	[jepsen worker 2] jepsen.core: Process 22 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 6196311765} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:24,542{GMT}	INFO	[jepsen worker 4] jepsen.util: 29	:invoke	:read	nil
+2017-09-20 13:09:24,542{GMT}	INFO	[jepsen worker 4] jepsen.util: 		nil	nil
+2017-09-20 13:09:24,542{GMT}	WARN	[jepsen worker 4] jepsen.core: Process 29 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 6341026768} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:24,643{GMT}	INFO	[jepsen worker 2] jepsen.util: 27	:invoke	:read	nil
+2017-09-20 13:09:24,643{GMT}	INFO	[jepsen worker 2] jepsen.util: 		nil	nil
+2017-09-20 13:09:24,644{GMT}	WARN	[jepsen worker 2] jepsen.core: Process 27 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 6442449918} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:24,918{GMT}	INFO	[jepsen worker 0] jepsen.util: 30	:invoke	:read	nil
+2017-09-20 13:09:24,918{GMT}	INFO	[jepsen worker 0] jepsen.util: 		nil	nil
+2017-09-20 13:09:24,919{GMT}	WARN	[jepsen worker 0] jepsen.core: Process 30 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 6717104832} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:24,933{GMT}	INFO	[jepsen worker 3] jepsen.util: 28	:invoke	:read	nil
+2017-09-20 13:09:24,934{GMT}	INFO	[jepsen worker 3] jepsen.util: 		nil	nil
+2017-09-20 13:09:24,934{GMT}	WARN	[jepsen worker 3] jepsen.core: Process 28 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 6732709494} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:25,003{GMT}	INFO	[jepsen worker 2] jepsen.util: 32	:invoke	:read	nil
+2017-09-20 13:09:25,004{GMT}	INFO	[jepsen worker 2] jepsen.util: 		nil	nil
+2017-09-20 13:09:25,005{GMT}	WARN	[jepsen worker 2] jepsen.core: Process 32 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 6802834635} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:25,368{GMT}	INFO	[jepsen worker 4] jepsen.util: 34	:invoke	:read	nil
+2017-09-20 13:09:25,368{GMT}	INFO	[jepsen worker 4] jepsen.util: 		nil	nil
+2017-09-20 13:09:25,368{GMT}	WARN	[jepsen worker 4] jepsen.core: Process 34 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 7167190485} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:25,418{GMT}	INFO	[jepsen worker 3] jepsen.util: 33	:invoke	:read	nil
+2017-09-20 13:09:25,418{GMT}	INFO	[jepsen worker 3] jepsen.util: 		nil	nil
+2017-09-20 13:09:25,418{GMT}	WARN	[jepsen worker 3] jepsen.core: Process 33 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 7216964286} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:25,580{GMT}	INFO	[jepsen worker 1] jepsen.util: 36	:invoke	:read	nil
+2017-09-20 13:09:25,581{GMT}	INFO	[jepsen worker 1] jepsen.util: 		nil	nil
+2017-09-20 13:09:25,581{GMT}	WARN	[jepsen worker 1] jepsen.core: Process 36 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 7379754795} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:26,496{GMT}	INFO	[jepsen worker 1] jepsen.util: 41	:invoke	:read	nil
+2017-09-20 13:09:26,496{GMT}	INFO	[jepsen worker 1] jepsen.util: 		nil	nil
+2017-09-20 13:09:26,496{GMT}	WARN	[jepsen worker 1] jepsen.core: Process 41 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 8294893795} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:26,650{GMT}	INFO	[jepsen worker 2] jepsen.util: 37	:invoke	:read	nil
+2017-09-20 13:09:26,651{GMT}	INFO	[jepsen worker 2] jepsen.util: 		nil	nil
+2017-09-20 13:09:26,651{GMT}	WARN	[jepsen worker 2] jepsen.core: Process 37 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 8449788057} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:26,720{GMT}	INFO	[jepsen worker 0] jepsen.util: 35	:invoke	:read	nil
+2017-09-20 13:09:26,720{GMT}	INFO	[jepsen worker 0] jepsen.util: 		nil	nil
+2017-09-20 13:09:26,721{GMT}	WARN	[jepsen worker 0] jepsen.core: Process 35 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 8519408736} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:26,773{GMT}	INFO	[jepsen worker 0] jepsen.util: 40	:invoke	:read	nil
+2017-09-20 13:09:26,773{GMT}	INFO	[jepsen worker 0] jepsen.util: 		nil	nil
+2017-09-20 13:09:26,773{GMT}	WARN	[jepsen worker 0] jepsen.core: Process 40 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 8572295991} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:26,945{GMT}	INFO	[jepsen worker 4] jepsen.util: 39	:invoke	:read	nil
+2017-09-20 13:09:26,945{GMT}	INFO	[jepsen worker 4] jepsen.util: 		nil	nil
+2017-09-20 13:09:26,945{GMT}	WARN	[jepsen worker 4] jepsen.core: Process 39 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 8744099561} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:27,016{GMT}	INFO	[jepsen worker 3] jepsen.util: 38	:invoke	:read	nil
+2017-09-20 13:09:27,016{GMT}	INFO	[jepsen worker 3] jepsen.util: 		nil	nil
+2017-09-20 13:09:27,016{GMT}	WARN	[jepsen worker 3] jepsen.core: Process 38 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 8815109174} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:27,218{GMT}	INFO	[jepsen worker 0] jepsen.util: 45	:invoke	:read	nil
+2017-09-20 13:09:27,218{GMT}	INFO	[jepsen worker 0] jepsen.util: 		nil	nil
+2017-09-20 13:09:27,219{GMT}	WARN	[jepsen worker 0] jepsen.core: Process 45 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 9017477681} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:27,288{GMT}	INFO	[jepsen worker 0] jepsen.util: 50	:invoke	:read	nil
+2017-09-20 13:09:27,288{GMT}	INFO	[jepsen worker 0] jepsen.util: 		nil	nil
+2017-09-20 13:09:27,288{GMT}	WARN	[jepsen worker 0] jepsen.core: Process 50 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 9086991264} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:27,354{GMT}	INFO	[jepsen worker 1] jepsen.util: 46	:invoke	:read	nil
+2017-09-20 13:09:27,354{GMT}	INFO	[jepsen worker 1] jepsen.util: 		nil	nil
+2017-09-20 13:09:27,354{GMT}	WARN	[jepsen worker 1] jepsen.core: Process 46 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 9153161481} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:27,575{GMT}	INFO	[jepsen worker 2] jepsen.util: 42	:invoke	:read	nil
+2017-09-20 13:09:27,575{GMT}	INFO	[jepsen worker 2] jepsen.util: 		nil	nil
+2017-09-20 13:09:27,575{GMT}	WARN	[jepsen worker 2] jepsen.core: Process 42 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 9374198990} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:27,759{GMT}	INFO	[jepsen worker 3] jepsen.util: 43	:invoke	:read	nil
+2017-09-20 13:09:27,759{GMT}	INFO	[jepsen worker 3] jepsen.util: 		nil	nil
+2017-09-20 13:09:27,759{GMT}	WARN	[jepsen worker 3] jepsen.core: Process 43 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 9557951073} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:27,800{GMT}	INFO	[jepsen worker 3] jepsen.util: 48	:invoke	:read	nil
+2017-09-20 13:09:27,800{GMT}	INFO	[jepsen worker 3] jepsen.util: 		nil	nil
+2017-09-20 13:09:27,800{GMT}	WARN	[jepsen worker 3] jepsen.core: Process 48 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 9598800174} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:28,036{GMT}	INFO	[jepsen worker 4] jepsen.util: 44	:invoke	:read	nil
+2017-09-20 13:09:28,036{GMT}	INFO	[jepsen worker 4] jepsen.util: 		nil	nil
+2017-09-20 13:09:28,036{GMT}	WARN	[jepsen worker 4] jepsen.core: Process 44 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 9834963854} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:28,275{GMT}	INFO	[jepsen worker 4] jepsen.util: 49	:invoke	:read	nil
+2017-09-20 13:09:28,275{GMT}	INFO	[jepsen worker 4] jepsen.util: 		nil	nil
+2017-09-20 13:09:28,275{GMT}	WARN	[jepsen worker 4] jepsen.core: Process 49 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 10074018002} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:28,663{GMT}	INFO	[jepsen worker 2] jepsen.util: 47	:invoke	:read	nil
+2017-09-20 13:09:28,663{GMT}	INFO	[jepsen worker 2] jepsen.util: 		nil	nil
+2017-09-20 13:09:28,663{GMT}	WARN	[jepsen worker 2] jepsen.core: Process 47 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 10462195390} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:28,706{GMT}	INFO	[jepsen worker 3] jepsen.util: 53	:invoke	:read	nil
+2017-09-20 13:09:28,707{GMT}	INFO	[jepsen worker 3] jepsen.util: 		nil	nil
+2017-09-20 13:09:28,707{GMT}	WARN	[jepsen worker 3] jepsen.core: Process 53 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 10505667109} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:28,755{GMT}	INFO	[jepsen worker 1] jepsen.util: 51	:invoke	:read	nil
+2017-09-20 13:09:28,755{GMT}	INFO	[jepsen worker 1] jepsen.util: 		nil	nil
+2017-09-20 13:09:28,756{GMT}	WARN	[jepsen worker 1] jepsen.core: Process 51 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 10554296071} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:28,973{GMT}	INFO	[jepsen worker 4] jepsen.util: 54	:invoke	:read	nil
+2017-09-20 13:09:28,973{GMT}	INFO	[jepsen worker 4] jepsen.util: 		nil	nil
+2017-09-20 13:09:28,973{GMT}	WARN	[jepsen worker 4] jepsen.core: Process 54 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 10771939551} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:29,083{GMT}	INFO	[jepsen worker 0] jepsen.util: 55	:invoke	:read	nil
+2017-09-20 13:09:29,083{GMT}	INFO	[jepsen worker 0] jepsen.util: 		nil	nil
+2017-09-20 13:09:29,083{GMT}	WARN	[jepsen worker 0] jepsen.core: Process 55 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 10882084913} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:29,291{GMT}	INFO	[jepsen worker 4] jepsen.util: 59	:invoke	:read	nil
+2017-09-20 13:09:29,292{GMT}	INFO	[jepsen worker 4] jepsen.util: 		nil	nil
+2017-09-20 13:09:29,292{GMT}	WARN	[jepsen worker 4] jepsen.core: Process 59 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 11090694632} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:29,394{GMT}	INFO	[jepsen worker 2] jepsen.util: 52	:invoke	:read	nil
+2017-09-20 13:09:29,394{GMT}	INFO	[jepsen worker 2] jepsen.util: 		nil	nil
+2017-09-20 13:09:29,394{GMT}	WARN	[jepsen worker 2] jepsen.core: Process 52 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 11192987445} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:29,773{GMT}	INFO	[jepsen worker 1] jepsen.util: 56	:invoke	:read	nil
+2017-09-20 13:09:29,773{GMT}	INFO	[jepsen worker 1] jepsen.util: 		nil	nil
+2017-09-20 13:09:29,773{GMT}	WARN	[jepsen worker 1] jepsen.core: Process 56 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 11572255789} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:29,883{GMT}	INFO	[jepsen worker 3] jepsen.util: 58	:invoke	:read	nil
+2017-09-20 13:09:29,884{GMT}	INFO	[jepsen worker 3] jepsen.util: 		nil	nil
+2017-09-20 13:09:29,884{GMT}	WARN	[jepsen worker 3] jepsen.core: Process 58 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 11682648645} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:29,978{GMT}	INFO	[jepsen worker 0] jepsen.util: 60	:invoke	:read	nil
+2017-09-20 13:09:29,978{GMT}	INFO	[jepsen worker 0] jepsen.util: 		nil	nil
+2017-09-20 13:09:29,978{GMT}	WARN	[jepsen worker 0] jepsen.core: Process 60 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 11776886129} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:30,110{GMT}	INFO	[jepsen worker 2] jepsen.util: 57	:invoke	:read	nil
+2017-09-20 13:09:30,110{GMT}	INFO	[jepsen worker 2] jepsen.util: 		nil	nil
+2017-09-20 13:09:30,110{GMT}	WARN	[jepsen worker 2] jepsen.core: Process 57 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 11908846452} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:30,330{GMT}	INFO	[jepsen worker 1] jepsen.util: 61	:invoke	:read	nil
+2017-09-20 13:09:30,330{GMT}	INFO	[jepsen worker 1] jepsen.util: 		nil	nil
+2017-09-20 13:09:30,330{GMT}	WARN	[jepsen worker 1] jepsen.core: Process 61 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 12129073987} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:30,792{GMT}	INFO	[jepsen worker 3] jepsen.util: 63	:invoke	:read	nil
+2017-09-20 13:09:30,793{GMT}	INFO	[jepsen worker 3] jepsen.util: 		nil	nil
+2017-09-20 13:09:30,793{GMT}	WARN	[jepsen worker 3] jepsen.core: Process 63 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 12591672060} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:30,890{GMT}	INFO	[jepsen worker 2] jepsen.util: 62	:invoke	:read	nil
+2017-09-20 13:09:30,891{GMT}	INFO	[jepsen worker 2] jepsen.util: 		nil	nil
+2017-09-20 13:09:30,891{GMT}	WARN	[jepsen worker 2] jepsen.core: Process 62 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 12689818562} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:31,165{GMT}	INFO	[jepsen worker 4] jepsen.util: 64	:invoke	:read	nil
+2017-09-20 13:09:31,166{GMT}	INFO	[jepsen worker 4] jepsen.util: 		nil	nil
+2017-09-20 13:09:31,166{GMT}	WARN	[jepsen worker 4] jepsen.core: Process 64 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 12964609766} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:31,279{GMT}	INFO	[jepsen worker 0] jepsen.util: 65	:invoke	:read	nil
+2017-09-20 13:09:31,280{GMT}	INFO	[jepsen worker 0] jepsen.util: 		nil	nil
+2017-09-20 13:09:31,280{GMT}	WARN	[jepsen worker 0] jepsen.core: Process 65 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 13078715661} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:31,318{GMT}	INFO	[jepsen worker 1] jepsen.util: 66	:invoke	:read	nil
+2017-09-20 13:09:31,318{GMT}	INFO	[jepsen worker 1] jepsen.util: 		nil	nil
+2017-09-20 13:09:31,318{GMT}	WARN	[jepsen worker 1] jepsen.core: Process 66 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 13116817001} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:31,827{GMT}	INFO	[jepsen worker 3] jepsen.util: 68	:invoke	:read	nil
+2017-09-20 13:09:31,828{GMT}	INFO	[jepsen worker 3] jepsen.util: 		nil	nil
+2017-09-20 13:09:31,828{GMT}	WARN	[jepsen worker 3] jepsen.core: Process 68 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 13626656460} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:32,152{GMT}	INFO	[jepsen worker 1] jepsen.util: 71	:invoke	:read	nil
+2017-09-20 13:09:32,153{GMT}	INFO	[jepsen worker 1] jepsen.util: 		nil	nil
+2017-09-20 13:09:32,153{GMT}	WARN	[jepsen worker 1] jepsen.core: Process 71 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 13951900508} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:32,468{GMT}	INFO	[jepsen worker 2] jepsen.util: 67	:invoke	:read	nil
+2017-09-20 13:09:32,468{GMT}	INFO	[jepsen worker 2] jepsen.util: 		nil	nil
+2017-09-20 13:09:32,468{GMT}	WARN	[jepsen worker 2] jepsen.core: Process 67 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 14267239222} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:32,623{GMT}	INFO	[jepsen worker 1] jepsen.util: 76	:invoke	:read	nil
+2017-09-20 13:09:32,623{GMT}	INFO	[jepsen worker 1] jepsen.util: 		nil	nil
+2017-09-20 13:09:32,623{GMT}	WARN	[jepsen worker 1] jepsen.core: Process 76 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 14422149837} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:33,085{GMT}	INFO	[jepsen worker 0] jepsen.util: 70	:invoke	:read	nil
+2017-09-20 13:09:33,086{GMT}	INFO	[jepsen worker 0] jepsen.util: 		nil	nil
+2017-09-20 13:09:33,086{GMT}	WARN	[jepsen worker 0] jepsen.core: Process 70 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 14884812199} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:33,087{GMT}	INFO	[jepsen worker 3] jepsen.util: 73	:invoke	:read	nil
+2017-09-20 13:09:33,088{GMT}	INFO	[jepsen worker 3] jepsen.util: 		nil	nil
+2017-09-20 13:09:33,088{GMT}	WARN	[jepsen worker 3] jepsen.core: Process 73 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 14886689737} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:33,099{GMT}	INFO	[jepsen worker 4] jepsen.util: 69	:invoke	:read	nil
+2017-09-20 13:09:33,100{GMT}	INFO	[jepsen worker 4] jepsen.util: 		nil	nil
+2017-09-20 13:09:33,100{GMT}	WARN	[jepsen worker 4] jepsen.core: Process 69 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 14898709983} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:33,374{GMT}	INFO	[jepsen worker 1] jepsen.util: 81	:invoke	:read	nil
+2017-09-20 13:09:33,374{GMT}	INFO	[jepsen worker 1] jepsen.util: 		nil	nil
+2017-09-20 13:09:33,374{GMT}	WARN	[jepsen worker 1] jepsen.core: Process 81 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 15173116879} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:33,374{GMT}	INFO	[jepsen worker 1] jepsen.core: Worker 1 done
+2017-09-20 13:09:33,512{GMT}	INFO	[jepsen worker 4] jepsen.util: 74	:invoke	:read	nil
+2017-09-20 13:09:33,513{GMT}	INFO	[jepsen worker 4] jepsen.util: 		nil	nil
+2017-09-20 13:09:33,513{GMT}	WARN	[jepsen worker 4] jepsen.core: Process 74 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 15311643553} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:33,513{GMT}	INFO	[jepsen worker 4] jepsen.core: Worker 4 done
+2017-09-20 13:09:33,587{GMT}	INFO	[jepsen worker 0] jepsen.util: 75	:invoke	:read	nil
+2017-09-20 13:09:33,587{GMT}	INFO	[jepsen worker 0] jepsen.util: 		nil	nil
+2017-09-20 13:09:33,587{GMT}	WARN	[jepsen worker 0] jepsen.core: Process 75 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 15385975556} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:33,587{GMT}	INFO	[jepsen worker 0] jepsen.core: Worker 0 done
+2017-09-20 13:09:34,195{GMT}	INFO	[jepsen worker 3] jepsen.util: 78	:invoke	:read	nil
+2017-09-20 13:09:34,197{GMT}	INFO	[jepsen worker 3] jepsen.util: 		nil	nil
+2017-09-20 13:09:34,197{GMT}	WARN	[jepsen worker 3] jepsen.core: Process 78 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 15995612117} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:34,197{GMT}	INFO	[jepsen worker 3] jepsen.core: Worker 3 done
+2017-09-20 13:09:34,429{GMT}	INFO	[jepsen worker 2] jepsen.util: 72	:invoke	:read	nil
+2017-09-20 13:09:34,429{GMT}	INFO	[jepsen worker 2] jepsen.util: 		nil	nil
+2017-09-20 13:09:34,429{GMT}	WARN	[jepsen worker 2] jepsen.core: Process 72 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 16228067473} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:09:34,429{GMT}	INFO	[jepsen worker 2] jepsen.core: Worker 2 done
+2017-09-20 13:09:34,430{GMT}	INFO	[jepsen test runner] jepsen.core: Waiting for nemesis to complete
+2017-09-20 13:09:34,430{GMT}	INFO	[jepsen test runner] jepsen.core: nemesis done.
+2017-09-20 13:09:34,430{GMT}	INFO	[jepsen test runner] jepsen.core: Tearing down nemesis
+2017-09-20 13:09:34,430{GMT}	INFO	[jepsen test runner] jepsen.core: Nemesis torn down
+2017-09-20 13:09:34,431{GMT}	INFO	[jepsen test runner] jepsen.core: Snarfing log files
+2017-09-20 13:09:34,433{GMT}	INFO	[jepsen node ec2-18-194-52-75.eu-central-1.compute.amazonaws.com] jepsen.core: downloading /opt/etcd/etcd.log to etcd.log
+2017-09-20 13:09:34,435{GMT}	INFO	[jepsen node ec2-35-156-80-2.eu-central-1.compute.amazonaws.com] jepsen.core: downloading /opt/etcd/etcd.log to etcd.log
+2017-09-20 13:09:34,436{GMT}	INFO	[jepsen node ec2-18-194-134-185.eu-central-1.compute.amazonaws.com] jepsen.core: downloading /opt/etcd/etcd.log to etcd.log
+2017-09-20 13:09:34,436{GMT}	INFO	[jepsen node ec2-18-196-0-107.eu-central-1.compute.amazonaws.com] jepsen.core: downloading /opt/etcd/etcd.log to etcd.log
+2017-09-20 13:09:34,436{GMT}	INFO	[jepsen node ec2-18-194-87-54.eu-central-1.compute.amazonaws.com] jepsen.core: downloading /opt/etcd/etcd.log to etcd.log
+2017-09-20 13:09:34,457{GMT}	INFO	[jepsen test runner] jepsen.core: Run complete, writing
+2017-09-20 13:09:34,509{GMT}	INFO	[jepsen node ec2-18-194-134-185.eu-central-1.compute.amazonaws.com] jepsen.etcdemo: Tearing down etcd
+2017-09-20 13:09:34,509{GMT}	INFO	[jepsen node ec2-18-194-87-54.eu-central-1.compute.amazonaws.com] jepsen.etcdemo: Tearing down etcd
+2017-09-20 13:09:34,509{GMT}	INFO	[jepsen node ec2-18-194-134-185.eu-central-1.compute.amazonaws.com] jepsen.control.util: Stopping etcd
+2017-09-20 13:09:34,509{GMT}	INFO	[jepsen node ec2-35-156-80-2.eu-central-1.compute.amazonaws.com] jepsen.etcdemo: Tearing down etcd
+2017-09-20 13:09:34,509{GMT}	INFO	[jepsen node ec2-18-194-52-75.eu-central-1.compute.amazonaws.com] jepsen.etcdemo: Tearing down etcd
+2017-09-20 13:09:34,510{GMT}	INFO	[jepsen node ec2-18-196-0-107.eu-central-1.compute.amazonaws.com] jepsen.etcdemo: Tearing down etcd
+2017-09-20 13:09:34,510{GMT}	INFO	[jepsen node ec2-35-156-80-2.eu-central-1.compute.amazonaws.com] jepsen.control.util: Stopping etcd
+2017-09-20 13:09:34,510{GMT}	INFO	[jepsen node ec2-18-194-52-75.eu-central-1.compute.amazonaws.com] jepsen.control.util: Stopping etcd
+2017-09-20 13:09:34,510{GMT}	INFO	[jepsen node ec2-18-196-0-107.eu-central-1.compute.amazonaws.com] jepsen.control.util: Stopping etcd
+2017-09-20 13:09:34,510{GMT}	INFO	[jepsen node ec2-18-194-87-54.eu-central-1.compute.amazonaws.com] jepsen.control.util: Stopping etcd
+2017-09-20 13:09:34,822{GMT}	INFO	[jepsen test runner] jepsen.core: Analyzing
+2017-09-20 13:09:34,822{GMT}	INFO	[jepsen test runner] jepsen.core: Analysis complete
+2017-09-20 13:09:34,824{GMT}	INFO	[jepsen results] jepsen.store: Wrote /home/admin/jepsen.etcdemo/store/etcdemo/20170920T130903.000Z/results.edn
+2017-09-20 13:09:34,830{GMT}	INFO	[main] jepsen.core: {:valid? true}
+
+
+Everything looks good! ヽ(‘ー`)ノ

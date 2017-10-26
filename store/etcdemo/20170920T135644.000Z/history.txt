@@ -1,0 +1,4 @@
+0	:invoke	:write	2
+2	:invoke	:cas	[1 1]
+0	:ok	:write	2
+2	:fail	:cas	[1 1]

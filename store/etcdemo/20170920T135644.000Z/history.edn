@@ -1,0 +1,4 @@
+{:type :invoke, :f :write, :value 2, :process 0, :time 63062970}
+{:type :invoke, :f :cas, :value [1 1], :process 2, :time 82642362}
+{:type :ok, :f :write, :value 2, :process 0, :time 190105068}
+{:type :fail, :f :cas, :value [1 1], :process 2, :time 190174776}

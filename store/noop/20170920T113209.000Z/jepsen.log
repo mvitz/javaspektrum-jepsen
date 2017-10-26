@@ -1,0 +1,29 @@
+2017-09-20 11:32:09,361{GMT}	INFO	[jepsen test runner] jepsen.core: Running test:
+ {:nodes-file "~/nodes",
+ :concurrency 5,
+ :db
+ #object[jepsen.db$reify__1266 0x29eda4f8 "jepsen.db$reify__1266@29eda4f8"],
+ :name "noop",
+ :start-time
+ #object[org.joda.time.DateTime 0x7158daf2 "2017-09-20T11:32:09.000Z"],
+ :net
+ #object[jepsen.net$reify__187 0x19650aa6 "jepsen.net$reify__187@19650aa6"],
+ :client
+ #object[jepsen.client$reify__3277 0x59d77850 "jepsen.client$reify__3277@59d77850"],
+ :barrier
+ #object[java.util.concurrent.CyclicBarrier 0x8f2098e "java.util.concurrent.CyclicBarrier@8f2098e"],
+ :ssh {:username "admin"},
+ :checker
+ #object[jepsen.checker$unbridled_optimism$reify__3133 0x19962194 "jepsen.checker$unbridled_optimism$reify__3133@19962194"],
+ :nemesis
+ #object[jepsen.nemesis$reify__220 0x2b9f74d0 "jepsen.nemesis$reify__220@2b9f74d0"],
+ :active-histories #<Atom@7187bac9: #{}>,
+ :nodes ["n1" "n2" "n3" "n4" "n5"],
+ :test-count 1,
+ :generator
+ #object[jepsen.generator$reify__1841 0x64f1fd08 "jepsen.generator$reify__1841@64f1fd08"],
+ :os
+ #object[jepsen.os$reify__1183 0x6629ad09 "jepsen.os$reify__1183@6629ad09"],
+ :time-limit 60,
+ :model {}}
+

@@ -1,0 +1,122 @@
+3	:invoke	:read	nil
+3	:ok	:read	nil
+1	:invoke	:read	nil
+1	:ok	:read	nil
+2	:invoke	:read	nil
+2	:ok	:read	nil
+2	:invoke	:cas	[3 2]
+2	:fail	:cas	[3 2]	:not-found
+3	:invoke	:read	nil
+3	:ok	:read	nil
+0	:invoke	:read	nil
+0	:ok	:read	nil
+4	:invoke	:cas	[4 4]
+4	:fail	:cas	[4 4]	:not-found
+4	:invoke	:read	nil
+4	:ok	:read	nil
+4	:invoke	:cas	[4 2]
+4	:fail	:cas	[4 2]	:not-found
+3	:invoke	:write	3
+3	:ok	:write	3
+1	:invoke	:write	1
+1	:ok	:write	1
+2	:invoke	:read	nil
+0	:invoke	:cas	[4 1]
+2	:ok	:read	1
+0	:fail	:cas	[4 1]
+0	:invoke	:read	nil
+0	:ok	:read	1
+4	:invoke	:read	nil
+4	:ok	:read	1
+4	:invoke	:cas	[1 4]
+4	:ok	:cas	[1 4]
+1	:invoke	:read	nil
+1	:ok	:read	4
+3	:invoke	:read	nil
+3	:ok	:read	4
+2	:invoke	:read	nil
+2	:ok	:read	4
+1	:invoke	:read	nil
+1	:ok	:read	4
+4	:invoke	:cas	[3 3]
+4	:fail	:cas	[3 3]
+:nemesis	:info	:start	nil
+0	:invoke	:cas	[1 1]
+0	:fail	:cas	[1 1]
+4	:invoke	:write	4
+4	:ok	:write	4
+3	:invoke	:write	1
+4	:invoke	:cas	[2 3]
+1	:invoke	:read	nil
+1	:ok	:read	4
+0	:invoke	:write	3
+1	:invoke	:cas	[2 2]
+:nemesis	:info	:start	"Cut off {\"ec2-18-194-52-75.eu-central-1.compute.amazonaws.com\" #{\"ec2-18-194-87-54.eu-central-1.compute.amazonaws.com\" \"ec2-18-194-134-185.eu-central-1.compute.amazonaws.com\" \"ec2-18-196-0-107.eu-central-1.compute.amazonaws.com\"}, \"ec2-35-156-80-2.eu-central-1.compute.amazonaws.com\" #{\"ec2-18-194-87-54.eu-central-1.compute.amazonaws.com\" \"ec2-18-194-134-185.eu-central-1.compute.amazonaws.com\" \"ec2-18-196-0-107.eu-central-1.compute.amazonaws.com\"}, \"ec2-18-194-87-54.eu-central-1.compute.amazonaws.com\" #{\"ec2-18-194-52-75.eu-central-1.compute.amazonaws.com\" \"ec2-35-156-80-2.eu-central-1.compute.amazonaws.com\"}, \"ec2-18-194-134-185.eu-central-1.compute.amazonaws.com\" #{\"ec2-18-194-52-75.eu-central-1.compute.amazonaws.com\" \"ec2-35-156-80-2.eu-central-1.compute.amazonaws.com\"}, \"ec2-18-196-0-107.eu-central-1.compute.amazonaws.com\" #{\"ec2-18-194-52-75.eu-central-1.compute.amazonaws.com\" \"ec2-35-156-80-2.eu-central-1.compute.amazonaws.com\"}}"
+2	:invoke	:read	nil
+2	:ok	:read	4
+2	:invoke	:read	nil
+2	:ok	:read	4
+2	:invoke	:write	2
+2	:ok	:write	2
+3	:info	:write	1	indeterminate: Read timed out
+4	:info	:cas	[2 3]	indeterminate: Read timed out
+2	:invoke	:cas	[0 0]
+2	:fail	:cas	[0 0]
+0	:info	:write	3	indeterminate: Read timed out
+5	:invoke	:read	nil
+5	:ok	:read	2
+5	:invoke	:cas	[2 0]
+5	:ok	:cas	[2 0]
+1	:info	:cas	[2 2]	indeterminate: Read timed out
+:nemesis	:info	:stop	nil
+:nemesis	:info	:stop	"fully connected"
+9	:invoke	:read	nil
+9	:ok	:read	4
+2	:invoke	:read	nil
+2	:ok	:read	0
+5	:invoke	:cas	[2 2]
+5	:fail	:cas	[2 2]
+8	:invoke	:write	1
+8	:ok	:write	1
+5	:invoke	:cas	[4 0]
+5	:fail	:cas	[4 0]
+9	:invoke	:read	nil
+9	:ok	:read	1
+6	:invoke	:read	nil
+6	:ok	:read	1
+9	:invoke	:read	nil
+9	:ok	:read	1
+8	:invoke	:cas	[0 1]
+8	:fail	:cas	[0 1]
+2	:invoke	:read	nil
+2	:ok	:read	1
+5	:invoke	:write	4
+5	:ok	:write	4
+6	:invoke	:read	nil
+6	:ok	:read	4
+2	:invoke	:write	2
+2	:ok	:write	2
+9	:invoke	:write	3
+9	:ok	:write	3
+8	:invoke	:write	1
+8	:ok	:write	1
+8	:invoke	:cas	[0 2]
+8	:fail	:cas	[0 2]
+2	:invoke	:cas	[4 3]
+2	:fail	:cas	[4 3]
+6	:invoke	:read	nil
+6	:ok	:read	1
+5	:invoke	:read	nil
+5	:ok	:read	1
+9	:invoke	:read	nil
+9	:ok	:read	1
+5	:invoke	:cas	[2 2]
+5	:fail	:cas	[2 2]
+8	:invoke	:cas	[3 2]
+8	:fail	:cas	[3 2]
+2	:invoke	:read	nil
+2	:ok	:read	1
+:nemesis	:info	:start	nil
+6	:invoke	:read	nil
+6	:ok	:read	1
+:nemesis	:info	:start	"Cut off {\"ec2-35-156-80-2.eu-central-1.compute.amazonaws.com\" #{\"ec2-18-194-52-75.eu-central-1.compute.amazonaws.com\" \"ec2-18-194-87-54.eu-central-1.compute.amazonaws.com\" \"ec2-18-194-134-185.eu-central-1.compute.amazonaws.com\"}, \"ec2-18-196-0-107.eu-central-1.compute.amazonaws.com\" #{\"ec2-18-194-52-75.eu-central-1.compute.amazonaws.com\" \"ec2-18-194-87-54.eu-central-1.compute.amazonaws.com\" \"ec2-18-194-134-185.eu-central-1.compute.amazonaws.com\"}, \"ec2-18-194-52-75.eu-central-1.compute.amazonaws.com\" #{\"ec2-35-156-80-2.eu-central-1.compute.amazonaws.com\" \"ec2-18-196-0-107.eu-central-1.compute.amazonaws.com\"}, \"ec2-18-194-87-54.eu-central-1.compute.amazonaws.com\" #{\"ec2-35-156-80-2.eu-central-1.compute.amazonaws.com\" \"ec2-18-196-0-107.eu-central-1.compute.amazonaws.com\"}, \"ec2-18-194-134-185.eu-central-1.compute.amazonaws.com\" #{\"ec2-35-156-80-2.eu-central-1.compute.amazonaws.com\" \"ec2-18-196-0-107.eu-central-1.compute.amazonaws.com\"}}"

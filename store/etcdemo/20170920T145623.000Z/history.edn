@@ -1,0 +1,122 @@
+{:type :invoke, :f :read, :value nil, :process 3, :time 354820968}
+{:type :ok, :f :read, :value nil, :process 3, :time 456900680}
+{:type :invoke, :f :read, :value nil, :process 1, :time 1116488206}
+{:type :ok, :f :read, :value nil, :process 1, :time 1121020940}
+{:type :invoke, :f :read, :value nil, :process 2, :time 1306456198}
+{:type :ok, :f :read, :value nil, :process 2, :time 1310924868}
+{:type :invoke, :f :cas, :value [3 2], :process 2, :time 1358753391}
+{:type :fail, :f :cas, :value [3 2], :process 2, :time 1368806620, :error :not-found}
+{:type :invoke, :f :read, :value nil, :process 3, :time 1612585679}
+{:type :ok, :f :read, :value nil, :process 3, :time 1616518530}
+{:type :invoke, :f :read, :value nil, :process 0, :time 1837852162}
+{:type :ok, :f :read, :value nil, :process 0, :time 1842783432}
+{:type :invoke, :f :cas, :value [4 4], :process 4, :time 2095492868}
+{:type :fail, :f :cas, :value [4 4], :process 4, :time 2102360819, :error :not-found}
+{:type :invoke, :f :read, :value nil, :process 4, :time 2490857583}
+{:type :ok, :f :read, :value nil, :process 4, :time 2495340611}
+{:type :invoke, :f :cas, :value [4 2], :process 4, :time 2851837108}
+{:type :fail, :f :cas, :value [4 2], :process 4, :time 2858844893, :error :not-found}
+{:type :invoke, :f :write, :value 3, :process 3, :time 2942292765}
+{:type :ok, :f :write, :value 3, :process 3, :time 2947536587}
+{:type :invoke, :f :write, :value 1, :process 1, :time 3117550984}
+{:type :ok, :f :write, :value 1, :process 1, :time 3123579405}
+{:type :invoke, :f :read, :value nil, :process 2, :time 3190347117}
+{:type :invoke, :f :cas, :value [4 1], :process 0, :time 3192280703}
+{:type :ok, :f :read, :value 1, :process 2, :time 3195433904}
+{:type :fail, :f :cas, :value [4 1], :process 0, :time 3200892805}
+{:type :invoke, :f :read, :value nil, :process 0, :time 3263374149}
+{:type :ok, :f :read, :value 1, :process 0, :time 3267308740}
+{:type :invoke, :f :read, :value nil, :process 4, :time 3482295959}
+{:type :ok, :f :read, :value 1, :process 4, :time 3486057887}
+{:type :invoke, :f :cas, :value [1 4], :process 4, :time 3645585615}
+{:type :ok, :f :cas, :value [1 4], :process 4, :time 3652497122}
+{:type :invoke, :f :read, :value nil, :process 1, :time 4105056178}
+{:type :ok, :f :read, :value 4, :process 1, :time 4108722824}
+{:type :invoke, :f :read, :value nil, :process 3, :time 4502991553}
+{:type :ok, :f :read, :value 4, :process 3, :time 4506669307}
+{:type :invoke, :f :read, :value nil, :process 2, :time 4587907046}
+{:type :ok, :f :read, :value 4, :process 2, :time 4591389742}
+{:type :invoke, :f :read, :value nil, :process 1, :time 4831222225}
+{:type :ok, :f :read, :value 4, :process 1, :time 4834695475}
+{:type :invoke, :f :cas, :value [3 3], :process 4, :time 4978111593}
+{:type :fail, :f :cas, :value [3 3], :process 4, :time 4984426861}
+{:type :info, :f :start, :process :nemesis, :time 5208570945}
+{:type :invoke, :f :cas, :value [1 1], :process 0, :time 5237784431}
+{:type :fail, :f :cas, :value [1 1], :process 0, :time 5243766036}
+{:type :invoke, :f :write, :value 4, :process 4, :time 5594800247}
+{:type :ok, :f :write, :value 4, :process 4, :time 5600607578}
+{:type :invoke, :f :write, :value 1, :process 3, :time 5744139559}
+{:type :invoke, :f :cas, :value [2 3], :process 4, :time 5774829914}
+{:type :invoke, :f :read, :value nil, :process 1, :time 5831136527}
+{:type :ok, :f :read, :value 4, :process 1, :time 5834218601}
+{:type :invoke, :f :write, :value 3, :process 0, :time 5995304649}
+{:type :invoke, :f :cas, :value [2 2], :process 1, :time 6281743041}
+{:type :info, :f :start, :process :nemesis, :time 6287227646, :value "Cut off {\"ec2-18-194-52-75.eu-central-1.compute.amazonaws.com\" #{\"ec2-18-194-87-54.eu-central-1.compute.amazonaws.com\" \"ec2-18-194-134-185.eu-central-1.compute.amazonaws.com\" \"ec2-18-196-0-107.eu-central-1.compute.amazonaws.com\"}, \"ec2-35-156-80-2.eu-central-1.compute.amazonaws.com\" #{\"ec2-18-194-87-54.eu-central-1.compute.amazonaws.com\" \"ec2-18-194-134-185.eu-central-1.compute.amazonaws.com\" \"ec2-18-196-0-107.eu-central-1.compute.amazonaws.com\"}, \"ec2-18-194-87-54.eu-central-1.compute.amazonaws.com\" #{\"ec2-18-194-52-75.eu-central-1.compute.amazonaws.com\" \"ec2-35-156-80-2.eu-central-1.compute.amazonaws.com\"}, \"ec2-18-194-134-185.eu-central-1.compute.amazonaws.com\" #{\"ec2-18-194-52-75.eu-central-1.compute.amazonaws.com\" \"ec2-35-156-80-2.eu-central-1.compute.amazonaws.com\"}, \"ec2-18-196-0-107.eu-central-1.compute.amazonaws.com\" #{\"ec2-18-194-52-75.eu-central-1.compute.amazonaws.com\" \"ec2-35-156-80-2.eu-central-1.compute.amazonaws.com\"}}"}
+{:type :invoke, :f :read, :value nil, :process 2, :time 6509852741}
+{:type :ok, :f :read, :value 4, :process 2, :time 6512867245}
+{:type :invoke, :f :read, :value nil, :process 2, :time 7907280089}
+{:type :ok, :f :read, :value 4, :process 2, :time 7910593548}
+{:type :invoke, :f :write, :value 2, :process 2, :time 9127074111}
+{:type :ok, :f :write, :value 2, :process 2, :time 9841719357}
+{:type :info, :f :write, :value 1, :process 3, :time 10752640285, :error "indeterminate: Read timed out"}
+{:type :info, :f :cas, :value [2 3], :process 4, :time 10782082867, :error "indeterminate: Read timed out"}
+{:type :invoke, :f :cas, :value [0 0], :process 2, :time 10889347106}
+{:type :fail, :f :cas, :value [0 0], :process 2, :time 10895033602}
+{:type :info, :f :write, :value 3, :process 0, :time 11001412729, :error "indeterminate: Read timed out"}
+{:type :invoke, :f :read, :value nil, :process 5, :time 11057145863}
+{:type :ok, :f :read, :value 2, :process 5, :time 11059948479}
+{:type :invoke, :f :cas, :value [2 0], :process 5, :time 11097321342}
+{:type :ok, :f :cas, :value [2 0], :process 5, :time 11102203074}
+{:type :info, :f :cas, :value [2 2], :process 1, :time 11287188202, :error "indeterminate: Read timed out"}
+{:type :info, :f :stop, :process :nemesis, :time 11288319030}
+{:type :info, :f :stop, :process :nemesis, :time 11492339031, :value "fully connected"}
+{:type :invoke, :f :read, :value nil, :process 9, :time 11621071632}
+{:type :ok, :f :read, :value 4, :process 9, :time 11624673726}
+{:type :invoke, :f :read, :value nil, :process 2, :time 11887504106}
+{:type :ok, :f :read, :value 0, :process 2, :time 11890601925}
+{:type :invoke, :f :cas, :value [2 2], :process 5, :time 11979632582}
+{:type :fail, :f :cas, :value [2 2], :process 5, :time 11985250592}
+{:type :invoke, :f :write, :value 1, :process 8, :time 12045725920}
+{:type :ok, :f :write, :value 1, :process 8, :time 12050411503}
+{:type :invoke, :f :cas, :value [4 0], :process 5, :time 12069639579}
+{:type :fail, :f :cas, :value [4 0], :process 5, :time 12075094470}
+{:type :invoke, :f :read, :value nil, :process 9, :time 12353204899}
+{:type :ok, :f :read, :value 1, :process 9, :time 12356834432}
+{:type :invoke, :f :read, :value nil, :process 6, :time 12464574942}
+{:type :ok, :f :read, :value 1, :process 6, :time 12467169171}
+{:type :invoke, :f :read, :value nil, :process 9, :time 12814394430}
+{:type :ok, :f :read, :value 1, :process 9, :time 12817410952}
+{:type :invoke, :f :cas, :value [0 1], :process 8, :time 12877865010}
+{:type :fail, :f :cas, :value [0 1], :process 8, :time 12883164768}
+{:type :invoke, :f :read, :value nil, :process 2, :time 13176103469}
+{:type :ok, :f :read, :value 1, :process 2, :time 13178695942}
+{:type :invoke, :f :write, :value 4, :process 5, :time 13466555056}
+{:type :ok, :f :write, :value 4, :process 5, :time 13471336028}
+{:type :invoke, :f :read, :value nil, :process 6, :time 13629576687}
+{:type :ok, :f :read, :value 4, :process 6, :time 13632233327}
+{:type :invoke, :f :write, :value 2, :process 2, :time 14053100037}
+{:type :ok, :f :write, :value 2, :process 2, :time 14057672623}
+{:type :invoke, :f :write, :value 3, :process 9, :time 14168790197}
+{:type :ok, :f :write, :value 3, :process 9, :time 14173883332}
+{:type :invoke, :f :write, :value 1, :process 8, :time 14397658462}
+{:type :ok, :f :write, :value 1, :process 8, :time 14403017490}
+{:type :invoke, :f :cas, :value [0 2], :process 8, :time 14522470988}
+{:type :fail, :f :cas, :value [0 2], :process 8, :time 14527913079}
+{:type :invoke, :f :cas, :value [4 3], :process 2, :time 14544125199}
+{:type :fail, :f :cas, :value [4 3], :process 2, :time 14548668530}
+{:type :invoke, :f :read, :value nil, :process 6, :time 14872765617}
+{:type :ok, :f :read, :value 1, :process 6, :time 14876174438}
+{:type :invoke, :f :read, :value nil, :process 5, :time 14975791488}
+{:type :ok, :f :read, :value 1, :process 5, :time 14979075195}
+{:type :invoke, :f :read, :value nil, :process 9, :time 15409303969}
+{:type :ok, :f :read, :value 1, :process 9, :time 15412510955}
+{:type :invoke, :f :cas, :value [2 2], :process 5, :time 15512618472}
+{:type :fail, :f :cas, :value [2 2], :process 5, :time 15518218751}
+{:type :invoke, :f :cas, :value [3 2], :process 8, :time 16317493621}
+{:type :fail, :f :cas, :value [3 2], :process 8, :time 16347335588}
+{:type :invoke, :f :read, :value nil, :process 2, :time 16408111336}
+{:type :ok, :f :read, :value 1, :process 2, :time 16410952318}
+{:type :info, :f :start, :process :nemesis, :time 16492807192}
+{:type :invoke, :f :read, :value nil, :process 6, :time 16687650102}
+{:type :ok, :f :read, :value 1, :process 6, :time 16690628615}
+{:type :info, :f :start, :process :nemesis, :time 17548054294, :value "Cut off {\"ec2-35-156-80-2.eu-central-1.compute.amazonaws.com\" #{\"ec2-18-194-52-75.eu-central-1.compute.amazonaws.com\" \"ec2-18-194-87-54.eu-central-1.compute.amazonaws.com\" \"ec2-18-194-134-185.eu-central-1.compute.amazonaws.com\"}, \"ec2-18-196-0-107.eu-central-1.compute.amazonaws.com\" #{\"ec2-18-194-52-75.eu-central-1.compute.amazonaws.com\" \"ec2-18-194-87-54.eu-central-1.compute.amazonaws.com\" \"ec2-18-194-134-185.eu-central-1.compute.amazonaws.com\"}, \"ec2-18-194-52-75.eu-central-1.compute.amazonaws.com\" #{\"ec2-35-156-80-2.eu-central-1.compute.amazonaws.com\" \"ec2-18-196-0-107.eu-central-1.compute.amazonaws.com\"}, \"ec2-18-194-87-54.eu-central-1.compute.amazonaws.com\" #{\"ec2-35-156-80-2.eu-central-1.compute.amazonaws.com\" \"ec2-18-196-0-107.eu-central-1.compute.amazonaws.com\"}, \"ec2-18-194-134-185.eu-central-1.compute.amazonaws.com\" #{\"ec2-35-156-80-2.eu-central-1.compute.amazonaws.com\" \"ec2-18-196-0-107.eu-central-1.compute.amazonaws.com\"}}"}

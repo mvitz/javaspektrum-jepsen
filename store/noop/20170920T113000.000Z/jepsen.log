@@ -1,0 +1,39 @@
+2017-09-20 11:30:00,199{GMT}	INFO	[jepsen test runner] jepsen.core: Running test:
+ {:nodes-file "/home/admin/nodes",
+ :concurrency 5,
+ :db
+ #object[jepsen.db$reify__1266 0x3936df72 "jepsen.db$reify__1266@3936df72"],
+ :name "noop",
+ :start-time
+ #object[org.joda.time.DateTime 0x8f2098e "2017-09-20T11:30:00.000Z"],
+ :username "admin",
+ :net
+ #object[jepsen.net$reify__187 0x7c8f9c2e "jepsen.net$reify__187@7c8f9c2e"],
+ :client
+ #object[jepsen.client$reify__3277 0x41b1f51e "jepsen.client$reify__3277@41b1f51e"],
+ :barrier
+ #object[java.util.concurrent.CyclicBarrier 0xac20bb4 "java.util.concurrent.CyclicBarrier@ac20bb4"],
+ :ssh
+ {:username "root",
+  :password "root",
+  :strict-host-key-checking false,
+  :private-key-path nil},
+ :checker
+ #object[jepsen.checker$unbridled_optimism$reify__3133 0x6b3f6585 "jepsen.checker$unbridled_optimism$reify__3133@6b3f6585"],
+ :nemesis
+ #object[jepsen.nemesis$reify__220 0x39c385d6 "jepsen.nemesis$reify__220@39c385d6"],
+ :active-histories #<Atom@27df0f3d: #{}>,
+ :nodes
+ ["ec2-18-194-87-54.eu-central-1.compute.amazonaws.com"
+  "ec2-18-196-0-107.eu-central-1.compute.amazonaws.com"
+  "ec2-18-194-134-185.eu-central-1.compute.amazonaws.com"
+  "ec2-18-194-52-75.eu-central-1.compute.amazonaws.com"
+  "ec2-35-156-80-2.eu-central-1.compute.amazonaws.com"],
+ :test-count 1,
+ :generator
+ #object[jepsen.generator$reify__1841 0x381d7219 "jepsen.generator$reify__1841@381d7219"],
+ :os
+ #object[jepsen.os$reify__1183 0xebd06a9 "jepsen.os$reify__1183@ebd06a9"],
+ :time-limit 60,
+ :model {}}
+

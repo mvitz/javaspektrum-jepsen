@@ -1,0 +1,152 @@
+{:type :invoke, :f :read, :value nil, :process 1, :time 107471812}
+{:type :ok, :f :read, :value nil, :process 1, :time 197870686}
+{:type :invoke, :f :read, :value nil, :process 3, :time 814604287}
+{:type :info, :f :read, :value nil, :process 3, :time 818268151, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 4, :time 969280323}
+{:type :info, :f :read, :value nil, :process 4, :time 971806160, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 2, :time 1455431328}
+{:type :info, :f :read, :value nil, :process 2, :time 1458002755, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 9, :time 1626907205}
+{:type :info, :f :read, :value nil, :process 9, :time 1629000795, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 0, :time 1844770595}
+{:type :info, :f :read, :value nil, :process 0, :time 1846561772, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 8, :time 1879448041}
+{:type :info, :f :read, :value nil, :process 8, :time 1881556205, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 1, :time 2052392048}
+{:type :info, :f :read, :value nil, :process 1, :time 2055145790, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 14, :time 2280451866}
+{:type :info, :f :read, :value nil, :process 14, :time 2282620185, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 19, :time 2420922626}
+{:type :info, :f :read, :value nil, :process 19, :time 2423059624, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 7, :time 3105932410}
+{:type :info, :f :read, :value nil, :process 7, :time 3108594215, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 6, :time 3170031624}
+{:type :info, :f :read, :value nil, :process 6, :time 3171639310, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 24, :time 3225934298}
+{:type :info, :f :read, :value nil, :process 24, :time 3227611661, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 5, :time 3269828092}
+{:type :info, :f :read, :value nil, :process 5, :time 3271756352, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 29, :time 3453246109}
+{:type :info, :f :read, :value nil, :process 29, :time 3455080804, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 13, :time 3480965732}
+{:type :info, :f :read, :value nil, :process 13, :time 3483214382, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 10, :time 4180059311}
+{:type :info, :f :read, :value nil, :process 10, :time 4182416750, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 11, :time 4215359104}
+{:type :info, :f :read, :value nil, :process 11, :time 4216970324, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 12, :time 4322548573}
+{:type :info, :f :read, :value nil, :process 12, :time 4324451818, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 34, :time 4341680690}
+{:type :info, :f :read, :value nil, :process 34, :time 4343189171, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 18, :time 4757382376}
+{:type :info, :f :read, :value nil, :process 18, :time 4759287973, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 16, :time 4975080674}
+{:type :info, :f :read, :value nil, :process 16, :time 4976760860, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 15, :time 5682425963}
+{:type :info, :f :read, :value nil, :process 15, :time 5684376574, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 17, :time 5858328799}
+{:type :info, :f :read, :value nil, :process 17, :time 5859872094, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 23, :time 6016207416}
+{:type :info, :f :read, :value nil, :process 23, :time 6017897904, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 21, :time 6050415378}
+{:type :info, :f :read, :value nil, :process 21, :time 6052362823, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 39, :time 6226016983}
+{:type :info, :f :read, :value nil, :process 39, :time 6228807673, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 26, :time 6457008495}
+{:type :info, :f :read, :value nil, :process 26, :time 6459331022, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 20, :time 6462424680}
+{:type :info, :f :read, :value nil, :process 20, :time 6464318294, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 31, :time 6703269381}
+{:type :info, :f :read, :value nil, :process 31, :time 6705561500, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 44, :time 7127879070}
+{:type :info, :f :read, :value nil, :process 44, :time 7130244570, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 28, :time 7178415353}
+{:type :info, :f :read, :value nil, :process 28, :time 7180426679, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 22, :time 7287769363}
+{:type :info, :f :read, :value nil, :process 22, :time 7289858176, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 33, :time 7718332644}
+{:type :info, :f :read, :value nil, :process 33, :time 7720672266, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 25, :time 7850356471}
+{:type :info, :f :read, :value nil, :process 25, :time 7852493811, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 49, :time 8489057338}
+{:type :info, :f :read, :value nil, :process 49, :time 8491305040, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 36, :time 8559344382}
+{:type :info, :f :read, :value nil, :process 36, :time 8561219244, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 30, :time 8777225695}
+{:type :info, :f :read, :value nil, :process 30, :time 8779472359, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 38, :time 8842447407}
+{:type :info, :f :read, :value nil, :process 38, :time 8844245128, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 43, :time 8962851593}
+{:type :info, :f :read, :value nil, :process 43, :time 8964360308, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 27, :time 8993807213}
+{:type :info, :f :read, :value nil, :process 27, :time 8995341273, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 35, :time 9231607422}
+{:type :info, :f :read, :value nil, :process 35, :time 9233212987, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 41, :time 9798432212}
+{:type :info, :f :read, :value nil, :process 41, :time 9800756482, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 54, :time 10034114081}
+{:type :info, :f :read, :value nil, :process 54, :time 10036184364, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 59, :time 10082187391}
+{:type :info, :f :read, :value nil, :process 59, :time 10083857294, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 32, :time 10212211275}
+{:type :info, :f :read, :value nil, :process 32, :time 10214375801, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 40, :time 10279873500}
+{:type :info, :f :read, :value nil, :process 40, :time 10282164996, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 45, :time 10351387084}
+{:type :info, :f :read, :value nil, :process 45, :time 10353974104, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 48, :time 10580880241}
+{:type :info, :f :read, :value nil, :process 48, :time 10583167105, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 37, :time 10745165310}
+{:type :info, :f :read, :value nil, :process 37, :time 10747474862, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 46, :time 10790757435}
+{:type :info, :f :read, :value nil, :process 46, :time 10792619055, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 42, :time 10838242637}
+{:type :info, :f :read, :value nil, :process 42, :time 10840041682, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 50, :time 11335109876}
+{:type :info, :f :read, :value nil, :process 50, :time 11337269601, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 64, :time 11644491802}
+{:type :info, :f :read, :value nil, :process 64, :time 11646886248, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 47, :time 11707612114}
+{:type :info, :f :read, :value nil, :process 47, :time 11709603047, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 69, :time 11767737255}
+{:type :info, :f :read, :value nil, :process 69, :time 11770019323, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 55, :time 11980693875}
+{:type :info, :f :read, :value nil, :process 55, :time 11983075574, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 74, :time 12411038000}
+{:type :invoke, :f :read, :value nil, :process 53, :time 12412883630}
+{:type :info, :f :read, :value nil, :process 74, :time 12413329841, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :info, :f :read, :value nil, :process 53, :time 12414610181, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 51, :time 12555201936}
+{:type :info, :f :read, :value nil, :process 51, :time 12557040759, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 60, :time 12558963277}
+{:type :info, :f :read, :value nil, :process 60, :time 12560721292, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 65, :time 12781678701}
+{:type :info, :f :read, :value nil, :process 65, :time 12783482067, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 52, :time 13137337941}
+{:type :info, :f :read, :value nil, :process 52, :time 13139564585, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 57, :time 13313800843}
+{:type :info, :f :read, :value nil, :process 57, :time 13315793210, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 56, :time 13478772463}
+{:type :info, :f :read, :value nil, :process 56, :time 13480591831, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 70, :time 13497517246}
+{:type :info, :f :read, :value nil, :process 70, :time 13498898261, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 79, :time 13764517155}
+{:type :info, :f :read, :value nil, :process 79, :time 13766799107, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 62, :time 13815032705}
+{:type :info, :f :read, :value nil, :process 62, :time 13816934885, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 58, :time 14292508537}
+{:type :info, :f :read, :value nil, :process 58, :time 14294727757, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 61, :time 14514807477}
+{:type :info, :f :read, :value nil, :process 61, :time 14516341063, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 63, :time 14884867744}
+{:type :info, :f :read, :value nil, :process 63, :time 14886913427, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 84, :time 15064994474}
+{:type :info, :f :read, :value nil, :process 84, :time 15066892059, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 66, :time 15114977269}
+{:type :info, :f :read, :value nil, :process 66, :time 15116450302, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 75, :time 15138924512}
+{:type :info, :f :read, :value nil, :process 75, :time 15140301080, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 67, :time 15434288003}
+{:type :info, :f :read, :value nil, :process 67, :time 15435739412, :error "indeterminate: Connection refused (Connection refused)"}
+{:type :invoke, :f :read, :value nil, :process 68, :time 16176536648}
+{:type :info, :f :read, :value nil, :process 68, :time 16178824942, :error "indeterminate: Connection refused (Connection refused)"}

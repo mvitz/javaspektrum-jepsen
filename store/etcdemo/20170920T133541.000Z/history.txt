@@ -1,0 +1,164 @@
+0	:invoke	:cas	[4 3]
+0	:info	:cas	[4 3]	indeterminate: clj-http: status 404 {:status 404, :headers {"Content-Type" "application/json", "X-Etcd-Cluster-Id" "663a90b2fc437693", "X-Etcd-Index" "11", "Date" "Wed, 20 Sep 2017 13:35:51 GMT", "Content-Length" "71", "Connection" "close"}, :body "{\"errorCode\":100,\"message\":\"Key not found\",\"cause\":\"/cats\",\"index\":11}\n", :request-time 76, :trace-redirects ["http://ec2-18-194-87-54.eu-central-1.compute.amazonaws.com:2379/v2/keys/cats"], :orig-content-encoding nil}
+4	:invoke	:write	3
+4	:ok	:write	3
+1	:invoke	:write	1
+1	:ok	:write	1
+1	:invoke	:write	2
+1	:ok	:write	2
+2	:invoke	:read	nil
+2	:ok	:read	2
+5	:invoke	:read	nil
+5	:ok	:read	2
+3	:invoke	:cas	[0 0]
+3	:info	:cas	[0 0]	indeterminate: java.lang.Boolean cannot be cast to clojure.lang.Associative
+5	:invoke	:cas	[2 0]
+5	:info	:cas	[2 0]	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:action "compareAndSwap", :node {:key "/cats", :value "0", :modifiedIndex 15, :createdIndex 14}, :prevNode {:key "/cats", :value "2", :modifiedIndex 14, :createdIndex 14}, :time 2435958074} instead
+(or (= t :ok) (= t :fail) (= t :info))
+1	:invoke	:read	nil
+1	:ok	:read	0
+4	:invoke	:write	1
+4	:ok	:write	1
+4	:invoke	:write	4
+4	:ok	:write	4
+8	:invoke	:read	nil
+8	:ok	:read	4
+8	:invoke	:read	nil
+8	:ok	:read	4
+1	:invoke	:write	0
+1	:ok	:write	0
+4	:invoke	:read	nil
+4	:ok	:read	0
+2	:invoke	:cas	[3 4]
+2	:info	:cas	[3 4]	indeterminate: java.lang.Boolean cannot be cast to clojure.lang.Associative
+10	:invoke	:write	1
+10	:ok	:write	1
+1	:invoke	:read	nil
+1	:ok	:read	1
+10	:invoke	:cas	[2 1]
+10	:info	:cas	[2 1]	indeterminate: java.lang.Boolean cannot be cast to clojure.lang.Associative
+7	:invoke	:write	0
+7	:ok	:write	0
+8	:invoke	:read	nil
+8	:ok	:read	0
+7	:invoke	:read	nil
+7	:ok	:read	0
+4	:invoke	:read	nil
+4	:ok	:read	0
+1	:invoke	:read	nil
+1	:ok	:read	0
+1	:invoke	:write	3
+1	:ok	:write	3
+15	:invoke	:cas	[0 0]
+15	:info	:cas	[0 0]	indeterminate: java.lang.Boolean cannot be cast to clojure.lang.Associative
+7	:invoke	:read	nil
+7	:ok	:read	3
+8	:invoke	:cas	[0 0]
+8	:info	:cas	[0 0]	indeterminate: java.lang.Boolean cannot be cast to clojure.lang.Associative
+4	:invoke	:write	1
+4	:ok	:write	1
+13	:invoke	:read	nil
+13	:ok	:read	1
+1	:invoke	:read	nil
+1	:ok	:read	1
+20	:invoke	:read	nil
+20	:ok	:read	1
+7	:invoke	:cas	[3 2]
+7	:info	:cas	[3 2]	indeterminate: java.lang.Boolean cannot be cast to clojure.lang.Associative
+1	:invoke	:cas	[4 2]
+1	:info	:cas	[4 2]	indeterminate: java.lang.Boolean cannot be cast to clojure.lang.Associative
+4	:invoke	:cas	[0 0]
+4	:info	:cas	[0 0]	indeterminate: java.lang.Boolean cannot be cast to clojure.lang.Associative
+13	:invoke	:write	2
+13	:ok	:write	2
+20	:invoke	:write	3
+20	:ok	:write	3
+6	:invoke	:write	2
+6	:ok	:write	2
+13	:invoke	:write	3
+13	:ok	:write	3
+13	:invoke	:write	4
+13	:ok	:write	4
+13	:invoke	:read	nil
+13	:ok	:read	4
+6	:invoke	:cas	[3 1]
+6	:info	:cas	[3 1]	indeterminate: java.lang.Boolean cannot be cast to clojure.lang.Associative
+13	:invoke	:read	nil
+13	:ok	:read	4
+12	:invoke	:write	1
+12	:ok	:write	1
+11	:invoke	:read	nil
+11	:ok	:read	1
+20	:invoke	:read	nil
+20	:ok	:read	1
+11	:invoke	:read	nil
+11	:ok	:read	1
+9	:invoke	:write	2
+9	:ok	:write	2
+20	:invoke	:read	nil
+20	:ok	:read	2
+13	:invoke	:cas	[3 3]
+13	:info	:cas	[3 3]	indeterminate: java.lang.Boolean cannot be cast to clojure.lang.Associative
+18	:invoke	:read	nil
+18	:ok	:read	2
+12	:invoke	:cas	[1 2]
+12	:info	:cas	[1 2]	indeterminate: java.lang.Boolean cannot be cast to clojure.lang.Associative
+11	:invoke	:write	1
+11	:ok	:write	1
+17	:invoke	:write	0
+17	:ok	:write	0
+20	:invoke	:write	4
+20	:ok	:write	4
+9	:invoke	:cas	[1 0]
+9	:info	:cas	[1 0]	indeterminate: java.lang.Boolean cannot be cast to clojure.lang.Associative
+17	:invoke	:read	nil
+17	:ok	:read	4
+18	:invoke	:read	nil
+18	:ok	:read	4
+11	:invoke	:write	2
+11	:ok	:write	2
+14	:invoke	:cas	[2 2]
+14	:info	:cas	[2 2]	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:action "compareAndSwap", :node {:key "/cats", :value "2", :modifiedIndex 34, :createdIndex 33}, :prevNode {:key "/cats", :value "2", :modifiedIndex 33, :createdIndex 33}, :time 12172298529} instead
+(or (= t :ok) (= t :fail) (= t :info))
+11	:invoke	:write	0
+11	:ok	:write	0
+17	:invoke	:cas	[1 1]
+17	:info	:cas	[1 1]	indeterminate: java.lang.Boolean cannot be cast to clojure.lang.Associative
+18	:invoke	:read	nil
+18	:ok	:read	0
+20	:invoke	:read	nil
+20	:ok	:read	0
+11	:invoke	:write	1
+11	:ok	:write	1
+19	:invoke	:read	nil
+19	:ok	:read	1
+20	:invoke	:cas	[3 0]
+20	:info	:cas	[3 0]	indeterminate: java.lang.Boolean cannot be cast to clojure.lang.Associative
+18	:invoke	:write	4
+18	:ok	:write	4
+11	:invoke	:read	nil
+11	:ok	:read	4
+22	:invoke	:write	2
+22	:ok	:write	2
+25	:invoke	:read	nil
+25	:ok	:read	2
+11	:invoke	:cas	[3 3]
+11	:info	:cas	[3 3]	indeterminate: java.lang.Boolean cannot be cast to clojure.lang.Associative
+18	:invoke	:write	4
+18	:ok	:write	4
+19	:invoke	:read	nil
+19	:ok	:read	4
+22	:invoke	:write	1
+22	:ok	:write	1
+19	:invoke	:write	1
+19	:ok	:write	1
+22	:invoke	:write	2
+22	:ok	:write	2
+18	:invoke	:write	3
+18	:ok	:write	3
+19	:invoke	:write	2
+19	:ok	:write	2
+16	:invoke	:write	2
+16	:ok	:write	2
+25	:invoke	:write	1
+25	:ok	:write	1

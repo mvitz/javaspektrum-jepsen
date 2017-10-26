@@ -1,0 +1,237 @@
+0	:invoke	:read	nil
+0	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 936958179} instead
+(or (= t :ok) (= t :fail) (= t :info))
+3	:invoke	:read	nil
+3	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 1180767571} instead
+(or (= t :ok) (= t :fail) (= t :info))
+1	:invoke	:read	nil
+1	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 1251367961} instead
+(or (= t :ok) (= t :fail) (= t :info))
+4	:invoke	:read	nil
+4	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 1716489374} instead
+(or (= t :ok) (= t :fail) (= t :info))
+2	:invoke	:read	nil
+2	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 1935412737} instead
+(or (= t :ok) (= t :fail) (= t :info))
+9	:invoke	:read	nil
+9	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 1958760506} instead
+(or (= t :ok) (= t :fail) (= t :info))
+6	:invoke	:read	nil
+6	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 2390563076} instead
+(or (= t :ok) (= t :fail) (= t :info))
+5	:invoke	:read	nil
+5	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 2678744428} instead
+(or (= t :ok) (= t :fail) (= t :info))
+14	:invoke	:read	nil
+14	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 2717930421} instead
+(or (= t :ok) (= t :fail) (= t :info))
+7	:invoke	:read	nil
+7	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 2985685855} instead
+(or (= t :ok) (= t :fail) (= t :info))
+11	:invoke	:read	nil
+11	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 3000628971} instead
+(or (= t :ok) (= t :fail) (= t :info))
+8	:invoke	:read	nil
+8	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 3010004656} instead
+(or (= t :ok) (= t :fail) (= t :info))
+10	:invoke	:read	nil
+10	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 3551274783} instead
+(or (= t :ok) (= t :fail) (= t :info))
+13	:invoke	:read	nil
+13	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 3827929117} instead
+(or (= t :ok) (= t :fail) (= t :info))
+12	:invoke	:read	nil
+12	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 4073970571} instead
+(or (= t :ok) (= t :fail) (= t :info))
+16	:invoke	:read	nil
+16	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 4228766390} instead
+(or (= t :ok) (= t :fail) (= t :info))
+21	:invoke	:read	nil
+21	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 4360484168} instead
+(or (= t :ok) (= t :fail) (= t :info))
+15	:invoke	:read	nil
+15	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 4384413630} instead
+(or (= t :ok) (= t :fail) (= t :info))
+19	:invoke	:read	nil
+19	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 4445953741} instead
+(or (= t :ok) (= t :fail) (= t :info))
+26	:invoke	:read	nil
+26	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 4869085421} instead
+(or (= t :ok) (= t :fail) (= t :info))
+17	:invoke	:read	nil
+17	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 5551143866} instead
+(or (= t :ok) (= t :fail) (= t :info))
+18	:invoke	:read	nil
+18	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 5602045727} instead
+(or (= t :ok) (= t :fail) (= t :info))
+20	:invoke	:read	nil
+20	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 5896800917} instead
+(or (= t :ok) (= t :fail) (= t :info))
+31	:invoke	:read	nil
+31	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 5985357930} instead
+(or (= t :ok) (= t :fail) (= t :info))
+23	:invoke	:read	nil
+23	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 6078285251} instead
+(or (= t :ok) (= t :fail) (= t :info))
+24	:invoke	:read	nil
+24	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 6080037949} instead
+(or (= t :ok) (= t :fail) (= t :info))
+25	:invoke	:read	nil
+25	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 6099873215} instead
+(or (= t :ok) (= t :fail) (= t :info))
+22	:invoke	:read	nil
+22	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 6196311765} instead
+(or (= t :ok) (= t :fail) (= t :info))
+29	:invoke	:read	nil
+29	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 6341026768} instead
+(or (= t :ok) (= t :fail) (= t :info))
+27	:invoke	:read	nil
+27	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 6442449918} instead
+(or (= t :ok) (= t :fail) (= t :info))
+30	:invoke	:read	nil
+30	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 6717104832} instead
+(or (= t :ok) (= t :fail) (= t :info))
+28	:invoke	:read	nil
+28	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 6732709494} instead
+(or (= t :ok) (= t :fail) (= t :info))
+32	:invoke	:read	nil
+32	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 6802834635} instead
+(or (= t :ok) (= t :fail) (= t :info))
+34	:invoke	:read	nil
+34	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 7167190485} instead
+(or (= t :ok) (= t :fail) (= t :info))
+33	:invoke	:read	nil
+33	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 7216964286} instead
+(or (= t :ok) (= t :fail) (= t :info))
+36	:invoke	:read	nil
+36	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 7379754795} instead
+(or (= t :ok) (= t :fail) (= t :info))
+41	:invoke	:read	nil
+41	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 8294893795} instead
+(or (= t :ok) (= t :fail) (= t :info))
+37	:invoke	:read	nil
+37	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 8449788057} instead
+(or (= t :ok) (= t :fail) (= t :info))
+35	:invoke	:read	nil
+35	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 8519408736} instead
+(or (= t :ok) (= t :fail) (= t :info))
+40	:invoke	:read	nil
+40	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 8572295991} instead
+(or (= t :ok) (= t :fail) (= t :info))
+39	:invoke	:read	nil
+39	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 8744099561} instead
+(or (= t :ok) (= t :fail) (= t :info))
+38	:invoke	:read	nil
+38	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 8815109174} instead
+(or (= t :ok) (= t :fail) (= t :info))
+45	:invoke	:read	nil
+45	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 9017477681} instead
+(or (= t :ok) (= t :fail) (= t :info))
+50	:invoke	:read	nil
+50	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 9086991264} instead
+(or (= t :ok) (= t :fail) (= t :info))
+46	:invoke	:read	nil
+46	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 9153161481} instead
+(or (= t :ok) (= t :fail) (= t :info))
+42	:invoke	:read	nil
+42	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 9374198990} instead
+(or (= t :ok) (= t :fail) (= t :info))
+43	:invoke	:read	nil
+43	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 9557951073} instead
+(or (= t :ok) (= t :fail) (= t :info))
+48	:invoke	:read	nil
+48	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 9598800174} instead
+(or (= t :ok) (= t :fail) (= t :info))
+44	:invoke	:read	nil
+44	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 9834963854} instead
+(or (= t :ok) (= t :fail) (= t :info))
+49	:invoke	:read	nil
+49	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 10074018002} instead
+(or (= t :ok) (= t :fail) (= t :info))
+47	:invoke	:read	nil
+47	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 10462195390} instead
+(or (= t :ok) (= t :fail) (= t :info))
+53	:invoke	:read	nil
+53	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 10505667109} instead
+(or (= t :ok) (= t :fail) (= t :info))
+51	:invoke	:read	nil
+51	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 10554296071} instead
+(or (= t :ok) (= t :fail) (= t :info))
+54	:invoke	:read	nil
+54	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 10771939551} instead
+(or (= t :ok) (= t :fail) (= t :info))
+55	:invoke	:read	nil
+55	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 10882084913} instead
+(or (= t :ok) (= t :fail) (= t :info))
+59	:invoke	:read	nil
+59	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 11090694632} instead
+(or (= t :ok) (= t :fail) (= t :info))
+52	:invoke	:read	nil
+52	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 11192987445} instead
+(or (= t :ok) (= t :fail) (= t :info))
+56	:invoke	:read	nil
+56	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 11572255789} instead
+(or (= t :ok) (= t :fail) (= t :info))
+58	:invoke	:read	nil
+58	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 11682648645} instead
+(or (= t :ok) (= t :fail) (= t :info))
+60	:invoke	:read	nil
+60	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 11776886129} instead
+(or (= t :ok) (= t :fail) (= t :info))
+57	:invoke	:read	nil
+57	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 11908846452} instead
+(or (= t :ok) (= t :fail) (= t :info))
+61	:invoke	:read	nil
+61	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 12129073987} instead
+(or (= t :ok) (= t :fail) (= t :info))
+63	:invoke	:read	nil
+63	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 12591672060} instead
+(or (= t :ok) (= t :fail) (= t :info))
+62	:invoke	:read	nil
+62	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 12689818562} instead
+(or (= t :ok) (= t :fail) (= t :info))
+64	:invoke	:read	nil
+64	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 12964609766} instead
+(or (= t :ok) (= t :fail) (= t :info))
+65	:invoke	:read	nil
+65	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 13078715661} instead
+(or (= t :ok) (= t :fail) (= t :info))
+66	:invoke	:read	nil
+66	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 13116817001} instead
+(or (= t :ok) (= t :fail) (= t :info))
+68	:invoke	:read	nil
+68	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 13626656460} instead
+(or (= t :ok) (= t :fail) (= t :info))
+71	:invoke	:read	nil
+71	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 13951900508} instead
+(or (= t :ok) (= t :fail) (= t :info))
+67	:invoke	:read	nil
+67	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 14267239222} instead
+(or (= t :ok) (= t :fail) (= t :info))
+76	:invoke	:read	nil
+76	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 14422149837} instead
+(or (= t :ok) (= t :fail) (= t :info))
+70	:invoke	:read	nil
+70	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 14884812199} instead
+(or (= t :ok) (= t :fail) (= t :info))
+73	:invoke	:read	nil
+73	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 14886689737} instead
+(or (= t :ok) (= t :fail) (= t :info))
+69	:invoke	:read	nil
+69	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 14898709983} instead
+(or (= t :ok) (= t :fail) (= t :info))
+81	:invoke	:read	nil
+81	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 15173116879} instead
+(or (= t :ok) (= t :fail) (= t :info))
+74	:invoke	:read	nil
+74	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 15311643553} instead
+(or (= t :ok) (= t :fail) (= t :info))
+75	:invoke	:read	nil
+75	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 15385975556} instead
+(or (= t :ok) (= t :fail) (= t :info))
+78	:invoke	:read	nil
+78	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 15995612117} instead
+(or (= t :ok) (= t :fail) (= t :info))
+72	:invoke	:read	nil
+72	:info	:read	nil	indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 16228067473} instead
+(or (= t :ok) (= t :fail) (= t :info))

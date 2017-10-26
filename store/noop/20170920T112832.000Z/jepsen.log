@@ -1,0 +1,62 @@
+2017-09-20 11:28:32,677{GMT}	INFO	[jepsen test runner] jepsen.core: Running test:
+ {:nodes-file "/home/admin/nodes",
+ :concurrency 5,
+ :db
+ #object[jepsen.db$reify__1266 0x14229fa7 "jepsen.db$reify__1266@14229fa7"],
+ :name "noop",
+ :start-time
+ #object[org.joda.time.DateTime 0x53ed09e8 "2017-09-20T11:28:32.000Z"],
+ :net
+ #object[jepsen.net$reify__187 0x8a2a6a "jepsen.net$reify__187@8a2a6a"],
+ :client
+ #object[jepsen.client$reify__3277 0x140d1230 "jepsen.client$reify__3277@140d1230"],
+ :barrier
+ #object[java.util.concurrent.CyclicBarrier 0x3dd818e8 "java.util.concurrent.CyclicBarrier@3dd818e8"],
+ :ssh
+ {:username "admin",
+  :password "root",
+  :strict-host-key-checking false,
+  :private-key-path nil},
+ :checker
+ #object[jepsen.checker$unbridled_optimism$reify__3133 0x36061cf3 "jepsen.checker$unbridled_optimism$reify__3133@36061cf3"],
+ :nemesis
+ #object[jepsen.nemesis$reify__220 0x45e1aa48 "jepsen.nemesis$reify__220@45e1aa48"],
+ :active-histories #<Atom@2b8bd798: #{}>,
+ :nodes
+ ["ec2-18-194-87-54.eu-central-1.compute.amazonaws.com"
+  "ec2-18-196-0-107.eu-central-1.compute.amazonaws.com"
+  "ec2-18-194-134-185.eu-central-1.compute.amazonaws.com"
+  "ec2-18-194-52-75.eu-central-1.compute.amazonaws.com"
+  "ec2-35-156-80-2.eu-central-1.compute.amazonaws.com"],
+ :test-count 1,
+ :generator
+ #object[jepsen.generator$reify__1841 0x4f5f6e45 "jepsen.generator$reify__1841@4f5f6e45"],
+ :os
+ #object[jepsen.os$reify__1183 0x13fed1ec "jepsen.os$reify__1183@13fed1ec"],
+ :time-limit 60,
+ :model {}}
+
+2017-09-20 11:28:33,396{GMT}	INFO	[jepsen nemesis] jepsen.core: Nemesis starting
+2017-09-20 11:28:33,397{GMT}	INFO	[jepsen nemesis] jepsen.core: nemesis done
+2017-09-20 11:28:33,398{GMT}	INFO	[jepsen worker 0] jepsen.core: Worker 0 starting
+2017-09-20 11:28:33,398{GMT}	INFO	[jepsen worker 4] jepsen.core: Worker 4 starting
+2017-09-20 11:28:33,398{GMT}	INFO	[jepsen worker 0] jepsen.core: Worker 0 done
+2017-09-20 11:28:33,398{GMT}	INFO	[jepsen worker 4] jepsen.core: Worker 4 done
+2017-09-20 11:28:33,398{GMT}	INFO	[jepsen worker 2] jepsen.core: Worker 2 starting
+2017-09-20 11:28:33,398{GMT}	INFO	[jepsen worker 2] jepsen.core: Worker 2 done
+2017-09-20 11:28:33,399{GMT}	INFO	[jepsen worker 1] jepsen.core: Worker 1 starting
+2017-09-20 11:28:33,399{GMT}	INFO	[jepsen worker 1] jepsen.core: Worker 1 done
+2017-09-20 11:28:33,399{GMT}	INFO	[jepsen worker 3] jepsen.core: Worker 3 starting
+2017-09-20 11:28:33,399{GMT}	INFO	[jepsen worker 3] jepsen.core: Worker 3 done
+2017-09-20 11:28:33,399{GMT}	INFO	[jepsen test runner] jepsen.core: Waiting for nemesis to complete
+2017-09-20 11:28:33,400{GMT}	INFO	[jepsen test runner] jepsen.core: nemesis done.
+2017-09-20 11:28:33,400{GMT}	INFO	[jepsen test runner] jepsen.core: Tearing down nemesis
+2017-09-20 11:28:33,400{GMT}	INFO	[jepsen test runner] jepsen.core: Nemesis torn down
+2017-09-20 11:28:33,401{GMT}	INFO	[jepsen test runner] jepsen.core: Run complete, writing
+2017-09-20 11:28:33,426{GMT}	INFO	[jepsen test runner] jepsen.core: Analyzing
+2017-09-20 11:28:33,426{GMT}	INFO	[jepsen test runner] jepsen.core: Analysis complete
+2017-09-20 11:28:33,430{GMT}	INFO	[jepsen results] jepsen.store: Wrote /home/admin/jepsen.etcdemo/store/noop/20170920T112832.000Z/results.edn
+2017-09-20 11:28:33,432{GMT}	INFO	[main] jepsen.core: {:valid? true}
+
+
+Everything looks good! ヽ(‘ー`)ノ

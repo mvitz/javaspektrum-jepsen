@@ -1,0 +1,499 @@
+2017-09-20 13:35:41,463{GMT}	INFO	[jepsen test runner] jepsen.core: Running test:
+ {:nodes-file "/home/admin/nodes",
+ :concurrency 5,
+ :db
+ #object[jepsen.etcdemo.Etcd 0x48cf8414 "jepsen.etcdemo.Etcd@48cf8414"],
+ :name "etcdemo",
+ :start-time
+ #object[org.joda.time.DateTime 0x74c7522c "2017-09-20T13:35:41.000Z"],
+ :net
+ #object[jepsen.net$reify__187 0x43deba42 "jepsen.net$reify__187@43deba42"],
+ :client {:conn nil},
+ :barrier
+ #object[java.util.concurrent.CyclicBarrier 0x5eeee124 "java.util.concurrent.CyclicBarrier@5eeee124"],
+ :ssh
+ {:username "admin",
+  :password "root",
+  :strict-host-key-checking false,
+  :private-key-path nil},
+ :checker
+ #object[jepsen.checker$unbridled_optimism$reify__3133 0xd28c214 "jepsen.checker$unbridled_optimism$reify__3133@d28c214"],
+ :nemesis
+ #object[jepsen.nemesis$reify__220 0x1b791dca "jepsen.nemesis$reify__220@1b791dca"],
+ :active-histories #<Atom@7548e1fb: #{}>,
+ :nodes
+ ["ec2-18-194-87-54.eu-central-1.compute.amazonaws.com"
+  "ec2-18-196-0-107.eu-central-1.compute.amazonaws.com"
+  "ec2-18-194-134-185.eu-central-1.compute.amazonaws.com"
+  "ec2-18-194-52-75.eu-central-1.compute.amazonaws.com"
+  "ec2-35-156-80-2.eu-central-1.compute.amazonaws.com"],
+ :test-count 1,
+ :generator
+ #object[jepsen.generator$time_limit$reify__1895 0x6182ffef "jepsen.generator$time_limit$reify__1895@6182ffef"],
+ :os
+ #object[jepsen.os.debian$reify__414 0x1124910c "jepsen.os.debian$reify__414@1124910c"],
+ :time-limit 60,
+ :model {}}
+
+2017-09-20 13:35:42,133{GMT}	INFO	[jepsen node ec2-18-196-0-107.eu-central-1.compute.amazonaws.com] jepsen.os.debian: ec2-18-196-0-107.eu-central-1.compute.amazonaws.com setting up debian
+2017-09-20 13:35:42,134{GMT}	INFO	[jepsen node ec2-18-194-134-185.eu-central-1.compute.amazonaws.com] jepsen.os.debian: ec2-18-194-134-185.eu-central-1.compute.amazonaws.com setting up debian
+2017-09-20 13:35:42,135{GMT}	INFO	[jepsen node ec2-18-194-52-75.eu-central-1.compute.amazonaws.com] jepsen.os.debian: ec2-18-194-52-75.eu-central-1.compute.amazonaws.com setting up debian
+2017-09-20 13:35:42,135{GMT}	INFO	[jepsen node ec2-35-156-80-2.eu-central-1.compute.amazonaws.com] jepsen.os.debian: ec2-35-156-80-2.eu-central-1.compute.amazonaws.com setting up debian
+2017-09-20 13:35:42,135{GMT}	INFO	[jepsen node ec2-18-194-87-54.eu-central-1.compute.amazonaws.com] jepsen.os.debian: ec2-18-194-87-54.eu-central-1.compute.amazonaws.com setting up debian
+2017-09-20 13:35:43,861{GMT}	INFO	[jepsen node ec2-18-194-134-185.eu-central-1.compute.amazonaws.com] jepsen.etcdemo: Tearing down etcd
+2017-09-20 13:35:43,861{GMT}	INFO	[jepsen node ec2-18-194-87-54.eu-central-1.compute.amazonaws.com] jepsen.etcdemo: Tearing down etcd
+2017-09-20 13:35:43,861{GMT}	INFO	[jepsen node ec2-35-156-80-2.eu-central-1.compute.amazonaws.com] jepsen.etcdemo: Tearing down etcd
+2017-09-20 13:35:43,861{GMT}	INFO	[jepsen node ec2-18-194-87-54.eu-central-1.compute.amazonaws.com] jepsen.control.util: Stopping etcd
+2017-09-20 13:35:43,861{GMT}	INFO	[jepsen node ec2-35-156-80-2.eu-central-1.compute.amazonaws.com] jepsen.control.util: Stopping etcd
+2017-09-20 13:35:43,861{GMT}	INFO	[jepsen node ec2-18-194-52-75.eu-central-1.compute.amazonaws.com] jepsen.etcdemo: Tearing down etcd
+2017-09-20 13:35:43,862{GMT}	INFO	[jepsen node ec2-18-194-52-75.eu-central-1.compute.amazonaws.com] jepsen.control.util: Stopping etcd
+2017-09-20 13:35:43,862{GMT}	INFO	[jepsen node ec2-18-194-134-185.eu-central-1.compute.amazonaws.com] jepsen.control.util: Stopping etcd
+2017-09-20 13:35:43,863{GMT}	INFO	[jepsen node ec2-18-196-0-107.eu-central-1.compute.amazonaws.com] jepsen.etcdemo: Tearing down etcd
+2017-09-20 13:35:43,863{GMT}	INFO	[jepsen node ec2-18-196-0-107.eu-central-1.compute.amazonaws.com] jepsen.control.util: Stopping etcd
+2017-09-20 13:35:44,165{GMT}	INFO	[jepsen node ec2-18-194-52-75.eu-central-1.compute.amazonaws.com] jepsen.etcdemo: Setting up etcd
+2017-09-20 13:35:44,166{GMT}	INFO	[jepsen node ec2-35-156-80-2.eu-central-1.compute.amazonaws.com] jepsen.etcdemo: Setting up etcd
+2017-09-20 13:35:44,166{GMT}	INFO	[jepsen node ec2-18-194-134-185.eu-central-1.compute.amazonaws.com] jepsen.etcdemo: Setting up etcd
+2017-09-20 13:35:44,166{GMT}	INFO	[jepsen node ec2-18-194-87-54.eu-central-1.compute.amazonaws.com] jepsen.etcdemo: Setting up etcd
+2017-09-20 13:35:44,167{GMT}	INFO	[jepsen node ec2-18-196-0-107.eu-central-1.compute.amazonaws.com] jepsen.etcdemo: Setting up etcd
+2017-09-20 13:35:45,585{GMT}	INFO	[jepsen node ec2-18-194-87-54.eu-central-1.compute.amazonaws.com] jepsen.control.util: starting etcd
+2017-09-20 13:35:45,585{GMT}	INFO	[jepsen node ec2-18-196-0-107.eu-central-1.compute.amazonaws.com] jepsen.control.util: starting etcd
+2017-09-20 13:35:45,585{GMT}	INFO	[jepsen node ec2-18-194-134-185.eu-central-1.compute.amazonaws.com] jepsen.control.util: starting etcd
+2017-09-20 13:35:45,585{GMT}	INFO	[jepsen node ec2-35-156-80-2.eu-central-1.compute.amazonaws.com] jepsen.control.util: starting etcd
+2017-09-20 13:35:45,585{GMT}	INFO	[jepsen node ec2-18-194-52-75.eu-central-1.compute.amazonaws.com] jepsen.control.util: starting etcd
+2017-09-20 13:35:50,797{GMT}	INFO	[jepsen nemesis] jepsen.core: Nemesis starting
+2017-09-20 13:35:50,797{GMT}	INFO	[jepsen nemesis] jepsen.core: nemesis done
+2017-09-20 13:35:50,799{GMT}	INFO	[jepsen worker 2] jepsen.core: Worker 2 starting
+2017-09-20 13:35:50,799{GMT}	INFO	[jepsen worker 3] jepsen.core: Worker 3 starting
+2017-09-20 13:35:50,799{GMT}	INFO	[jepsen worker 4] jepsen.core: Worker 4 starting
+2017-09-20 13:35:50,799{GMT}	INFO	[jepsen worker 1] jepsen.core: Worker 1 starting
+2017-09-20 13:35:50,800{GMT}	INFO	[jepsen worker 0] jepsen.core: Worker 0 starting
+2017-09-20 13:35:50,834{GMT}	INFO	[jepsen worker 0] jepsen.util: 0	:invoke	:cas	[4 3]
+2017-09-20 13:35:50,945{GMT}	WARN	[jepsen worker 0] jepsen.core: Process 0 indeterminate
+clojure.lang.ExceptionInfo: throw+: {:errorCode 100, :message "Key not found", :cause "/cats", :index 11, :status 404}
+	at slingshot.support$stack_trace.invoke(support.clj:201) ~[na:na]
+	at verschlimmbesserung.core$cas_BANG_$fn__2546.invoke(core.clj:378) ~[na:na]
+	at verschlimmbesserung.core$cas_BANG_.invokeStatic(core.clj:378) ~[na:na]
+	at verschlimmbesserung.core$cas_BANG_.invoke(core.clj:363) ~[na:na]
+	at verschlimmbesserung.core$cas_BANG_.invokeStatic(core.clj:375) ~[na:na]
+	at verschlimmbesserung.core$cas_BANG_.invoke(core.clj:363) ~[na:na]
+	at jepsen.etcdemo.EtcdClient.invoke_BANG_(etcdemo.clj:98) ~[na:na]
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:163) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+Caused by: clojure.lang.ExceptionInfo: clj-http: status 404 {:status 404, :headers {"Content-Type" "application/json", "X-Etcd-Cluster-Id" "663a90b2fc437693", "X-Etcd-Index" "11", "Date" "Wed, 20 Sep 2017 13:35:51 GMT", "Content-Length" "71", "Connection" "close"}, :body "{\"errorCode\":100,\"message\":\"Key not found\",\"cause\":\"/cats\",\"index\":11}\n", :request-time 76, :trace-redirects ["http://ec2-18-194-87-54.eu-central-1.compute.amazonaws.com:2379/v2/keys/cats"], :orig-content-encoding nil}
+	at slingshot.support$stack_trace.invoke(support.clj:201) ~[na:na]
+	at clj_http.client$wrap_exceptions$fn__2072.invoke(client.clj:225) ~[na:na]
+	at clj_http.client$wrap_accept$fn__2276.invoke(client.clj:595) ~[na:na]
+	at clj_http.client$wrap_accept_encoding$fn__2282.invoke(client.clj:609) ~[na:na]
+	at clj_http.client$wrap_content_type$fn__2271.invoke(client.clj:585) ~[na:na]
+	at clj_http.client$wrap_form_params$fn__2363.invoke(client.clj:756) ~[na:na]
+	at clj_http.client$wrap_nested_params$fn__2377.invoke(client.clj:786) ~[na:na]
+	at clj_http.client$wrap_method$fn__2323.invoke(client.clj:700) ~[na:na]
+	at clj_http.cookies$wrap_cookies$fn__588.invoke(cookies.clj:124) ~[na:na]
+	at clj_http.links$wrap_links$fn__910.invoke(links.clj:51) ~[na:na]
+	at clj_http.client$wrap_unknown_host$fn__2386.invoke(client.clj:806) ~[na:na]
+	at clj_http.client$put.invokeStatic(client.clj:927) ~[na:na]
+	at clj_http.client$put.doInvoke(client.clj:923) ~[na:na]
+	at clojure.lang.RestFn.invoke(RestFn.java:423) ~[clojure-1.8.0.jar:na]
+	at verschlimmbesserung.core$cas_BANG_.invokeStatic(core.clj:384) ~[na:na]
+	... 12 common frames omitted
+2017-09-20 13:35:51,875{GMT}	INFO	[jepsen worker 4] jepsen.util: 4	:invoke	:write	3
+2017-09-20 13:35:51,883{GMT}	INFO	[jepsen worker 4] jepsen.util: 4	:ok	:write	3
+2017-09-20 13:35:51,989{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:invoke	:write	1
+2017-09-20 13:35:51,995{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:ok	:write	1
+2017-09-20 13:35:52,270{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:invoke	:write	2
+2017-09-20 13:35:52,276{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:ok	:write	2
+2017-09-20 13:35:52,545{GMT}	INFO	[jepsen worker 2] jepsen.util: 2	:invoke	:read	nil
+2017-09-20 13:35:52,549{GMT}	INFO	[jepsen worker 2] jepsen.util: 2	:ok	:read	2
+2017-09-20 13:35:52,568{GMT}	INFO	[jepsen worker 0] jepsen.util: 5	:invoke	:read	nil
+2017-09-20 13:35:52,571{GMT}	INFO	[jepsen worker 0] jepsen.util: 5	:ok	:read	2
+2017-09-20 13:35:52,749{GMT}	INFO	[jepsen worker 3] jepsen.util: 3	:invoke	:cas	[0 0]
+2017-09-20 13:35:52,755{GMT}	WARN	[jepsen worker 3] jepsen.core: Process 3 indeterminate
+java.lang.ClassCastException: java.lang.Boolean cannot be cast to clojure.lang.Associative
+	at clojure.lang.RT.assoc(RT.java:792) ~[clojure-1.8.0.jar:na]
+	at clojure.core$assoc__4371.invokeStatic(core.clj:191) ~[clojure-1.8.0.jar:na]
+	at clojure.core$assoc__4371.invoke(core.clj:190) ~[clojure-1.8.0.jar:na]
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:164) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:35:53,224{GMT}	INFO	[jepsen worker 0] jepsen.util: 5	:invoke	:cas	[2 0]
+2017-09-20 13:35:53,229{GMT}	INFO	[jepsen worker 0] jepsen.util: 		nil	nil
+2017-09-20 13:35:53,232{GMT}	WARN	[jepsen worker 0] jepsen.core: Process 5 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:action "compareAndSwap", :node {:key "/cats", :value "0", :modifiedIndex 15, :createdIndex 14}, :prevNode {:key "/cats", :value "2", :modifiedIndex 14, :createdIndex 14}, :time 2435958074} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:35:53,321{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:invoke	:read	nil
+2017-09-20 13:35:53,324{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:ok	:read	0
+2017-09-20 13:35:53,406{GMT}	INFO	[jepsen worker 4] jepsen.util: 4	:invoke	:write	1
+2017-09-20 13:35:53,412{GMT}	INFO	[jepsen worker 4] jepsen.util: 4	:ok	:write	1
+2017-09-20 13:35:53,458{GMT}	INFO	[jepsen worker 4] jepsen.util: 4	:invoke	:write	4
+2017-09-20 13:35:53,463{GMT}	INFO	[jepsen worker 4] jepsen.util: 4	:ok	:write	4
+2017-09-20 13:35:53,484{GMT}	INFO	[jepsen worker 3] jepsen.util: 8	:invoke	:read	nil
+2017-09-20 13:35:53,487{GMT}	INFO	[jepsen worker 3] jepsen.util: 8	:ok	:read	4
+2017-09-20 13:35:54,024{GMT}	INFO	[jepsen worker 3] jepsen.util: 8	:invoke	:read	nil
+2017-09-20 13:35:54,028{GMT}	INFO	[jepsen worker 3] jepsen.util: 8	:ok	:read	4
+2017-09-20 13:35:54,032{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:invoke	:write	0
+2017-09-20 13:35:54,038{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:ok	:write	0
+2017-09-20 13:35:54,246{GMT}	INFO	[jepsen worker 4] jepsen.util: 4	:invoke	:read	nil
+2017-09-20 13:35:54,249{GMT}	INFO	[jepsen worker 4] jepsen.util: 4	:ok	:read	0
+2017-09-20 13:35:54,476{GMT}	INFO	[jepsen worker 2] jepsen.util: 2	:invoke	:cas	[3 4]
+2017-09-20 13:35:54,484{GMT}	WARN	[jepsen worker 2] jepsen.core: Process 2 indeterminate
+java.lang.ClassCastException: java.lang.Boolean cannot be cast to clojure.lang.Associative
+	at clojure.lang.RT.assoc(RT.java:792) ~[clojure-1.8.0.jar:na]
+	at clojure.core$assoc__4371.invokeStatic(core.clj:191) ~[clojure-1.8.0.jar:na]
+	at clojure.core$assoc__4371.invoke(core.clj:190) ~[clojure-1.8.0.jar:na]
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:164) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:35:54,926{GMT}	INFO	[jepsen worker 0] jepsen.util: 10	:invoke	:write	1
+2017-09-20 13:35:54,936{GMT}	INFO	[jepsen worker 0] jepsen.util: 10	:ok	:write	1
+2017-09-20 13:35:54,994{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:invoke	:read	nil
+2017-09-20 13:35:54,997{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:ok	:read	1
+2017-09-20 13:35:55,490{GMT}	INFO	[jepsen worker 0] jepsen.util: 10	:invoke	:cas	[2 1]
+2017-09-20 13:35:55,498{GMT}	WARN	[jepsen worker 0] jepsen.core: Process 10 indeterminate
+java.lang.ClassCastException: java.lang.Boolean cannot be cast to clojure.lang.Associative
+	at clojure.lang.RT.assoc(RT.java:792) ~[clojure-1.8.0.jar:na]
+	at clojure.core$assoc__4371.invokeStatic(core.clj:191) ~[clojure-1.8.0.jar:na]
+	at clojure.core$assoc__4371.invoke(core.clj:190) ~[clojure-1.8.0.jar:na]
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:164) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:35:55,774{GMT}	INFO	[jepsen worker 2] jepsen.util: 7	:invoke	:write	0
+2017-09-20 13:35:55,781{GMT}	INFO	[jepsen worker 2] jepsen.util: 7	:ok	:write	0
+2017-09-20 13:35:55,829{GMT}	INFO	[jepsen worker 3] jepsen.util: 8	:invoke	:read	nil
+2017-09-20 13:35:55,832{GMT}	INFO	[jepsen worker 3] jepsen.util: 8	:ok	:read	0
+2017-09-20 13:35:55,834{GMT}	INFO	[jepsen worker 2] jepsen.util: 7	:invoke	:read	nil
+2017-09-20 13:35:55,836{GMT}	INFO	[jepsen worker 2] jepsen.util: 7	:ok	:read	0
+2017-09-20 13:35:56,021{GMT}	INFO	[jepsen worker 4] jepsen.util: 4	:invoke	:read	nil
+2017-09-20 13:35:56,024{GMT}	INFO	[jepsen worker 4] jepsen.util: 4	:ok	:read	0
+2017-09-20 13:35:56,270{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:invoke	:read	nil
+2017-09-20 13:35:56,273{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:ok	:read	0
+2017-09-20 13:35:56,768{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:invoke	:write	3
+2017-09-20 13:35:56,773{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:ok	:write	3
+2017-09-20 13:35:56,833{GMT}	INFO	[jepsen worker 0] jepsen.util: 15	:invoke	:cas	[0 0]
+2017-09-20 13:35:56,838{GMT}	WARN	[jepsen worker 0] jepsen.core: Process 15 indeterminate
+java.lang.ClassCastException: java.lang.Boolean cannot be cast to clojure.lang.Associative
+	at clojure.lang.RT.assoc(RT.java:792) ~[clojure-1.8.0.jar:na]
+	at clojure.core$assoc__4371.invokeStatic(core.clj:191) ~[clojure-1.8.0.jar:na]
+	at clojure.core$assoc__4371.invoke(core.clj:190) ~[clojure-1.8.0.jar:na]
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:164) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:35:57,122{GMT}	INFO	[jepsen worker 2] jepsen.util: 7	:invoke	:read	nil
+2017-09-20 13:35:57,125{GMT}	INFO	[jepsen worker 2] jepsen.util: 7	:ok	:read	3
+2017-09-20 13:35:57,583{GMT}	INFO	[jepsen worker 3] jepsen.util: 8	:invoke	:cas	[0 0]
+2017-09-20 13:35:57,589{GMT}	WARN	[jepsen worker 3] jepsen.core: Process 8 indeterminate
+java.lang.ClassCastException: java.lang.Boolean cannot be cast to clojure.lang.Associative
+	at clojure.lang.RT.assoc(RT.java:792) ~[clojure-1.8.0.jar:na]
+	at clojure.core$assoc__4371.invokeStatic(core.clj:191) ~[clojure-1.8.0.jar:na]
+	at clojure.core$assoc__4371.invoke(core.clj:190) ~[clojure-1.8.0.jar:na]
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:164) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:35:57,866{GMT}	INFO	[jepsen worker 4] jepsen.util: 4	:invoke	:write	1
+2017-09-20 13:35:57,871{GMT}	INFO	[jepsen worker 4] jepsen.util: 4	:ok	:write	1
+2017-09-20 13:35:58,045{GMT}	INFO	[jepsen worker 3] jepsen.util: 13	:invoke	:read	nil
+2017-09-20 13:35:58,048{GMT}	INFO	[jepsen worker 3] jepsen.util: 13	:ok	:read	1
+2017-09-20 13:35:58,246{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:invoke	:read	nil
+2017-09-20 13:35:58,249{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:ok	:read	1
+2017-09-20 13:35:58,297{GMT}	INFO	[jepsen worker 0] jepsen.util: 20	:invoke	:read	nil
+2017-09-20 13:35:58,299{GMT}	INFO	[jepsen worker 0] jepsen.util: 20	:ok	:read	1
+2017-09-20 13:35:58,312{GMT}	INFO	[jepsen worker 2] jepsen.util: 7	:invoke	:cas	[3 2]
+2017-09-20 13:35:58,317{GMT}	WARN	[jepsen worker 2] jepsen.core: Process 7 indeterminate
+java.lang.ClassCastException: java.lang.Boolean cannot be cast to clojure.lang.Associative
+	at clojure.lang.RT.assoc(RT.java:792) ~[clojure-1.8.0.jar:na]
+	at clojure.core$assoc__4371.invokeStatic(core.clj:191) ~[clojure-1.8.0.jar:na]
+	at clojure.core$assoc__4371.invoke(core.clj:190) ~[clojure-1.8.0.jar:na]
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:164) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:35:58,409{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:invoke	:cas	[4 2]
+2017-09-20 13:35:58,415{GMT}	WARN	[jepsen worker 1] jepsen.core: Process 1 indeterminate
+java.lang.ClassCastException: java.lang.Boolean cannot be cast to clojure.lang.Associative
+	at clojure.lang.RT.assoc(RT.java:792) ~[clojure-1.8.0.jar:na]
+	at clojure.core$assoc__4371.invokeStatic(core.clj:191) ~[clojure-1.8.0.jar:na]
+	at clojure.core$assoc__4371.invoke(core.clj:190) ~[clojure-1.8.0.jar:na]
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:164) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:35:58,533{GMT}	INFO	[jepsen worker 4] jepsen.util: 4	:invoke	:cas	[0 0]
+2017-09-20 13:35:58,538{GMT}	WARN	[jepsen worker 4] jepsen.core: Process 4 indeterminate
+java.lang.ClassCastException: java.lang.Boolean cannot be cast to clojure.lang.Associative
+	at clojure.lang.RT.assoc(RT.java:792) ~[clojure-1.8.0.jar:na]
+	at clojure.core$assoc__4371.invokeStatic(core.clj:191) ~[clojure-1.8.0.jar:na]
+	at clojure.core$assoc__4371.invoke(core.clj:190) ~[clojure-1.8.0.jar:na]
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:164) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:35:58,544{GMT}	INFO	[jepsen worker 3] jepsen.util: 13	:invoke	:write	2
+2017-09-20 13:35:58,550{GMT}	INFO	[jepsen worker 3] jepsen.util: 13	:ok	:write	2
+2017-09-20 13:35:58,719{GMT}	INFO	[jepsen worker 0] jepsen.util: 20	:invoke	:write	3
+2017-09-20 13:35:58,723{GMT}	INFO	[jepsen worker 0] jepsen.util: 20	:ok	:write	3
+2017-09-20 13:35:59,536{GMT}	INFO	[jepsen worker 1] jepsen.util: 6	:invoke	:write	2
+2017-09-20 13:35:59,541{GMT}	INFO	[jepsen worker 1] jepsen.util: 6	:ok	:write	2
+2017-09-20 13:35:59,742{GMT}	INFO	[jepsen worker 3] jepsen.util: 13	:invoke	:write	3
+2017-09-20 13:35:59,748{GMT}	INFO	[jepsen worker 3] jepsen.util: 13	:ok	:write	3
+2017-09-20 13:35:59,766{GMT}	INFO	[jepsen worker 3] jepsen.util: 13	:invoke	:write	4
+2017-09-20 13:35:59,771{GMT}	INFO	[jepsen worker 3] jepsen.util: 13	:ok	:write	4
+2017-09-20 13:35:59,783{GMT}	INFO	[jepsen worker 3] jepsen.util: 13	:invoke	:read	nil
+2017-09-20 13:35:59,785{GMT}	INFO	[jepsen worker 3] jepsen.util: 13	:ok	:read	4
+2017-09-20 13:35:59,834{GMT}	INFO	[jepsen worker 1] jepsen.util: 6	:invoke	:cas	[3 1]
+2017-09-20 13:35:59,839{GMT}	WARN	[jepsen worker 1] jepsen.core: Process 6 indeterminate
+java.lang.ClassCastException: java.lang.Boolean cannot be cast to clojure.lang.Associative
+	at clojure.lang.RT.assoc(RT.java:792) ~[clojure-1.8.0.jar:na]
+	at clojure.core$assoc__4371.invokeStatic(core.clj:191) ~[clojure-1.8.0.jar:na]
+	at clojure.core$assoc__4371.invoke(core.clj:190) ~[clojure-1.8.0.jar:na]
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:164) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:35:59,871{GMT}	INFO	[jepsen worker 3] jepsen.util: 13	:invoke	:read	nil
+2017-09-20 13:35:59,873{GMT}	INFO	[jepsen worker 3] jepsen.util: 13	:ok	:read	4
+2017-09-20 13:35:59,949{GMT}	INFO	[jepsen worker 2] jepsen.util: 12	:invoke	:write	1
+2017-09-20 13:35:59,954{GMT}	INFO	[jepsen worker 2] jepsen.util: 12	:ok	:write	1
+2017-09-20 13:36:00,177{GMT}	INFO	[jepsen worker 1] jepsen.util: 11	:invoke	:read	nil
+2017-09-20 13:36:00,180{GMT}	INFO	[jepsen worker 1] jepsen.util: 11	:ok	:read	1
+2017-09-20 13:36:00,261{GMT}	INFO	[jepsen worker 0] jepsen.util: 20	:invoke	:read	nil
+2017-09-20 13:36:00,264{GMT}	INFO	[jepsen worker 0] jepsen.util: 20	:ok	:read	1
+2017-09-20 13:36:00,356{GMT}	INFO	[jepsen worker 1] jepsen.util: 11	:invoke	:read	nil
+2017-09-20 13:36:00,359{GMT}	INFO	[jepsen worker 1] jepsen.util: 11	:ok	:read	1
+2017-09-20 13:36:00,374{GMT}	INFO	[jepsen worker 4] jepsen.util: 9	:invoke	:write	2
+2017-09-20 13:36:00,378{GMT}	INFO	[jepsen worker 4] jepsen.util: 9	:ok	:write	2
+2017-09-20 13:36:00,473{GMT}	INFO	[jepsen worker 0] jepsen.util: 20	:invoke	:read	nil
+2017-09-20 13:36:00,475{GMT}	INFO	[jepsen worker 0] jepsen.util: 20	:ok	:read	2
+2017-09-20 13:36:00,503{GMT}	INFO	[jepsen worker 3] jepsen.util: 13	:invoke	:cas	[3 3]
+2017-09-20 13:36:00,509{GMT}	WARN	[jepsen worker 3] jepsen.core: Process 13 indeterminate
+java.lang.ClassCastException: java.lang.Boolean cannot be cast to clojure.lang.Associative
+	at clojure.lang.RT.assoc(RT.java:792) ~[clojure-1.8.0.jar:na]
+	at clojure.core$assoc__4371.invokeStatic(core.clj:191) ~[clojure-1.8.0.jar:na]
+	at clojure.core$assoc__4371.invoke(core.clj:190) ~[clojure-1.8.0.jar:na]
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:164) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:36:01,096{GMT}	INFO	[jepsen worker 3] jepsen.util: 18	:invoke	:read	nil
+2017-09-20 13:36:01,099{GMT}	INFO	[jepsen worker 3] jepsen.util: 18	:ok	:read	2
+2017-09-20 13:36:01,199{GMT}	INFO	[jepsen worker 2] jepsen.util: 12	:invoke	:cas	[1 2]
+2017-09-20 13:36:01,205{GMT}	WARN	[jepsen worker 2] jepsen.core: Process 12 indeterminate
+java.lang.ClassCastException: java.lang.Boolean cannot be cast to clojure.lang.Associative
+	at clojure.lang.RT.assoc(RT.java:792) ~[clojure-1.8.0.jar:na]
+	at clojure.core$assoc__4371.invokeStatic(core.clj:191) ~[clojure-1.8.0.jar:na]
+	at clojure.core$assoc__4371.invoke(core.clj:190) ~[clojure-1.8.0.jar:na]
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:164) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:36:01,531{GMT}	INFO	[jepsen worker 1] jepsen.util: 11	:invoke	:write	1
+2017-09-20 13:36:01,536{GMT}	INFO	[jepsen worker 1] jepsen.util: 11	:ok	:write	1
+2017-09-20 13:36:01,716{GMT}	INFO	[jepsen worker 2] jepsen.util: 17	:invoke	:write	0
+2017-09-20 13:36:01,722{GMT}	INFO	[jepsen worker 2] jepsen.util: 17	:ok	:write	0
+2017-09-20 13:36:01,980{GMT}	INFO	[jepsen worker 0] jepsen.util: 20	:invoke	:write	4
+2017-09-20 13:36:01,986{GMT}	INFO	[jepsen worker 0] jepsen.util: 20	:ok	:write	4
+2017-09-20 13:36:01,991{GMT}	INFO	[jepsen worker 4] jepsen.util: 9	:invoke	:cas	[1 0]
+2017-09-20 13:36:01,995{GMT}	WARN	[jepsen worker 4] jepsen.core: Process 9 indeterminate
+java.lang.ClassCastException: java.lang.Boolean cannot be cast to clojure.lang.Associative
+	at clojure.lang.RT.assoc(RT.java:792) ~[clojure-1.8.0.jar:na]
+	at clojure.core$assoc__4371.invokeStatic(core.clj:191) ~[clojure-1.8.0.jar:na]
+	at clojure.core$assoc__4371.invoke(core.clj:190) ~[clojure-1.8.0.jar:na]
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:164) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:36:02,146{GMT}	INFO	[jepsen worker 2] jepsen.util: 17	:invoke	:read	nil
+2017-09-20 13:36:02,149{GMT}	INFO	[jepsen worker 2] jepsen.util: 17	:ok	:read	4
+2017-09-20 13:36:02,207{GMT}	INFO	[jepsen worker 3] jepsen.util: 18	:invoke	:read	nil
+2017-09-20 13:36:02,210{GMT}	INFO	[jepsen worker 3] jepsen.util: 18	:ok	:read	4
+2017-09-20 13:36:02,818{GMT}	INFO	[jepsen worker 1] jepsen.util: 11	:invoke	:write	2
+2017-09-20 13:36:02,824{GMT}	INFO	[jepsen worker 1] jepsen.util: 11	:ok	:write	2
+2017-09-20 13:36:02,960{GMT}	INFO	[jepsen worker 4] jepsen.util: 14	:invoke	:cas	[2 2]
+2017-09-20 13:36:02,965{GMT}	INFO	[jepsen worker 4] jepsen.util: 		nil	nil
+2017-09-20 13:36:02,966{GMT}	WARN	[jepsen worker 4] jepsen.core: Process 14 indeterminate
+java.lang.AssertionError: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:action "compareAndSwap", :node {:key "/cats", :value "2", :modifiedIndex 34, :createdIndex 33}, :prevNode {:key "/cats", :value "2", :modifiedIndex 33, :createdIndex 33}, :time 12172298529} instead
+(or (= t :ok) (= t :fail) (= t :info))
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:169) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:36:03,133{GMT}	INFO	[jepsen worker 1] jepsen.util: 11	:invoke	:write	0
+2017-09-20 13:36:03,138{GMT}	INFO	[jepsen worker 1] jepsen.util: 11	:ok	:write	0
+2017-09-20 13:36:03,664{GMT}	INFO	[jepsen worker 2] jepsen.util: 17	:invoke	:cas	[1 1]
+2017-09-20 13:36:03,670{GMT}	WARN	[jepsen worker 2] jepsen.core: Process 17 indeterminate
+java.lang.ClassCastException: java.lang.Boolean cannot be cast to clojure.lang.Associative
+	at clojure.lang.RT.assoc(RT.java:792) ~[clojure-1.8.0.jar:na]
+	at clojure.core$assoc__4371.invokeStatic(core.clj:191) ~[clojure-1.8.0.jar:na]
+	at clojure.core$assoc__4371.invoke(core.clj:190) ~[clojure-1.8.0.jar:na]
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:164) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:36:03,875{GMT}	INFO	[jepsen worker 3] jepsen.util: 18	:invoke	:read	nil
+2017-09-20 13:36:03,878{GMT}	INFO	[jepsen worker 3] jepsen.util: 18	:ok	:read	0
+2017-09-20 13:36:03,891{GMT}	INFO	[jepsen worker 0] jepsen.util: 20	:invoke	:read	nil
+2017-09-20 13:36:03,894{GMT}	INFO	[jepsen worker 0] jepsen.util: 20	:ok	:read	0
+2017-09-20 13:36:03,919{GMT}	INFO	[jepsen worker 1] jepsen.util: 11	:invoke	:write	1
+2017-09-20 13:36:03,923{GMT}	INFO	[jepsen worker 1] jepsen.util: 11	:ok	:write	1
+2017-09-20 13:36:04,284{GMT}	INFO	[jepsen worker 4] jepsen.util: 19	:invoke	:read	nil
+2017-09-20 13:36:04,287{GMT}	INFO	[jepsen worker 4] jepsen.util: 19	:ok	:read	1
+2017-09-20 13:36:04,957{GMT}	INFO	[jepsen worker 0] jepsen.util: 20	:invoke	:cas	[3 0]
+2017-09-20 13:36:04,964{GMT}	WARN	[jepsen worker 0] jepsen.core: Process 20 indeterminate
+java.lang.ClassCastException: java.lang.Boolean cannot be cast to clojure.lang.Associative
+	at clojure.lang.RT.assoc(RT.java:792) ~[clojure-1.8.0.jar:na]
+	at clojure.core$assoc__4371.invokeStatic(core.clj:191) ~[clojure-1.8.0.jar:na]
+	at clojure.core$assoc__4371.invoke(core.clj:190) ~[clojure-1.8.0.jar:na]
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:164) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:36:05,058{GMT}	INFO	[jepsen worker 3] jepsen.util: 18	:invoke	:write	4
+2017-09-20 13:36:05,063{GMT}	INFO	[jepsen worker 3] jepsen.util: 18	:ok	:write	4
+2017-09-20 13:36:05,145{GMT}	INFO	[jepsen worker 1] jepsen.util: 11	:invoke	:read	nil
+2017-09-20 13:36:05,147{GMT}	INFO	[jepsen worker 1] jepsen.util: 11	:ok	:read	4
+2017-09-20 13:36:05,346{GMT}	INFO	[jepsen worker 2] jepsen.util: 22	:invoke	:write	2
+2017-09-20 13:36:05,350{GMT}	INFO	[jepsen worker 2] jepsen.util: 22	:ok	:write	2
+2017-09-20 13:36:05,404{GMT}	INFO	[jepsen worker 0] jepsen.util: 25	:invoke	:read	nil
+2017-09-20 13:36:05,406{GMT}	INFO	[jepsen worker 0] jepsen.util: 25	:ok	:read	2
+2017-09-20 13:36:05,422{GMT}	INFO	[jepsen worker 1] jepsen.util: 11	:invoke	:cas	[3 3]
+2017-09-20 13:36:05,427{GMT}	WARN	[jepsen worker 1] jepsen.core: Process 11 indeterminate
+java.lang.ClassCastException: java.lang.Boolean cannot be cast to clojure.lang.Associative
+	at clojure.lang.RT.assoc(RT.java:792) ~[clojure-1.8.0.jar:na]
+	at clojure.core$assoc__4371.invokeStatic(core.clj:191) ~[clojure-1.8.0.jar:na]
+	at clojure.core$assoc__4371.invoke(core.clj:190) ~[clojure-1.8.0.jar:na]
+	at jepsen.core$worker$fn__3324$fn__3325.invoke(core.clj:164) ~[jepsen-0.1.6.jar:na]
+	at jepsen.core$worker$fn__3324.invoke(core.clj:161) [jepsen-0.1.6.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938) [clojure-1.8.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.8.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-09-20 13:36:05,486{GMT}	INFO	[jepsen worker 3] jepsen.util: 18	:invoke	:write	4
+2017-09-20 13:36:05,508{GMT}	INFO	[jepsen worker 3] jepsen.util: 18	:ok	:write	4
+2017-09-20 13:36:05,518{GMT}	INFO	[jepsen worker 4] jepsen.util: 19	:invoke	:read	nil
+2017-09-20 13:36:05,520{GMT}	INFO	[jepsen worker 4] jepsen.util: 19	:ok	:read	4
+2017-09-20 13:36:05,522{GMT}	INFO	[jepsen worker 2] jepsen.util: 22	:invoke	:write	1
+2017-09-20 13:36:05,526{GMT}	INFO	[jepsen worker 2] jepsen.util: 22	:ok	:write	1
+2017-09-20 13:36:05,666{GMT}	INFO	[jepsen worker 4] jepsen.util: 19	:invoke	:write	1
+2017-09-20 13:36:05,670{GMT}	INFO	[jepsen worker 4] jepsen.util: 19	:ok	:write	1
+2017-09-20 13:36:06,138{GMT}	INFO	[jepsen worker 2] jepsen.util: 22	:invoke	:write	2
+2017-09-20 13:36:06,144{GMT}	INFO	[jepsen worker 2] jepsen.util: 22	:ok	:write	2
+2017-09-20 13:36:06,144{GMT}	INFO	[jepsen worker 2] jepsen.core: Worker 2 done
+2017-09-20 13:36:06,346{GMT}	INFO	[jepsen worker 3] jepsen.util: 18	:invoke	:write	3
+2017-09-20 13:36:06,352{GMT}	INFO	[jepsen worker 3] jepsen.util: 18	:ok	:write	3
+2017-09-20 13:36:06,352{GMT}	INFO	[jepsen worker 3] jepsen.core: Worker 3 done
+2017-09-20 13:36:06,420{GMT}	INFO	[jepsen worker 4] jepsen.util: 19	:invoke	:write	2
+2017-09-20 13:36:06,425{GMT}	INFO	[jepsen worker 4] jepsen.util: 19	:ok	:write	2
+2017-09-20 13:36:06,425{GMT}	INFO	[jepsen worker 4] jepsen.core: Worker 4 done
+2017-09-20 13:36:06,454{GMT}	INFO	[jepsen worker 1] jepsen.util: 16	:invoke	:write	2
+2017-09-20 13:36:06,460{GMT}	INFO	[jepsen worker 1] jepsen.util: 16	:ok	:write	2
+2017-09-20 13:36:06,460{GMT}	INFO	[jepsen worker 1] jepsen.core: Worker 1 done
+2017-09-20 13:36:06,861{GMT}	INFO	[jepsen worker 0] jepsen.util: 25	:invoke	:write	1
+2017-09-20 13:36:06,867{GMT}	INFO	[jepsen worker 0] jepsen.util: 25	:ok	:write	1
+2017-09-20 13:36:06,867{GMT}	INFO	[jepsen worker 0] jepsen.core: Worker 0 done
+2017-09-20 13:36:06,867{GMT}	INFO	[jepsen test runner] jepsen.core: Waiting for nemesis to complete
+2017-09-20 13:36:06,867{GMT}	INFO	[jepsen test runner] jepsen.core: nemesis done.
+2017-09-20 13:36:06,867{GMT}	INFO	[jepsen test runner] jepsen.core: Tearing down nemesis
+2017-09-20 13:36:06,867{GMT}	INFO	[jepsen test runner] jepsen.core: Nemesis torn down
+2017-09-20 13:36:06,868{GMT}	INFO	[jepsen test runner] jepsen.core: Snarfing log files
+2017-09-20 13:36:06,871{GMT}	INFO	[jepsen node ec2-18-194-134-185.eu-central-1.compute.amazonaws.com] jepsen.core: downloading /opt/etcd/etcd.log to etcd.log
+2017-09-20 13:36:06,871{GMT}	INFO	[jepsen node ec2-35-156-80-2.eu-central-1.compute.amazonaws.com] jepsen.core: downloading /opt/etcd/etcd.log to etcd.log
+2017-09-20 13:36:06,871{GMT}	INFO	[jepsen node ec2-18-194-52-75.eu-central-1.compute.amazonaws.com] jepsen.core: downloading /opt/etcd/etcd.log to etcd.log
+2017-09-20 13:36:06,871{GMT}	INFO	[jepsen node ec2-18-194-87-54.eu-central-1.compute.amazonaws.com] jepsen.core: downloading /opt/etcd/etcd.log to etcd.log
+2017-09-20 13:36:06,872{GMT}	INFO	[jepsen node ec2-18-196-0-107.eu-central-1.compute.amazonaws.com] jepsen.core: downloading /opt/etcd/etcd.log to etcd.log
+2017-09-20 13:36:06,896{GMT}	INFO	[jepsen test runner] jepsen.core: Run complete, writing
+2017-09-20 13:36:06,934{GMT}	INFO	[jepsen node ec2-18-196-0-107.eu-central-1.compute.amazonaws.com] jepsen.etcdemo: Tearing down etcd
+2017-09-20 13:36:06,934{GMT}	INFO	[jepsen node ec2-18-194-87-54.eu-central-1.compute.amazonaws.com] jepsen.etcdemo: Tearing down etcd
+2017-09-20 13:36:06,934{GMT}	INFO	[jepsen node ec2-18-194-134-185.eu-central-1.compute.amazonaws.com] jepsen.etcdemo: Tearing down etcd
+2017-09-20 13:36:06,934{GMT}	INFO	[jepsen node ec2-18-196-0-107.eu-central-1.compute.amazonaws.com] jepsen.control.util: Stopping etcd
+2017-09-20 13:36:06,934{GMT}	INFO	[jepsen node ec2-18-194-52-75.eu-central-1.compute.amazonaws.com] jepsen.etcdemo: Tearing down etcd
+2017-09-20 13:36:06,934{GMT}	INFO	[jepsen node ec2-35-156-80-2.eu-central-1.compute.amazonaws.com] jepsen.etcdemo: Tearing down etcd
+2017-09-20 13:36:06,934{GMT}	INFO	[jepsen node ec2-18-194-87-54.eu-central-1.compute.amazonaws.com] jepsen.control.util: Stopping etcd
+2017-09-20 13:36:06,934{GMT}	INFO	[jepsen node ec2-18-194-134-185.eu-central-1.compute.amazonaws.com] jepsen.control.util: Stopping etcd
+2017-09-20 13:36:06,935{GMT}	INFO	[jepsen node ec2-18-194-52-75.eu-central-1.compute.amazonaws.com] jepsen.control.util: Stopping etcd
+2017-09-20 13:36:06,935{GMT}	INFO	[jepsen node ec2-35-156-80-2.eu-central-1.compute.amazonaws.com] jepsen.control.util: Stopping etcd
+2017-09-20 13:36:07,245{GMT}	INFO	[jepsen test runner] jepsen.core: Analyzing
+2017-09-20 13:36:07,245{GMT}	INFO	[jepsen test runner] jepsen.core: Analysis complete
+2017-09-20 13:36:07,247{GMT}	INFO	[jepsen results] jepsen.store: Wrote /home/admin/jepsen.etcdemo/store/etcdemo/20170920T133541.000Z/results.edn
+2017-09-20 13:36:07,251{GMT}	INFO	[main] jepsen.core: {:valid? true}
+
+
+Everything looks good! ヽ(‘ー`)ノ

@@ -1,0 +1,158 @@
+{:type :invoke, :f :read, :value nil, :process 0, :time 934843818}
+{:type :info, :f :read, :value nil, :process 0, :time 941998257, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 936958179} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 3, :time 1180460444}
+{:type :info, :f :read, :value nil, :process 3, :time 1181054008, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 1180767571} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 1, :time 1251129545}
+{:type :info, :f :read, :value nil, :process 1, :time 1251611439, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 1251367961} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 4, :time 1716023184}
+{:type :info, :f :read, :value nil, :process 4, :time 1716761279, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 1716489374} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 2, :time 1935024330}
+{:type :info, :f :read, :value nil, :process 2, :time 1935643643, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 1935412737} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 9, :time 1958521702}
+{:type :info, :f :read, :value nil, :process 9, :time 1959130252, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 1958760506} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 6, :time 2390143727}
+{:type :info, :f :read, :value nil, :process 6, :time 2390812769, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 2390563076} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 5, :time 2678380674}
+{:type :info, :f :read, :value nil, :process 5, :time 2679127384, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 2678744428} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 14, :time 2717679840}
+{:type :info, :f :read, :value nil, :process 14, :time 2718161992, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 2717930421} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 7, :time 2985232560}
+{:type :info, :f :read, :value nil, :process 7, :time 2986060834, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 2985685855} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 11, :time 3000416732}
+{:type :info, :f :read, :value nil, :process 11, :time 3000964639, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 3000628971} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 8, :time 3009802083}
+{:type :info, :f :read, :value nil, :process 8, :time 3010200785, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 3010004656} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 10, :time 3550809369}
+{:type :info, :f :read, :value nil, :process 10, :time 3551547598, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 3551274783} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 13, :time 3827627787}
+{:type :info, :f :read, :value nil, :process 13, :time 3828155224, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 3827929117} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 12, :time 4073587715}
+{:type :info, :f :read, :value nil, :process 12, :time 4074202055, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 4073970571} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 16, :time 4228398688}
+{:type :info, :f :read, :value nil, :process 16, :time 4229112885, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 4228766390} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 21, :time 4360123124}
+{:type :info, :f :read, :value nil, :process 21, :time 4360845801, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 4360484168} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 15, :time 4384200698}
+{:type :info, :f :read, :value nil, :process 15, :time 4384711768, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 4384413630} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 19, :time 4445672482}
+{:type :info, :f :read, :value nil, :process 19, :time 4446215124, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 4445953741} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 26, :time 4868728438}
+{:type :info, :f :read, :value nil, :process 26, :time 4869391398, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 4869085421} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 17, :time 5550758786}
+{:type :info, :f :read, :value nil, :process 17, :time 5551401582, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 5551143866} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 18, :time 5601661896}
+{:type :info, :f :read, :value nil, :process 18, :time 5602285525, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 5602045727} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 20, :time 5896439253}
+{:type :info, :f :read, :value nil, :process 20, :time 5897103626, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 5896800917} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 31, :time 5984932755}
+{:type :info, :f :read, :value nil, :process 31, :time 5985645156, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 5985357930} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 23, :time 6077821178}
+{:type :info, :f :read, :value nil, :process 23, :time 6078548173, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 6078285251} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 24, :time 6079786273}
+{:type :info, :f :read, :value nil, :process 24, :time 6080229308, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 6080037949} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 25, :time 6099675447}
+{:type :info, :f :read, :value nil, :process 25, :time 6100081869, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 6099873215} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 22, :time 6195983000}
+{:type :info, :f :read, :value nil, :process 22, :time 6196525930, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 6196311765} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 29, :time 6340606632}
+{:type :info, :f :read, :value nil, :process 29, :time 6341278567, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 6341026768} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 27, :time 6442087203}
+{:type :info, :f :read, :value nil, :process 27, :time 6442674708, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 6442449918} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 30, :time 6716625471}
+{:type :info, :f :read, :value nil, :process 30, :time 6717357112, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 6717104832} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 28, :time 6732340494}
+{:type :info, :f :read, :value nil, :process 28, :time 6732971175, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 6732709494} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 32, :time 6802495173}
+{:type :info, :f :read, :value nil, :process 32, :time 6803453294, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 6802834635} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 34, :time 7166852569}
+{:type :info, :f :read, :value nil, :process 34, :time 7167393089, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 7167190485} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 33, :time 7216626988}
+{:type :info, :f :read, :value nil, :process 33, :time 7217305303, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 7216964286} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 36, :time 7379392287}
+{:type :info, :f :read, :value nil, :process 36, :time 7380083982, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 7379754795} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 41, :time 8294566266}
+{:type :info, :f :read, :value nil, :process 41, :time 8295105082, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 8294893795} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 37, :time 8449314590}
+{:type :info, :f :read, :value nil, :process 37, :time 8450191556, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 8449788057} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 35, :time 8519122706}
+{:type :info, :f :read, :value nil, :process 35, :time 8519619856, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 8519408736} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 40, :time 8572123192}
+{:type :info, :f :read, :value nil, :process 40, :time 8572480183, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 8572295991} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 39, :time 8743828382}
+{:type :info, :f :read, :value nil, :process 39, :time 8744312807, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 8744099561} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 38, :time 8814910265}
+{:type :info, :f :read, :value nil, :process 38, :time 8815310774, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 8815109174} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 45, :time 9016897355}
+{:type :info, :f :read, :value nil, :process 45, :time 9017836712, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 9017477681} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 50, :time 9086601701}
+{:type :info, :f :read, :value nil, :process 50, :time 9087289120, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 9086991264} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 46, :time 9152794684}
+{:type :info, :f :read, :value nil, :process 46, :time 9153410132, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 9153161481} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 42, :time 9373884655}
+{:type :info, :f :read, :value nil, :process 42, :time 9374430036, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 9374198990} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 43, :time 9557727889}
+{:type :info, :f :read, :value nil, :process 43, :time 9558118002, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 9557951073} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 48, :time 9598620552}
+{:type :info, :f :read, :value nil, :process 48, :time 9598979879, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 9598800174} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 44, :time 9834756483}
+{:type :info, :f :read, :value nil, :process 44, :time 9835186389, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 9834963854} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 49, :time 10073787186}
+{:type :info, :f :read, :value nil, :process 49, :time 10074290364, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 10074018002} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 47, :time 10461899893}
+{:type :info, :f :read, :value nil, :process 47, :time 10462395044, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 10462195390} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 53, :time 10505473019}
+{:type :info, :f :read, :value nil, :process 53, :time 10505903614, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 10505667109} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 51, :time 10553870821}
+{:type :info, :f :read, :value nil, :process 51, :time 10555260717, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 10554296071} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 54, :time 10771682362}
+{:type :info, :f :read, :value nil, :process 54, :time 10772130494, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 10771939551} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 55, :time 10881908459}
+{:type :info, :f :read, :value nil, :process 55, :time 10882253764, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 10882084913} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 59, :time 11090505345}
+{:type :info, :f :read, :value nil, :process 59, :time 11090911583, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 11090694632} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 52, :time 11192813898}
+{:type :info, :f :read, :value nil, :process 52, :time 11193161111, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 11192987445} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 56, :time 11571938347}
+{:type :info, :f :read, :value nil, :process 56, :time 11572476064, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 11572255789} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 58, :time 11682387431}
+{:type :info, :f :read, :value nil, :process 58, :time 11682901750, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 11682648645} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 60, :time 11776722426}
+{:type :info, :f :read, :value nil, :process 60, :time 11777052121, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 11776886129} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 57, :time 11908679519}
+{:type :info, :f :read, :value nil, :process 57, :time 11909022418, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 11908846452} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 61, :time 12128902940}
+{:type :info, :f :read, :value nil, :process 61, :time 12129237422, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 12129073987} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 63, :time 12591350463}
+{:type :info, :f :read, :value nil, :process 63, :time 12591920412, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 12591672060} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 62, :time 12689386579}
+{:type :info, :f :read, :value nil, :process 62, :time 12690233755, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 12689818562} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 64, :time 12964300574}
+{:type :info, :f :read, :value nil, :process 64, :time 12964913354, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 12964609766} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 65, :time 13078545048}
+{:type :info, :f :read, :value nil, :process 65, :time 13078926648, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 13078715661} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 66, :time 13116654840}
+{:type :info, :f :read, :value nil, :process 66, :time 13116975011, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 13116817001} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 68, :time 13626361868}
+{:type :info, :f :read, :value nil, :process 68, :time 13626920551, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 13626656460} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 71, :time 13951360928}
+{:type :info, :f :read, :value nil, :process 71, :time 13952260985, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 13951900508} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 67, :time 14266909899}
+{:type :info, :f :read, :value nil, :process 67, :time 14267419568, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 14267239222} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 76, :time 14421871265}
+{:type :info, :f :read, :value nil, :process 76, :time 14422355743, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 14422149837} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 70, :time 14884334509}
+{:type :info, :f :read, :value nil, :process 70, :time 14885139738, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 14884812199} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 73, :time 14886355928}
+{:type :info, :f :read, :value nil, :process 73, :time 14886987531, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 14886689737} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 69, :time 14898340029}
+{:type :info, :f :read, :value nil, :process 69, :time 14898937299, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 14898709983} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 81, :time 15172796278}
+{:type :info, :f :read, :value nil, :process 81, :time 15173300930, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 15173116879} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 74, :time 15311429734}
+{:type :info, :f :read, :value nil, :process 74, :time 15311852302, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 15311643553} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 75, :time 15385763484}
+{:type :info, :f :read, :value nil, :process 75, :time 15386147009, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 15385975556} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 78, :time 15994495061}
+{:type :info, :f :read, :value nil, :process 78, :time 15995827009, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 15995612117} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 72, :time 16227838588}
+{:type :info, :f :read, :value nil, :process 72, :time 16228271383, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:time 16228067473} instead\n(or (= t :ok) (= t :fail) (= t :info))"}

@@ -1,0 +1,271 @@
+2017-09-20 13:45:27,481{GMT}	INFO	[jepsen test runner] jepsen.core: Running test:
+ {:nodes-file "/home/admin/nodes",
+ :concurrency 5,
+ :db
+ #object[jepsen.etcdemo.Etcd 0x27dbaa33 "jepsen.etcdemo.Etcd@27dbaa33"],
+ :name "etcdemo",
+ :start-time
+ #object[org.joda.time.DateTime 0x77c23d90 "2017-09-20T13:45:27.000Z"],
+ :net
+ #object[jepsen.net$reify__187 0xe795a1d "jepsen.net$reify__187@e795a1d"],
+ :client {:conn nil},
+ :barrier
+ #object[java.util.concurrent.CyclicBarrier 0x62cd562d "java.util.concurrent.CyclicBarrier@62cd562d"],
+ :ssh
+ {:username "admin",
+  :password "root",
+  :strict-host-key-checking false,
+  :private-key-path nil},
+ :checker
+ #object[jepsen.checker$unbridled_optimism$reify__3133 0x2fc7fa6e "jepsen.checker$unbridled_optimism$reify__3133@2fc7fa6e"],
+ :nemesis
+ #object[jepsen.nemesis$reify__220 0x15ac02d5 "jepsen.nemesis$reify__220@15ac02d5"],
+ :active-histories #<Atom@505f45cc: #{}>,
+ :nodes
+ ["ec2-18-194-87-54.eu-central-1.compute.amazonaws.com"
+  "ec2-18-196-0-107.eu-central-1.compute.amazonaws.com"
+  "ec2-18-194-134-185.eu-central-1.compute.amazonaws.com"
+  "ec2-18-194-52-75.eu-central-1.compute.amazonaws.com"
+  "ec2-35-156-80-2.eu-central-1.compute.amazonaws.com"],
+ :test-count 1,
+ :generator
+ #object[jepsen.generator$time_limit$reify__1895 0x49e479da "jepsen.generator$time_limit$reify__1895@49e479da"],
+ :os
+ #object[jepsen.os.debian$reify__414 0xf849027 "jepsen.os.debian$reify__414@f849027"],
+ :time-limit 60,
+ :model {}}
+
+2017-09-20 13:45:28,179{GMT}	INFO	[jepsen node ec2-18-194-134-185.eu-central-1.compute.amazonaws.com] jepsen.os.debian: ec2-18-194-134-185.eu-central-1.compute.amazonaws.com setting up debian
+2017-09-20 13:45:28,179{GMT}	INFO	[jepsen node ec2-18-196-0-107.eu-central-1.compute.amazonaws.com] jepsen.os.debian: ec2-18-196-0-107.eu-central-1.compute.amazonaws.com setting up debian
+2017-09-20 13:45:28,179{GMT}	INFO	[jepsen node ec2-18-194-87-54.eu-central-1.compute.amazonaws.com] jepsen.os.debian: ec2-18-194-87-54.eu-central-1.compute.amazonaws.com setting up debian
+2017-09-20 13:45:28,180{GMT}	INFO	[jepsen node ec2-18-194-52-75.eu-central-1.compute.amazonaws.com] jepsen.os.debian: ec2-18-194-52-75.eu-central-1.compute.amazonaws.com setting up debian
+2017-09-20 13:45:28,179{GMT}	INFO	[jepsen node ec2-35-156-80-2.eu-central-1.compute.amazonaws.com] jepsen.os.debian: ec2-35-156-80-2.eu-central-1.compute.amazonaws.com setting up debian
+2017-09-20 13:45:28,798{GMT}	WARN	[jepsen node ec2-18-194-87-54.eu-central-1.compute.amazonaws.com] jepsen.control: Encountered error with conn [:control "ec2-18-194-87-54.eu-central-1.compute.amazonaws.com"]; reopening
+2017-09-20 13:45:30,831{GMT}	INFO	[jepsen node ec2-18-194-87-54.eu-central-1.compute.amazonaws.com] jepsen.etcdemo: Tearing down etcd
+2017-09-20 13:45:30,831{GMT}	INFO	[jepsen node ec2-18-194-134-185.eu-central-1.compute.amazonaws.com] jepsen.etcdemo: Tearing down etcd
+2017-09-20 13:45:30,832{GMT}	INFO	[jepsen node ec2-18-194-87-54.eu-central-1.compute.amazonaws.com] jepsen.control.util: Stopping etcd
+2017-09-20 13:45:30,833{GMT}	INFO	[jepsen node ec2-18-194-52-75.eu-central-1.compute.amazonaws.com] jepsen.etcdemo: Tearing down etcd
+2017-09-20 13:45:30,833{GMT}	INFO	[jepsen node ec2-18-194-134-185.eu-central-1.compute.amazonaws.com] jepsen.control.util: Stopping etcd
+2017-09-20 13:45:30,833{GMT}	INFO	[jepsen node ec2-35-156-80-2.eu-central-1.compute.amazonaws.com] jepsen.etcdemo: Tearing down etcd
+2017-09-20 13:45:30,833{GMT}	INFO	[jepsen node ec2-18-196-0-107.eu-central-1.compute.amazonaws.com] jepsen.etcdemo: Tearing down etcd
+2017-09-20 13:45:30,833{GMT}	INFO	[jepsen node ec2-18-194-52-75.eu-central-1.compute.amazonaws.com] jepsen.control.util: Stopping etcd
+2017-09-20 13:45:30,833{GMT}	INFO	[jepsen node ec2-35-156-80-2.eu-central-1.compute.amazonaws.com] jepsen.control.util: Stopping etcd
+2017-09-20 13:45:30,833{GMT}	INFO	[jepsen node ec2-18-196-0-107.eu-central-1.compute.amazonaws.com] jepsen.control.util: Stopping etcd
+2017-09-20 13:45:31,137{GMT}	INFO	[jepsen node ec2-18-194-52-75.eu-central-1.compute.amazonaws.com] jepsen.etcdemo: Setting up etcd
+2017-09-20 13:45:31,137{GMT}	INFO	[jepsen node ec2-18-196-0-107.eu-central-1.compute.amazonaws.com] jepsen.etcdemo: Setting up etcd
+2017-09-20 13:45:31,137{GMT}	INFO	[jepsen node ec2-18-194-134-185.eu-central-1.compute.amazonaws.com] jepsen.etcdemo: Setting up etcd
+2017-09-20 13:45:31,138{GMT}	INFO	[jepsen node ec2-35-156-80-2.eu-central-1.compute.amazonaws.com] jepsen.etcdemo: Setting up etcd
+2017-09-20 13:45:31,138{GMT}	INFO	[jepsen node ec2-18-194-87-54.eu-central-1.compute.amazonaws.com] jepsen.etcdemo: Setting up etcd
+2017-09-20 13:45:32,558{GMT}	INFO	[jepsen node ec2-18-196-0-107.eu-central-1.compute.amazonaws.com] jepsen.control.util: starting etcd
+2017-09-20 13:45:32,558{GMT}	INFO	[jepsen node ec2-18-194-134-185.eu-central-1.compute.amazonaws.com] jepsen.control.util: starting etcd
+2017-09-20 13:45:32,558{GMT}	INFO	[jepsen node ec2-18-194-52-75.eu-central-1.compute.amazonaws.com] jepsen.control.util: starting etcd
+2017-09-20 13:45:32,559{GMT}	INFO	[jepsen node ec2-18-194-87-54.eu-central-1.compute.amazonaws.com] jepsen.control.util: starting etcd
+2017-09-20 13:45:32,560{GMT}	INFO	[jepsen node ec2-35-156-80-2.eu-central-1.compute.amazonaws.com] jepsen.control.util: starting etcd
+2017-09-20 13:45:37,768{GMT}	INFO	[jepsen nemesis] jepsen.core: Nemesis starting
+2017-09-20 13:45:37,769{GMT}	INFO	[jepsen nemesis] jepsen.core: nemesis done
+2017-09-20 13:45:37,770{GMT}	INFO	[jepsen worker 0] jepsen.core: Worker 0 starting
+2017-09-20 13:45:37,770{GMT}	INFO	[jepsen worker 1] jepsen.core: Worker 1 starting
+2017-09-20 13:45:37,770{GMT}	INFO	[jepsen worker 3] jepsen.core: Worker 3 starting
+2017-09-20 13:45:37,771{GMT}	INFO	[jepsen worker 2] jepsen.core: Worker 2 starting
+2017-09-20 13:45:37,771{GMT}	INFO	[jepsen worker 4] jepsen.core: Worker 4 starting
+2017-09-20 13:45:37,909{GMT}	INFO	[jepsen worker 2] jepsen.util: 2	:invoke	:read	nil
+2017-09-20 13:45:38,006{GMT}	INFO	[jepsen worker 2] jepsen.util: 2	:ok	:read	nil
+2017-09-20 13:45:38,128{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:invoke	:read	nil
+2017-09-20 13:45:38,141{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:ok	:read	nil
+2017-09-20 13:45:38,450{GMT}	INFO	[jepsen worker 2] jepsen.util: 2	:invoke	:write	1
+2017-09-20 13:45:38,459{GMT}	INFO	[jepsen worker 2] jepsen.util: 2	:ok	:write	1
+2017-09-20 13:45:38,630{GMT}	INFO	[jepsen worker 0] jepsen.util: 0	:invoke	:read	nil
+2017-09-20 13:45:38,633{GMT}	INFO	[jepsen worker 0] jepsen.util: 0	:ok	:read	1
+2017-09-20 13:45:38,798{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:invoke	:write	0
+2017-09-20 13:45:38,805{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:ok	:write	0
+2017-09-20 13:45:39,019{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:invoke	:write	0
+2017-09-20 13:45:39,026{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:ok	:write	0
+2017-09-20 13:45:39,034{GMT}	INFO	[jepsen worker 4] jepsen.util: 4	:invoke	:cas	[4 0]
+2017-09-20 13:45:39,041{GMT}	INFO	[jepsen worker 4] jepsen.util: 4	:fail	:cas	[4 0]
+2017-09-20 13:45:39,361{GMT}	INFO	[jepsen worker 3] jepsen.util: 3	:invoke	:write	1
+2017-09-20 13:45:39,367{GMT}	INFO	[jepsen worker 3] jepsen.util: 3	:ok	:write	1
+2017-09-20 13:45:39,438{GMT}	INFO	[jepsen worker 0] jepsen.util: 0	:invoke	:cas	[2 1]
+2017-09-20 13:45:39,444{GMT}	INFO	[jepsen worker 0] jepsen.util: 0	:fail	:cas	[2 1]
+2017-09-20 13:45:40,106{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:invoke	:write	3
+2017-09-20 13:45:40,112{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:ok	:write	3
+2017-09-20 13:45:40,177{GMT}	INFO	[jepsen worker 2] jepsen.util: 2	:invoke	:read	nil
+2017-09-20 13:45:40,181{GMT}	INFO	[jepsen worker 2] jepsen.util: 2	:ok	:read	3
+2017-09-20 13:45:40,314{GMT}	INFO	[jepsen worker 0] jepsen.util: 0	:invoke	:read	nil
+2017-09-20 13:45:40,317{GMT}	INFO	[jepsen worker 0] jepsen.util: 0	:ok	:read	3
+2017-09-20 13:45:40,340{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:invoke	:write	2
+2017-09-20 13:45:40,344{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:ok	:write	2
+2017-09-20 13:45:40,626{GMT}	INFO	[jepsen worker 4] jepsen.util: 4	:invoke	:cas	[0 2]
+2017-09-20 13:45:40,632{GMT}	INFO	[jepsen worker 4] jepsen.util: 4	:fail	:cas	[0 2]
+2017-09-20 13:45:40,787{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:invoke	:write	0
+2017-09-20 13:45:40,793{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:ok	:write	0
+2017-09-20 13:45:40,942{GMT}	INFO	[jepsen worker 0] jepsen.util: 0	:invoke	:cas	[1 2]
+2017-09-20 13:45:40,951{GMT}	INFO	[jepsen worker 0] jepsen.util: 0	:fail	:cas	[1 2]
+2017-09-20 13:45:41,110{GMT}	INFO	[jepsen worker 3] jepsen.util: 3	:invoke	:write	3
+2017-09-20 13:45:41,117{GMT}	INFO	[jepsen worker 3] jepsen.util: 3	:ok	:write	3
+2017-09-20 13:45:41,187{GMT}	INFO	[jepsen worker 0] jepsen.util: 0	:invoke	:write	0
+2017-09-20 13:45:41,187{GMT}	INFO	[jepsen worker 4] jepsen.util: 4	:invoke	:write	3
+2017-09-20 13:45:41,193{GMT}	INFO	[jepsen worker 4] jepsen.util: 4	:ok	:write	3
+2017-09-20 13:45:41,193{GMT}	INFO	[jepsen worker 0] jepsen.util: 0	:ok	:write	0
+2017-09-20 13:45:41,213{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:invoke	:write	2
+2017-09-20 13:45:41,218{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:ok	:write	2
+2017-09-20 13:45:41,625{GMT}	INFO	[jepsen worker 2] jepsen.util: 2	:invoke	:cas	[3 3]
+2017-09-20 13:45:41,631{GMT}	INFO	[jepsen worker 2] jepsen.util: 2	:fail	:cas	[3 3]
+2017-09-20 13:45:41,774{GMT}	INFO	[jepsen worker 0] jepsen.util: 0	:invoke	:cas	[1 1]
+2017-09-20 13:45:41,780{GMT}	INFO	[jepsen worker 0] jepsen.util: 0	:fail	:cas	[1 1]
+2017-09-20 13:45:41,826{GMT}	INFO	[jepsen worker 0] jepsen.util: 0	:invoke	:write	4
+2017-09-20 13:45:41,831{GMT}	INFO	[jepsen worker 0] jepsen.util: 0	:ok	:write	4
+2017-09-20 13:45:42,288{GMT}	INFO	[jepsen worker 0] jepsen.util: 0	:invoke	:write	1
+2017-09-20 13:45:42,293{GMT}	INFO	[jepsen worker 0] jepsen.util: 0	:ok	:write	1
+2017-09-20 13:45:42,592{GMT}	INFO	[jepsen worker 2] jepsen.util: 2	:invoke	:write	1
+2017-09-20 13:45:42,597{GMT}	INFO	[jepsen worker 2] jepsen.util: 2	:ok	:write	1
+2017-09-20 13:45:42,649{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:invoke	:write	1
+2017-09-20 13:45:42,654{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:ok	:write	1
+2017-09-20 13:45:42,956{GMT}	INFO	[jepsen worker 3] jepsen.util: 3	:invoke	:write	4
+2017-09-20 13:45:42,961{GMT}	INFO	[jepsen worker 3] jepsen.util: 3	:ok	:write	4
+2017-09-20 13:45:43,086{GMT}	INFO	[jepsen worker 4] jepsen.util: 4	:invoke	:cas	[0 2]
+2017-09-20 13:45:43,093{GMT}	INFO	[jepsen worker 4] jepsen.util: 4	:fail	:cas	[0 2]
+2017-09-20 13:45:43,507{GMT}	INFO	[jepsen worker 2] jepsen.util: 2	:invoke	:cas	[3 1]
+2017-09-20 13:45:43,513{GMT}	INFO	[jepsen worker 2] jepsen.util: 2	:fail	:cas	[3 1]
+2017-09-20 13:45:43,659{GMT}	INFO	[jepsen worker 4] jepsen.util: 4	:invoke	:read	nil
+2017-09-20 13:45:43,662{GMT}	INFO	[jepsen worker 4] jepsen.util: 4	:ok	:read	4
+2017-09-20 13:45:43,800{GMT}	INFO	[jepsen worker 3] jepsen.util: 3	:invoke	:read	nil
+2017-09-20 13:45:43,803{GMT}	INFO	[jepsen worker 3] jepsen.util: 3	:ok	:read	4
+2017-09-20 13:45:43,806{GMT}	INFO	[jepsen worker 0] jepsen.util: 0	:invoke	:read	nil
+2017-09-20 13:45:43,809{GMT}	INFO	[jepsen worker 0] jepsen.util: 0	:ok	:read	4
+2017-09-20 13:45:44,111{GMT}	INFO	[jepsen worker 3] jepsen.util: 3	:invoke	:write	0
+2017-09-20 13:45:44,117{GMT}	INFO	[jepsen worker 3] jepsen.util: 3	:ok	:write	0
+2017-09-20 13:45:44,465{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:invoke	:read	nil
+2017-09-20 13:45:44,468{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:ok	:read	0
+2017-09-20 13:45:44,755{GMT}	INFO	[jepsen worker 4] jepsen.util: 4	:invoke	:write	0
+2017-09-20 13:45:44,761{GMT}	INFO	[jepsen worker 4] jepsen.util: 4	:ok	:write	0
+2017-09-20 13:45:44,831{GMT}	INFO	[jepsen worker 4] jepsen.util: 4	:invoke	:write	1
+2017-09-20 13:45:44,835{GMT}	INFO	[jepsen worker 4] jepsen.util: 4	:ok	:write	1
+2017-09-20 13:45:44,952{GMT}	INFO	[jepsen worker 2] jepsen.util: 2	:invoke	:read	nil
+2017-09-20 13:45:44,955{GMT}	INFO	[jepsen worker 2] jepsen.util: 2	:ok	:read	1
+2017-09-20 13:45:45,024{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:invoke	:write	1
+2017-09-20 13:45:45,028{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:ok	:write	1
+2017-09-20 13:45:45,143{GMT}	INFO	[jepsen worker 2] jepsen.util: 2	:invoke	:write	0
+2017-09-20 13:45:45,148{GMT}	INFO	[jepsen worker 2] jepsen.util: 2	:ok	:write	0
+2017-09-20 13:45:45,220{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:invoke	:write	1
+2017-09-20 13:45:45,225{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:ok	:write	1
+2017-09-20 13:45:45,469{GMT}	INFO	[jepsen worker 0] jepsen.util: 0	:invoke	:cas	[3 2]
+2017-09-20 13:45:45,475{GMT}	INFO	[jepsen worker 0] jepsen.util: 0	:fail	:cas	[3 2]
+2017-09-20 13:45:45,714{GMT}	INFO	[jepsen worker 0] jepsen.util: 0	:invoke	:write	2
+2017-09-20 13:45:45,719{GMT}	INFO	[jepsen worker 0] jepsen.util: 0	:ok	:write	2
+2017-09-20 13:45:45,857{GMT}	INFO	[jepsen worker 3] jepsen.util: 3	:invoke	:read	nil
+2017-09-20 13:45:45,859{GMT}	INFO	[jepsen worker 3] jepsen.util: 3	:ok	:read	2
+2017-09-20 13:45:46,031{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:invoke	:cas	[0 0]
+2017-09-20 13:45:46,037{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:fail	:cas	[0 0]
+2017-09-20 13:45:46,550{GMT}	INFO	[jepsen worker 4] jepsen.util: 4	:invoke	:write	3
+2017-09-20 13:45:46,556{GMT}	INFO	[jepsen worker 4] jepsen.util: 4	:ok	:write	3
+2017-09-20 13:45:46,939{GMT}	INFO	[jepsen worker 0] jepsen.util: 0	:invoke	:read	nil
+2017-09-20 13:45:46,942{GMT}	INFO	[jepsen worker 0] jepsen.util: 0	:ok	:read	3
+2017-09-20 13:45:47,027{GMT}	INFO	[jepsen worker 2] jepsen.util: 2	:invoke	:write	2
+2017-09-20 13:45:47,031{GMT}	INFO	[jepsen worker 2] jepsen.util: 2	:ok	:write	2
+2017-09-20 13:45:47,181{GMT}	INFO	[jepsen worker 3] jepsen.util: 3	:invoke	:write	0
+2017-09-20 13:45:47,187{GMT}	INFO	[jepsen worker 3] jepsen.util: 3	:ok	:write	0
+2017-09-20 13:45:47,245{GMT}	INFO	[jepsen worker 3] jepsen.util: 3	:invoke	:write	2
+2017-09-20 13:45:47,250{GMT}	INFO	[jepsen worker 3] jepsen.util: 3	:ok	:write	2
+2017-09-20 13:45:47,579{GMT}	INFO	[jepsen worker 4] jepsen.util: 4	:invoke	:cas	[0 3]
+2017-09-20 13:45:47,584{GMT}	INFO	[jepsen worker 4] jepsen.util: 4	:fail	:cas	[0 3]
+2017-09-20 13:45:47,857{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:invoke	:write	2
+2017-09-20 13:45:47,862{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:ok	:write	2
+2017-09-20 13:45:47,880{GMT}	INFO	[jepsen worker 0] jepsen.util: 0	:invoke	:read	nil
+2017-09-20 13:45:47,882{GMT}	INFO	[jepsen worker 0] jepsen.util: 0	:ok	:read	2
+2017-09-20 13:45:48,000{GMT}	INFO	[jepsen worker 4] jepsen.util: 4	:invoke	:write	4
+2017-09-20 13:45:48,005{GMT}	INFO	[jepsen worker 4] jepsen.util: 4	:ok	:write	4
+2017-09-20 13:45:48,481{GMT}	INFO	[jepsen worker 4] jepsen.util: 4	:invoke	:read	nil
+2017-09-20 13:45:48,485{GMT}	INFO	[jepsen worker 4] jepsen.util: 4	:ok	:read	4
+2017-09-20 13:45:48,685{GMT}	INFO	[jepsen worker 2] jepsen.util: 2	:invoke	:read	nil
+2017-09-20 13:45:48,687{GMT}	INFO	[jepsen worker 2] jepsen.util: 2	:ok	:read	4
+2017-09-20 13:45:48,751{GMT}	INFO	[jepsen worker 3] jepsen.util: 3	:invoke	:read	nil
+2017-09-20 13:45:48,754{GMT}	INFO	[jepsen worker 3] jepsen.util: 3	:ok	:read	4
+2017-09-20 13:45:49,028{GMT}	INFO	[jepsen worker 0] jepsen.util: 0	:invoke	:write	1
+2017-09-20 13:45:49,033{GMT}	INFO	[jepsen worker 0] jepsen.util: 0	:ok	:write	1
+2017-09-20 13:45:49,084{GMT}	INFO	[jepsen worker 3] jepsen.util: 3	:invoke	:read	nil
+2017-09-20 13:45:49,087{GMT}	INFO	[jepsen worker 3] jepsen.util: 3	:ok	:read	1
+2017-09-20 13:45:49,266{GMT}	INFO	[jepsen worker 0] jepsen.util: 0	:invoke	:write	1
+2017-09-20 13:45:49,271{GMT}	INFO	[jepsen worker 0] jepsen.util: 0	:ok	:write	1
+2017-09-20 13:45:49,467{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:invoke	:cas	[0 0]
+2017-09-20 13:45:49,473{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:fail	:cas	[0 0]
+2017-09-20 13:45:49,661{GMT}	INFO	[jepsen worker 2] jepsen.util: 2	:invoke	:write	1
+2017-09-20 13:45:49,673{GMT}	INFO	[jepsen worker 2] jepsen.util: 2	:ok	:write	1
+2017-09-20 13:45:49,754{GMT}	INFO	[jepsen worker 4] jepsen.util: 4	:invoke	:write	1
+2017-09-20 13:45:49,759{GMT}	INFO	[jepsen worker 4] jepsen.util: 4	:ok	:write	1
+2017-09-20 13:45:49,979{GMT}	INFO	[jepsen worker 0] jepsen.util: 0	:invoke	:write	3
+2017-09-20 13:45:49,986{GMT}	INFO	[jepsen worker 0] jepsen.util: 0	:ok	:write	3
+2017-09-20 13:45:50,049{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:invoke	:write	2
+2017-09-20 13:45:50,054{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:ok	:write	2
+2017-09-20 13:45:50,063{GMT}	INFO	[jepsen worker 3] jepsen.util: 3	:invoke	:write	0
+2017-09-20 13:45:50,067{GMT}	INFO	[jepsen worker 3] jepsen.util: 3	:ok	:write	0
+2017-09-20 13:45:50,788{GMT}	INFO	[jepsen worker 2] jepsen.util: 2	:invoke	:write	3
+2017-09-20 13:45:50,792{GMT}	INFO	[jepsen worker 2] jepsen.util: 2	:ok	:write	3
+2017-09-20 13:45:51,080{GMT}	INFO	[jepsen worker 2] jepsen.util: 2	:invoke	:cas	[0 2]
+2017-09-20 13:45:51,085{GMT}	INFO	[jepsen worker 2] jepsen.util: 2	:fail	:cas	[0 2]
+2017-09-20 13:45:51,127{GMT}	INFO	[jepsen worker 0] jepsen.util: 0	:invoke	:write	4
+2017-09-20 13:45:51,132{GMT}	INFO	[jepsen worker 0] jepsen.util: 0	:ok	:write	4
+2017-09-20 13:45:51,143{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:invoke	:cas	[0 2]
+2017-09-20 13:45:51,148{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:fail	:cas	[0 2]
+2017-09-20 13:45:51,298{GMT}	INFO	[jepsen worker 4] jepsen.util: 4	:invoke	:write	4
+2017-09-20 13:45:51,302{GMT}	INFO	[jepsen worker 4] jepsen.util: 4	:ok	:write	4
+2017-09-20 13:45:51,692{GMT}	INFO	[jepsen worker 3] jepsen.util: 3	:invoke	:cas	[2 0]
+2017-09-20 13:45:51,698{GMT}	INFO	[jepsen worker 3] jepsen.util: 3	:fail	:cas	[2 0]
+2017-09-20 13:45:51,809{GMT}	INFO	[jepsen worker 0] jepsen.util: 0	:invoke	:write	0
+2017-09-20 13:45:51,814{GMT}	INFO	[jepsen worker 0] jepsen.util: 0	:ok	:write	0
+2017-09-20 13:45:51,836{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:invoke	:cas	[2 2]
+2017-09-20 13:45:51,840{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:fail	:cas	[2 2]
+2017-09-20 13:45:52,040{GMT}	INFO	[jepsen worker 4] jepsen.util: 4	:invoke	:cas	[1 2]
+2017-09-20 13:45:52,045{GMT}	INFO	[jepsen worker 4] jepsen.util: 4	:fail	:cas	[1 2]
+2017-09-20 13:45:52,153{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:invoke	:cas	[2 4]
+2017-09-20 13:45:52,158{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:fail	:cas	[2 4]
+2017-09-20 13:45:52,286{GMT}	INFO	[jepsen worker 3] jepsen.util: 3	:invoke	:cas	[0 1]
+2017-09-20 13:45:52,291{GMT}	INFO	[jepsen worker 3] jepsen.util: 3	:ok	:cas	[0 1]
+2017-09-20 13:45:52,417{GMT}	INFO	[jepsen worker 2] jepsen.util: 2	:invoke	:cas	[3 2]
+2017-09-20 13:45:52,421{GMT}	INFO	[jepsen worker 2] jepsen.util: 2	:fail	:cas	[3 2]
+2017-09-20 13:45:52,463{GMT}	INFO	[jepsen worker 4] jepsen.util: 4	:invoke	:write	4
+2017-09-20 13:45:52,467{GMT}	INFO	[jepsen worker 4] jepsen.util: 4	:ok	:write	4
+2017-09-20 13:45:52,488{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:invoke	:cas	[3 4]
+2017-09-20 13:45:52,493{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:fail	:cas	[3 4]
+2017-09-20 13:45:52,829{GMT}	INFO	[jepsen worker 0] jepsen.util: 0	:invoke	:read	nil
+2017-09-20 13:45:52,832{GMT}	INFO	[jepsen worker 0] jepsen.util: 0	:ok	:read	4
+2017-09-20 13:45:52,832{GMT}	INFO	[jepsen worker 0] jepsen.core: Worker 0 done
+2017-09-20 13:45:53,173{GMT}	INFO	[jepsen worker 3] jepsen.util: 3	:invoke	:write	1
+2017-09-20 13:45:53,178{GMT}	INFO	[jepsen worker 3] jepsen.util: 3	:ok	:write	1
+2017-09-20 13:45:53,178{GMT}	INFO	[jepsen worker 3] jepsen.core: Worker 3 done
+2017-09-20 13:45:53,269{GMT}	INFO	[jepsen worker 2] jepsen.util: 2	:invoke	:cas	[1 3]
+2017-09-20 13:45:53,273{GMT}	INFO	[jepsen worker 2] jepsen.util: 2	:ok	:cas	[1 3]
+2017-09-20 13:45:53,273{GMT}	INFO	[jepsen worker 2] jepsen.core: Worker 2 done
+2017-09-20 13:45:53,475{GMT}	INFO	[jepsen worker 4] jepsen.util: 4	:invoke	:write	0
+2017-09-20 13:45:53,481{GMT}	INFO	[jepsen worker 4] jepsen.util: 4	:ok	:write	0
+2017-09-20 13:45:53,482{GMT}	INFO	[jepsen worker 4] jepsen.core: Worker 4 done
+2017-09-20 13:45:54,129{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:invoke	:write	0
+2017-09-20 13:45:54,135{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:ok	:write	0
+2017-09-20 13:45:54,135{GMT}	INFO	[jepsen worker 1] jepsen.core: Worker 1 done
+2017-09-20 13:45:54,135{GMT}	INFO	[jepsen test runner] jepsen.core: Waiting for nemesis to complete
+2017-09-20 13:45:54,135{GMT}	INFO	[jepsen test runner] jepsen.core: nemesis done.
+2017-09-20 13:45:54,135{GMT}	INFO	[jepsen test runner] jepsen.core: Tearing down nemesis
+2017-09-20 13:45:54,135{GMT}	INFO	[jepsen test runner] jepsen.core: Nemesis torn down
+2017-09-20 13:45:54,136{GMT}	INFO	[jepsen test runner] jepsen.core: Snarfing log files
+2017-09-20 13:45:54,138{GMT}	INFO	[jepsen node ec2-18-194-134-185.eu-central-1.compute.amazonaws.com] jepsen.core: downloading /opt/etcd/etcd.log to etcd.log
+2017-09-20 13:45:54,138{GMT}	INFO	[jepsen node ec2-35-156-80-2.eu-central-1.compute.amazonaws.com] jepsen.core: downloading /opt/etcd/etcd.log to etcd.log
+2017-09-20 13:45:54,139{GMT}	INFO	[jepsen node ec2-18-194-52-75.eu-central-1.compute.amazonaws.com] jepsen.core: downloading /opt/etcd/etcd.log to etcd.log
+2017-09-20 13:45:54,139{GMT}	INFO	[jepsen node ec2-18-196-0-107.eu-central-1.compute.amazonaws.com] jepsen.core: downloading /opt/etcd/etcd.log to etcd.log
+2017-09-20 13:45:54,140{GMT}	INFO	[jepsen node ec2-18-194-87-54.eu-central-1.compute.amazonaws.com] jepsen.core: downloading /opt/etcd/etcd.log to etcd.log
+2017-09-20 13:45:54,157{GMT}	INFO	[jepsen test runner] jepsen.core: Run complete, writing
+2017-09-20 13:45:54,195{GMT}	INFO	[jepsen node ec2-18-196-0-107.eu-central-1.compute.amazonaws.com] jepsen.etcdemo: Tearing down etcd
+2017-09-20 13:45:54,195{GMT}	INFO	[jepsen node ec2-35-156-80-2.eu-central-1.compute.amazonaws.com] jepsen.etcdemo: Tearing down etcd
+2017-09-20 13:45:54,195{GMT}	INFO	[jepsen node ec2-18-196-0-107.eu-central-1.compute.amazonaws.com] jepsen.control.util: Stopping etcd
+2017-09-20 13:45:54,195{GMT}	INFO	[jepsen node ec2-35-156-80-2.eu-central-1.compute.amazonaws.com] jepsen.control.util: Stopping etcd
+2017-09-20 13:45:54,195{GMT}	INFO	[jepsen node ec2-18-194-87-54.eu-central-1.compute.amazonaws.com] jepsen.etcdemo: Tearing down etcd
+2017-09-20 13:45:54,195{GMT}	INFO	[jepsen node ec2-18-194-134-185.eu-central-1.compute.amazonaws.com] jepsen.etcdemo: Tearing down etcd
+2017-09-20 13:45:54,195{GMT}	INFO	[jepsen node ec2-18-194-87-54.eu-central-1.compute.amazonaws.com] jepsen.control.util: Stopping etcd
+2017-09-20 13:45:54,195{GMT}	INFO	[jepsen node ec2-18-194-134-185.eu-central-1.compute.amazonaws.com] jepsen.control.util: Stopping etcd
+2017-09-20 13:45:54,195{GMT}	INFO	[jepsen node ec2-18-194-52-75.eu-central-1.compute.amazonaws.com] jepsen.etcdemo: Tearing down etcd
+2017-09-20 13:45:54,195{GMT}	INFO	[jepsen node ec2-18-194-52-75.eu-central-1.compute.amazonaws.com] jepsen.control.util: Stopping etcd
+2017-09-20 13:45:54,501{GMT}	INFO	[jepsen test runner] jepsen.core: Analyzing
+2017-09-20 13:45:54,501{GMT}	INFO	[jepsen test runner] jepsen.core: Analysis complete
+2017-09-20 13:45:54,503{GMT}	INFO	[jepsen results] jepsen.store: Wrote /home/admin/jepsen.etcdemo/store/etcdemo/20170920T134527.000Z/results.edn
+2017-09-20 13:45:54,507{GMT}	INFO	[main] jepsen.core: {:valid? true}
+
+
+Everything looks good! ヽ(‘ー`)ノ

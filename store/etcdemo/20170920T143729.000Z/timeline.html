@@ -1,0 +1,80 @@
+<html><head><style>.ops        { position: absolute; }
+.op         { position: absolute;
+                      padding:  2px; }
+.op.invoke  { background: #eeeeee; }
+.op.ok      { background: #6DB6FE; }
+.op.info    { background: #FFAA26; }
+.op.fail    { background: #FEB5DA; }
+</style></head><body><h1>etcdemo</h1><p>2017-09-20T14:37:29.000Z</p><div class="ops"><div class="op ok" style="width:100;left:106;top:0;height:16" title="96 ms
+nil">1 :read </div><div class="op fail" style="width:100;left:318;top:48;height:16" title="13 ms
+:not-found">3 :cas [3 0]</div><div class="op fail" style="width:100;left:106;top:32;height:48" title="14 ms
+:not-found">1 :cas [4 4]</div><div class="op ok" style="width:100;left:212;top:96;height:16" title="5 ms
+nil">2 :write 3</div><div class="op ok" style="width:100;left:0;top:128;height:16" title="3 ms
+nil">0 :read 3</div><div class="op ok" style="width:100;left:212;top:160;height:16" title="4 ms
+nil">2 :read 3</div><div class="op ok" style="width:100;left:424;top:192;height:16" title="14 ms
+nil">4 :cas [3 4]</div><div class="op ok" style="width:100;left:0;top:224;height:16" title="5 ms
+nil">0 :write 2</div><div class="op ok" style="width:100;left:106;top:256;height:16" title="11 ms
+nil">1 :write 4</div><div class="op ok" style="width:100;left:318;top:288;height:16" title="5 ms
+nil">3 :write 2</div><div class="op ok" style="width:100;left:318;top:320;height:16" title="2 ms
+nil">3 :read 2</div><div class="op fail" style="width:100;left:212;top:352;height:16" title="5 ms
+nil">2 :cas [1 1]</div><div class="op fail" style="width:100;left:0;top:384;height:16" title="6 ms
+nil">0 :cas [1 1]</div><div class="op ok" style="width:100;left:106;top:416;height:16" title="2 ms
+nil">1 :read 2</div><div class="op ok" style="width:100;left:106;top:448;height:16" title="5 ms
+nil">1 :write 2</div><div class="op ok" style="width:100;left:424;top:480;height:16" title="6 ms
+nil">4 :cas [2 1]</div><div class="op ok" style="width:100;left:212;top:512;height:16" title="3 ms
+nil">2 :read 1</div><div class="op ok" style="width:100;left:106;top:544;height:16" title="2 ms
+nil">1 :read 1</div><div class="op ok" style="width:100;left:318;top:576;height:16" title="3 ms
+nil">3 :read 1</div><div class="op fail" style="width:100;left:0;top:608;height:16" title="11 ms
+nil">0 :cas [0 3]</div><div class="op ok" style="width:100;left:424;top:640;height:16" title="4 ms
+nil">4 :cas [1 1]</div><div class="op ok" style="width:100;left:106;top:672;height:16" title="2 ms
+nil">1 :read 1</div><div class="op ok" style="width:100;left:0;top:704;height:16" title="2 ms
+nil">0 :read 1</div><div class="op fail" style="width:100;left:212;top:736;height:16" title="5 ms
+nil">2 :cas [3 2]</div><div class="op ok" style="width:100;left:318;top:768;height:16" title="6 ms
+nil">3 :write 3</div><div class="op fail" style="width:100;left:424;top:800;height:16" title="6 ms
+nil">4 :cas [1 2]</div><div class="op fail" style="width:100;left:106;top:832;height:16" title="5 ms
+nil">1 :cas [0 0]</div><div class="op ok" style="width:100;left:318;top:864;height:16" title="5 ms
+nil">3 :cas [3 1]</div><div class="op ok" style="width:100;left:0;top:896;height:16" title="5 ms
+nil">0 :write 2</div><div class="op ok" style="width:100;left:318;top:928;height:16" title="4 ms
+nil">3 :write 2</div><div class="op fail" style="width:100;left:0;top:960;height:16" title="6 ms
+nil">0 :cas [1 3]</div><div class="op ok" style="width:100;left:212;top:992;height:16" title="3 ms
+nil">2 :read 2</div><div class="op ok" style="width:100;left:0;top:1024;height:16" title="2 ms
+nil">0 :read 2</div><div class="op ok" style="width:100;left:424;top:1056;height:16" title="3 ms
+nil">4 :read 2</div><div class="op ok" style="width:100;left:0;top:1088;height:16" title="5 ms
+nil">0 :cas [2 1]</div><div class="op ok" style="width:100;left:212;top:1120;height:16" title="4 ms
+nil">2 :write 2</div><div class="op ok" style="width:100;left:106;top:1152;height:16" title="5 ms
+nil">1 :write 0</div><div class="op ok" style="width:100;left:318;top:1184;height:16" title="4 ms
+nil">3 :cas [0 2]</div><div class="op ok" style="width:100;left:318;top:1216;height:16" title="4 ms
+nil">3 :write 1</div><div class="op ok" style="width:100;left:212;top:1248;height:16" title="2 ms
+nil">2 :read 1</div><div class="op fail" style="width:100;left:424;top:1280;height:16" title="5 ms
+nil">4 :cas [3 2]</div><div class="op fail" style="width:100;left:0;top:1312;height:16" title="4 ms
+nil">0 :cas [3 1]</div><div class="op ok" style="width:100;left:106;top:1344;height:16" title="2 ms
+nil">1 :read 1</div><div class="op ok" style="width:100;left:318;top:1376;height:16" title="4 ms
+nil">3 :write 0</div><div class="op ok" style="width:100;left:0;top:1408;height:16" title="2 ms
+nil">0 :read 0</div><div class="op ok" style="width:100;left:212;top:1440;height:16" title="2 ms
+nil">2 :read 0</div><div class="op ok" style="width:100;left:106;top:1472;height:16" title="3 ms
+nil">1 :read 0</div><div class="op ok" style="width:100;left:424;top:1504;height:16" title="2 ms
+nil">4 :read 0</div><div class="op ok" style="width:100;left:318;top:1536;height:16" title="2 ms
+nil">3 :read 0</div><div class="op ok" style="width:100;left:424;top:1568;height:16" title="5 ms
+nil">4 :write 2</div><div class="op ok" style="width:100;left:0;top:1600;height:16" title="3 ms
+nil">0 :read 2</div><div class="op ok" style="width:100;left:212;top:1632;height:16" title="5 ms
+nil">2 :cas [2 3]</div><div class="op ok" style="width:100;left:318;top:1664;height:16" title="3 ms
+nil">3 :read 3</div><div class="op fail" style="width:100;left:424;top:1696;height:16" title="5 ms
+nil">4 :cas [0 2]</div><div class="op ok" style="width:100;left:212;top:1728;height:16" title="3 ms
+nil">2 :read 3</div><div class="op ok" style="width:100;left:106;top:1760;height:16" title="3 ms
+nil">1 :read 3</div><div class="op ok" style="width:100;left:0;top:1792;height:16" title="2 ms
+nil">0 :read 3</div><div class="op ok" style="width:100;left:424;top:1824;height:16" title="3 ms
+nil">4 :read 3</div><div class="op ok" style="width:100;left:106;top:1856;height:16" title="2 ms
+nil">1 :read 3</div><div class="op ok" style="width:100;left:212;top:1888;height:16" title="3 ms
+nil">2 :write 0</div><div class="op ok" style="width:100;left:318;top:1920;height:16" title="2 ms
+nil">3 :read 0</div><div class="op ok" style="width:100;left:424;top:1952;height:16" title="4 ms
+nil">4 :cas [0 2]</div><div class="op ok" style="width:100;left:424;top:1984;height:16" title="2 ms
+nil">4 :read 2</div><div class="op fail" style="width:100;left:106;top:2016;height:16" title="5 ms
+nil">1 :cas [4 4]</div><div class="op ok" style="width:100;left:0;top:2048;height:16" title="2 ms
+nil">0 :read 2</div><div class="op ok" style="width:100;left:318;top:2080;height:16" title="2 ms
+nil">3 :read 2</div><div class="op ok" style="width:100;left:424;top:2112;height:16" title="2 ms
+nil">4 :read 2</div><div class="op ok" style="width:100;left:212;top:2144;height:16" title="2 ms
+nil">2 :read 2</div><div class="op ok" style="width:100;left:0;top:2176;height:16" title="2 ms
+nil">0 :read 2</div><div class="op ok" style="width:100;left:318;top:2208;height:16" title="2 ms
+nil">3 :read 2</div><div class="op ok" style="width:100;left:106;top:2240;height:16" title="2 ms
+nil">1 :read 2</div><div class="op ok" style="width:100;left:424;top:2272;height:16" title="5 ms
+nil">4 :cas [2 3]</div></div></body></html>

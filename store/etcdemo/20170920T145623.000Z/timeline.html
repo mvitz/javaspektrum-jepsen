@@ -1,0 +1,66 @@
+<html><head><style>.ops        { position: absolute; }
+.op         { position: absolute;
+                      padding:  2px; }
+.op.invoke  { background: #eeeeee; }
+.op.ok      { background: #6DB6FE; }
+.op.info    { background: #FFAA26; }
+.op.fail    { background: #FEB5DA; }
+</style></head><body><h1>etcdemo</h1><p>2017-09-20T14:56:23.000Z</p><div class="ops"><div class="op ok" style="width:100;left:424;top:0;height:16" title="102 ms
+nil">3 :read </div><div class="op ok" style="width:100;left:212;top:32;height:16" title="4 ms
+nil">1 :read </div><div class="op ok" style="width:100;left:318;top:64;height:16" title="4 ms
+nil">2 :read </div><div class="op fail" style="width:100;left:318;top:96;height:16" title="10 ms
+:not-found">2 :cas [3 2]</div><div class="op ok" style="width:100;left:424;top:128;height:16" title="3 ms
+nil">3 :read </div><div class="op ok" style="width:100;left:106;top:160;height:16" title="4 ms
+nil">0 :read </div><div class="op fail" style="width:100;left:530;top:192;height:16" title="6 ms
+:not-found">4 :cas [4 4]</div><div class="op ok" style="width:100;left:530;top:224;height:16" title="4 ms
+nil">4 :read </div><div class="op fail" style="width:100;left:530;top:256;height:16" title="7 ms
+:not-found">4 :cas [4 2]</div><div class="op ok" style="width:100;left:424;top:288;height:16" title="5 ms
+nil">3 :write 3</div><div class="op ok" style="width:100;left:212;top:320;height:16" title="6 ms
+nil">1 :write 1</div><div class="op ok" style="width:100;left:318;top:352;height:32" title="5 ms
+nil">2 :read 1</div><div class="op fail" style="width:100;left:106;top:368;height:32" title="8 ms
+nil">0 :cas [4 1]</div><div class="op ok" style="width:100;left:106;top:416;height:16" title="3 ms
+nil">0 :read 1</div><div class="op ok" style="width:100;left:530;top:448;height:16" title="3 ms
+nil">4 :read 1</div><div class="op ok" style="width:100;left:530;top:480;height:16" title="6 ms
+nil">4 :cas [1 4]</div><div class="op ok" style="width:100;left:212;top:512;height:16" title="3 ms
+nil">1 :read 4</div><div class="op ok" style="width:100;left:424;top:544;height:16" title="3 ms
+nil">3 :read 4</div><div class="op ok" style="width:100;left:318;top:576;height:16" title="3 ms
+nil">2 :read 4</div><div class="op ok" style="width:100;left:212;top:608;height:16" title="3 ms
+nil">1 :read 4</div><div class="op fail" style="width:100;left:530;top:640;height:16" title="6 ms
+nil">4 :cas [3 3]</div><div class="op info" style="width:100;left:0;top:672;height:16" title="nil">:nemesis :start </div><div class="op fail" style="width:100;left:106;top:688;height:16" title="5 ms
+nil">0 :cas [1 1]</div><div class="op ok" style="width:100;left:530;top:720;height:16" title="5 ms
+nil">4 :write 4</div><div class="op ok" style="width:100;left:212;top:784;height:16" title="3 ms
+nil">1 :read 4</div><div class="op info" style="width:100;left:0;top:848;height:16" title="nil">:nemesis :start Cut off {"ec2-18-194-52-75.eu-central-1.compute.amazonaws.com" #{"ec2-18-194-87-54.eu-central-1.compute.amazonaws.com" "ec2-18-194-134-185.eu-central-1.compute.amazonaws.com" "ec2-18-196-0-107.eu-central-1.compute.amazonaws.com"}, "ec2-35-156-80-2.eu-central-1.compute.amazonaws.com" #{"ec2-18-194-87-54.eu-central-1.compute.amazonaws.com" "ec2-18-194-134-185.eu-central-1.compute.amazonaws.com" "ec2-18-196-0-107.eu-central-1.compute.amazonaws.com"}, "ec2-18-194-87-54.eu-central-1.compute.amazonaws.com" #{"ec2-18-194-52-75.eu-central-1.compute.amazonaws.com" "ec2-35-156-80-2.eu-central-1.compute.amazonaws.com"}, "ec2-18-194-134-185.eu-central-1.compute.amazonaws.com" #{"ec2-18-194-52-75.eu-central-1.compute.amazonaws.com" "ec2-35-156-80-2.eu-central-1.compute.amazonaws.com"}, "ec2-18-196-0-107.eu-central-1.compute.amazonaws.com" #{"ec2-18-194-52-75.eu-central-1.compute.amazonaws.com" "ec2-35-156-80-2.eu-central-1.compute.amazonaws.com"}}<br /></div><div class="op ok" style="width:100;left:318;top:864;height:16" title="3 ms
+nil">2 :read 4</div><div class="op ok" style="width:100;left:318;top:896;height:16" title="3 ms
+nil">2 :read 4</div><div class="op ok" style="width:100;left:318;top:928;height:16" title="714 ms
+nil">2 :write 2</div><div class="op info" style="width:100;left:424;top:752;height:1216" title="5008 ms
+&quot;indeterminate: Read timed out&quot;">3 :write 1</div><div class="op info" style="width:100;left:530;top:768;height:1200" title="5007 ms
+&quot;indeterminate: Read timed out&quot;">4 :cas [2 3]</div><div class="op fail" style="width:100;left:318;top:992;height:16" title="5 ms
+nil">2 :cas [0 0]</div><div class="op info" style="width:100;left:106;top:816;height:1152" title="5006 ms
+&quot;indeterminate: Read timed out&quot;">0 :write 3</div><div class="op ok" style="width:100;left:636;top:1040;height:16" title="2 ms
+nil">5 :read 2</div><div class="op ok" style="width:100;left:636;top:1072;height:16" title="4 ms
+nil">5 :cas [2 0]</div><div class="op info" style="width:100;left:212;top:832;height:1136" title="5005 ms
+&quot;indeterminate: Read timed out&quot;">1 :cas [2 2]</div><div class="op info" style="width:100;left:0;top:1120;height:16" title="nil">:nemesis :stop </div><div class="op info" style="width:100;left:0;top:1136;height:16" title="nil">:nemesis :stop fully connected<br /></div><div class="op ok" style="width:100;left:954;top:1152;height:16" title="3 ms
+nil">9 :read 4</div><div class="op ok" style="width:100;left:318;top:1184;height:16" title="3 ms
+nil">2 :read 0</div><div class="op fail" style="width:100;left:636;top:1216;height:16" title="5 ms
+nil">5 :cas [2 2]</div><div class="op ok" style="width:100;left:848;top:1248;height:16" title="4 ms
+nil">8 :write 1</div><div class="op fail" style="width:100;left:636;top:1280;height:16" title="5 ms
+nil">5 :cas [4 0]</div><div class="op ok" style="width:100;left:954;top:1312;height:16" title="3 ms
+nil">9 :read 1</div><div class="op ok" style="width:100;left:742;top:1344;height:16" title="2 ms
+nil">6 :read 1</div><div class="op ok" style="width:100;left:954;top:1376;height:16" title="3 ms
+nil">9 :read 1</div><div class="op fail" style="width:100;left:848;top:1408;height:16" title="5 ms
+nil">8 :cas [0 1]</div><div class="op ok" style="width:100;left:318;top:1440;height:16" title="2 ms
+nil">2 :read 1</div><div class="op ok" style="width:100;left:636;top:1472;height:16" title="4 ms
+nil">5 :write 4</div><div class="op ok" style="width:100;left:742;top:1504;height:16" title="2 ms
+nil">6 :read 4</div><div class="op ok" style="width:100;left:318;top:1536;height:16" title="4 ms
+nil">2 :write 2</div><div class="op ok" style="width:100;left:954;top:1568;height:16" title="5 ms
+nil">9 :write 3</div><div class="op ok" style="width:100;left:848;top:1600;height:16" title="5 ms
+nil">8 :write 1</div><div class="op fail" style="width:100;left:848;top:1632;height:16" title="5 ms
+nil">8 :cas [0 2]</div><div class="op fail" style="width:100;left:318;top:1664;height:16" title="4 ms
+nil">2 :cas [4 3]</div><div class="op ok" style="width:100;left:742;top:1696;height:16" title="3 ms
+nil">6 :read 1</div><div class="op ok" style="width:100;left:636;top:1728;height:16" title="3 ms
+nil">5 :read 1</div><div class="op ok" style="width:100;left:954;top:1760;height:16" title="3 ms
+nil">9 :read 1</div><div class="op fail" style="width:100;left:636;top:1792;height:16" title="5 ms
+nil">5 :cas [2 2]</div><div class="op fail" style="width:100;left:848;top:1824;height:16" title="29 ms
+nil">8 :cas [3 2]</div><div class="op ok" style="width:100;left:318;top:1856;height:16" title="2 ms
+nil">2 :read 1</div><div class="op info" style="width:100;left:0;top:1888;height:16" title="nil">:nemesis :start </div><div class="op ok" style="width:100;left:742;top:1904;height:16" title="2 ms
+nil">6 :read 1</div><div class="op info" style="width:100;left:0;top:1936;height:16" title="nil">:nemesis :start Cut off {"ec2-35-156-80-2.eu-central-1.compute.amazonaws.com" #{"ec2-18-194-52-75.eu-central-1.compute.amazonaws.com" "ec2-18-194-87-54.eu-central-1.compute.amazonaws.com" "ec2-18-194-134-185.eu-central-1.compute.amazonaws.com"}, "ec2-18-196-0-107.eu-central-1.compute.amazonaws.com" #{"ec2-18-194-52-75.eu-central-1.compute.amazonaws.com" "ec2-18-194-87-54.eu-central-1.compute.amazonaws.com" "ec2-18-194-134-185.eu-central-1.compute.amazonaws.com"}, "ec2-18-194-52-75.eu-central-1.compute.amazonaws.com" #{"ec2-35-156-80-2.eu-central-1.compute.amazonaws.com" "ec2-18-196-0-107.eu-central-1.compute.amazonaws.com"}, "ec2-18-194-87-54.eu-central-1.compute.amazonaws.com" #{"ec2-35-156-80-2.eu-central-1.compute.amazonaws.com" "ec2-18-196-0-107.eu-central-1.compute.amazonaws.com"}, "ec2-18-194-134-185.eu-central-1.compute.amazonaws.com" #{"ec2-35-156-80-2.eu-central-1.compute.amazonaws.com" "ec2-18-196-0-107.eu-central-1.compute.amazonaws.com"}}<br /></div></div></body></html>

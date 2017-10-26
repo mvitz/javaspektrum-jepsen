@@ -1,0 +1,162 @@
+{:type :invoke, :f :cas, :value [4 3], :process 0, :time 40227321}
+{:type :info, :f :cas, :value [4 3], :process 0, :time 137267957, :error "indeterminate: clj-http: status 404 {:status 404, :headers {\"Content-Type\" \"application/json\", \"X-Etcd-Cluster-Id\" \"663a90b2fc437693\", \"X-Etcd-Index\" \"11\", \"Date\" \"Wed, 20 Sep 2017 13:35:51 GMT\", \"Content-Length\" \"71\", \"Connection\" \"close\"}, :body \"{\\\"errorCode\\\":100,\\\"message\\\":\\\"Key not found\\\",\\\"cause\\\":\\\"/cats\\\",\\\"index\\\":11}\\n\", :request-time 76, :trace-redirects [\"http://ec2-18-194-87-54.eu-central-1.compute.amazonaws.com:2379/v2/keys/cats\"], :orig-content-encoding nil}"}
+{:type :invoke, :f :write, :value 3, :process 4, :time 1082029128}
+{:type :ok, :f :write, :value 3, :process 4, :time 1089473163}
+{:type :invoke, :f :write, :value 1, :process 1, :time 1195770130}
+{:type :ok, :f :write, :value 1, :process 1, :time 1201808008}
+{:type :invoke, :f :write, :value 2, :process 1, :time 1477247798}
+{:type :ok, :f :write, :value 2, :process 1, :time 1483124410}
+{:type :invoke, :f :read, :value nil, :process 2, :time 1751436358}
+{:type :ok, :f :read, :value 2, :process 2, :time 1755890896}
+{:type :invoke, :f :read, :value nil, :process 5, :time 1775134732}
+{:type :ok, :f :read, :value 2, :process 5, :time 1777940647}
+{:type :invoke, :f :cas, :value [0 0], :process 3, :time 1955355743}
+{:type :info, :f :cas, :value [0 0], :process 3, :time 1961471177, :error "indeterminate: java.lang.Boolean cannot be cast to clojure.lang.Associative"}
+{:type :invoke, :f :cas, :value [2 0], :process 5, :time 2430385676}
+{:type :info, :f :cas, :value [2 0], :process 5, :time 2438389997, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:action \"compareAndSwap\", :node {:key \"/cats\", :value \"0\", :modifiedIndex 15, :createdIndex 14}, :prevNode {:key \"/cats\", :value \"2\", :modifiedIndex 14, :createdIndex 14}, :time 2435958074} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :read, :value nil, :process 1, :time 2527531386}
+{:type :ok, :f :read, :value 0, :process 1, :time 2530547753}
+{:type :invoke, :f :write, :value 1, :process 4, :time 2613038857}
+{:type :ok, :f :write, :value 1, :process 4, :time 2618364584}
+{:type :invoke, :f :write, :value 4, :process 4, :time 2664805138}
+{:type :ok, :f :write, :value 4, :process 4, :time 2669885082}
+{:type :invoke, :f :read, :value nil, :process 8, :time 2690445667}
+{:type :ok, :f :read, :value 4, :process 8, :time 2693445422}
+{:type :invoke, :f :read, :value nil, :process 8, :time 3230957851}
+{:type :ok, :f :read, :value 4, :process 8, :time 3234616672}
+{:type :invoke, :f :write, :value 0, :process 1, :time 3238953588}
+{:type :ok, :f :write, :value 0, :process 1, :time 3245279465}
+{:type :invoke, :f :read, :value nil, :process 4, :time 3452320088}
+{:type :ok, :f :read, :value 0, :process 4, :time 3456103598}
+{:type :invoke, :f :cas, :value [3 4], :process 2, :time 3682354845}
+{:type :info, :f :cas, :value [3 4], :process 2, :time 3690426082, :error "indeterminate: java.lang.Boolean cannot be cast to clojure.lang.Associative"}
+{:type :invoke, :f :write, :value 1, :process 10, :time 4133036573}
+{:type :ok, :f :write, :value 1, :process 10, :time 4142734857}
+{:type :invoke, :f :read, :value nil, :process 1, :time 4200709804}
+{:type :ok, :f :read, :value 1, :process 1, :time 4203616770}
+{:type :invoke, :f :cas, :value [2 1], :process 10, :time 4697218245}
+{:type :info, :f :cas, :value [2 1], :process 10, :time 4704602123, :error "indeterminate: java.lang.Boolean cannot be cast to clojure.lang.Associative"}
+{:type :invoke, :f :write, :value 0, :process 7, :time 4981238077}
+{:type :ok, :f :write, :value 0, :process 7, :time 4987933289}
+{:type :invoke, :f :read, :value nil, :process 8, :time 5036081619}
+{:type :ok, :f :read, :value 0, :process 8, :time 5038924789}
+{:type :invoke, :f :read, :value nil, :process 7, :time 5040383363}
+{:type :ok, :f :read, :value 0, :process 7, :time 5042664446}
+{:type :invoke, :f :read, :value nil, :process 4, :time 5227690979}
+{:type :ok, :f :read, :value 0, :process 4, :time 5230873766}
+{:type :invoke, :f :read, :value nil, :process 1, :time 5477027078}
+{:type :ok, :f :read, :value 0, :process 1, :time 5479931516}
+{:type :invoke, :f :write, :value 3, :process 1, :time 5974523474}
+{:type :ok, :f :write, :value 3, :process 1, :time 5979785216}
+{:type :invoke, :f :cas, :value [0 0], :process 15, :time 6039377350}
+{:type :info, :f :cas, :value [0 0], :process 15, :time 6044686502, :error "indeterminate: java.lang.Boolean cannot be cast to clojure.lang.Associative"}
+{:type :invoke, :f :read, :value nil, :process 7, :time 6329089070}
+{:type :ok, :f :read, :value 3, :process 7, :time 6332267031}
+{:type :invoke, :f :cas, :value [0 0], :process 8, :time 6789421555}
+{:type :info, :f :cas, :value [0 0], :process 8, :time 6796117259, :error "indeterminate: java.lang.Boolean cannot be cast to clojure.lang.Associative"}
+{:type :invoke, :f :write, :value 1, :process 4, :time 7073271829}
+{:type :ok, :f :write, :value 1, :process 4, :time 7077617356}
+{:type :invoke, :f :read, :value nil, :process 13, :time 7251709890}
+{:type :ok, :f :read, :value 1, :process 13, :time 7254628925}
+{:type :invoke, :f :read, :value nil, :process 1, :time 7453269995}
+{:type :ok, :f :read, :value 1, :process 1, :time 7455532973}
+{:type :invoke, :f :read, :value nil, :process 20, :time 7503380546}
+{:type :ok, :f :read, :value 1, :process 20, :time 7506199359}
+{:type :invoke, :f :cas, :value [3 2], :process 7, :time 7518727330}
+{:type :info, :f :cas, :value [3 2], :process 7, :time 7523521263, :error "indeterminate: java.lang.Boolean cannot be cast to clojure.lang.Associative"}
+{:type :invoke, :f :cas, :value [4 2], :process 1, :time 7615963947}
+{:type :info, :f :cas, :value [4 2], :process 1, :time 7621773774, :error "indeterminate: java.lang.Boolean cannot be cast to clojure.lang.Associative"}
+{:type :invoke, :f :cas, :value [0 0], :process 4, :time 7740021251}
+{:type :info, :f :cas, :value [0 0], :process 4, :time 7745126617, :error "indeterminate: java.lang.Boolean cannot be cast to clojure.lang.Associative"}
+{:type :invoke, :f :write, :value 2, :process 13, :time 7751187872}
+{:type :ok, :f :write, :value 2, :process 13, :time 7757197348}
+{:type :invoke, :f :write, :value 3, :process 20, :time 7925629235}
+{:type :ok, :f :write, :value 3, :process 20, :time 7930254831}
+{:type :invoke, :f :write, :value 2, :process 6, :time 8742473464}
+{:type :ok, :f :write, :value 2, :process 6, :time 8747632645}
+{:type :invoke, :f :write, :value 3, :process 13, :time 8948613271}
+{:type :ok, :f :write, :value 3, :process 13, :time 8954942685}
+{:type :invoke, :f :write, :value 4, :process 13, :time 8972411518}
+{:type :ok, :f :write, :value 4, :process 13, :time 8977397805}
+{:type :invoke, :f :read, :value nil, :process 13, :time 8989755349}
+{:type :ok, :f :read, :value 4, :process 13, :time 8992224411}
+{:type :invoke, :f :cas, :value [3 1], :process 6, :time 9041066357}
+{:type :info, :f :cas, :value [3 1], :process 6, :time 9045905906, :error "indeterminate: java.lang.Boolean cannot be cast to clojure.lang.Associative"}
+{:type :invoke, :f :read, :value nil, :process 13, :time 9077646261}
+{:type :ok, :f :read, :value 4, :process 13, :time 9080196217}
+{:type :invoke, :f :write, :value 1, :process 12, :time 9156081191}
+{:type :ok, :f :write, :value 1, :process 12, :time 9160700396}
+{:type :invoke, :f :read, :value nil, :process 11, :time 9383642454}
+{:type :ok, :f :read, :value 1, :process 11, :time 9386496944}
+{:type :invoke, :f :read, :value nil, :process 20, :time 9468300720}
+{:type :ok, :f :read, :value 1, :process 20, :time 9470870103}
+{:type :invoke, :f :read, :value nil, :process 11, :time 9563009761}
+{:type :ok, :f :read, :value 1, :process 11, :time 9565717812}
+{:type :invoke, :f :write, :value 2, :process 9, :time 9580798464}
+{:type :ok, :f :write, :value 2, :process 9, :time 9584982964}
+{:type :invoke, :f :read, :value nil, :process 20, :time 9679349583}
+{:type :ok, :f :read, :value 2, :process 20, :time 9681544654}
+{:type :invoke, :f :cas, :value [3 3], :process 13, :time 9709980349}
+{:type :info, :f :cas, :value [3 3], :process 13, :time 9715507837, :error "indeterminate: java.lang.Boolean cannot be cast to clojure.lang.Associative"}
+{:type :invoke, :f :read, :value nil, :process 18, :time 10302315514}
+{:type :ok, :f :read, :value 2, :process 18, :time 10305509484}
+{:type :invoke, :f :cas, :value [1 2], :process 12, :time 10406217552}
+{:type :info, :f :cas, :value [1 2], :process 12, :time 10412200403, :error "indeterminate: java.lang.Boolean cannot be cast to clojure.lang.Associative"}
+{:type :invoke, :f :write, :value 1, :process 11, :time 10737314108}
+{:type :ok, :f :write, :value 1, :process 11, :time 10742776167}
+{:type :invoke, :f :write, :value 0, :process 17, :time 10922821537}
+{:type :ok, :f :write, :value 0, :process 17, :time 10928416276}
+{:type :invoke, :f :write, :value 4, :process 20, :time 11186996120}
+{:type :ok, :f :write, :value 4, :process 20, :time 11192895400}
+{:type :invoke, :f :cas, :value [1 0], :process 9, :time 11197443379}
+{:type :info, :f :cas, :value [1 0], :process 9, :time 11201870475, :error "indeterminate: java.lang.Boolean cannot be cast to clojure.lang.Associative"}
+{:type :invoke, :f :read, :value nil, :process 17, :time 11352887428}
+{:type :ok, :f :read, :value 4, :process 17, :time 11356044089}
+{:type :invoke, :f :read, :value nil, :process 18, :time 11413996622}
+{:type :ok, :f :read, :value 4, :process 18, :time 11416710598}
+{:type :invoke, :f :write, :value 2, :process 11, :time 12025282703}
+{:type :ok, :f :write, :value 2, :process 11, :time 12030654711}
+{:type :invoke, :f :cas, :value [2 2], :process 14, :time 12166532220}
+{:type :info, :f :cas, :value [2 2], :process 14, :time 12172607374, :error "indeterminate: Assert failed: Expected client/invoke! to return a map with :type :ok, :fail, or :info, but received {:action \"compareAndSwap\", :node {:key \"/cats\", :value \"2\", :modifiedIndex 34, :createdIndex 33}, :prevNode {:key \"/cats\", :value \"2\", :modifiedIndex 33, :createdIndex 33}, :time 12172298529} instead\n(or (= t :ok) (= t :fail) (= t :info))"}
+{:type :invoke, :f :write, :value 0, :process 11, :time 12340025946}
+{:type :ok, :f :write, :value 0, :process 11, :time 12344563920}
+{:type :invoke, :f :cas, :value [1 1], :process 17, :time 12870503734}
+{:type :info, :f :cas, :value [1 1], :process 17, :time 12876661913, :error "indeterminate: java.lang.Boolean cannot be cast to clojure.lang.Associative"}
+{:type :invoke, :f :read, :value nil, :process 18, :time 13082073542}
+{:type :ok, :f :read, :value 0, :process 18, :time 13085092769}
+{:type :invoke, :f :read, :value nil, :process 20, :time 13098313537}
+{:type :ok, :f :read, :value 0, :process 20, :time 13100896684}
+{:type :invoke, :f :write, :value 1, :process 11, :time 13126015317}
+{:type :ok, :f :write, :value 1, :process 11, :time 13130169691}
+{:type :invoke, :f :read, :value nil, :process 19, :time 13490454007}
+{:type :ok, :f :read, :value 1, :process 19, :time 13493515259}
+{:type :invoke, :f :cas, :value [3 0], :process 20, :time 14163369041}
+{:type :info, :f :cas, :value [3 0], :process 20, :time 14170993489, :error "indeterminate: java.lang.Boolean cannot be cast to clojure.lang.Associative"}
+{:type :invoke, :f :write, :value 4, :process 18, :time 14264600317}
+{:type :ok, :f :write, :value 4, :process 18, :time 14269693366}
+{:type :invoke, :f :read, :value nil, :process 11, :time 14351515394}
+{:type :ok, :f :read, :value 4, :process 11, :time 14353728931}
+{:type :invoke, :f :write, :value 2, :process 22, :time 14552381232}
+{:type :ok, :f :write, :value 2, :process 22, :time 14557169778}
+{:type :invoke, :f :read, :value nil, :process 25, :time 14610717219}
+{:type :ok, :f :read, :value 2, :process 25, :time 14612834470}
+{:type :invoke, :f :cas, :value [3 3], :process 11, :time 14629111960}
+{:type :info, :f :cas, :value [3 3], :process 11, :time 14633899162, :error "indeterminate: java.lang.Boolean cannot be cast to clojure.lang.Associative"}
+{:type :invoke, :f :write, :value 4, :process 18, :time 14693054012}
+{:type :ok, :f :write, :value 4, :process 18, :time 14714913351}
+{:type :invoke, :f :read, :value nil, :process 19, :time 14724878478}
+{:type :ok, :f :read, :value 4, :process 19, :time 14727305836}
+{:type :invoke, :f :write, :value 1, :process 22, :time 14728598066}
+{:type :ok, :f :write, :value 1, :process 22, :time 14732529453}
+{:type :invoke, :f :write, :value 1, :process 19, :time 14872648633}
+{:type :ok, :f :write, :value 1, :process 19, :time 14876765586}
+{:type :invoke, :f :write, :value 2, :process 22, :time 15344926260}
+{:type :ok, :f :write, :value 2, :process 22, :time 15350472914}
+{:type :invoke, :f :write, :value 3, :process 18, :time 15552380327}
+{:type :ok, :f :write, :value 3, :process 18, :time 15558991863}
+{:type :invoke, :f :write, :value 2, :process 19, :time 15627110814}
+{:type :ok, :f :write, :value 2, :process 19, :time 15632091005}
+{:type :invoke, :f :write, :value 2, :process 16, :time 15660655934}
+{:type :ok, :f :write, :value 2, :process 16, :time 15666369754}
+{:type :invoke, :f :write, :value 1, :process 25, :time 16068214609}
+{:type :ok, :f :write, :value 1, :process 25, :time 16073433986}
