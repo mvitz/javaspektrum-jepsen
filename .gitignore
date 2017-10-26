@@ -1,0 +1,8 @@
+### macOS ###
+*.DS_Store
+
+### Leiningen ###
+target/
+.lein-repl-history
+.nrepl-port
+
