@@ -3,12 +3,13 @@
 **Jepsen Example**
 
 These examples were written for my german
-[JavaSPEKTRUM](http://www.javaspektrum.de/) article "Der Praktiker: Jepsen - verteilte Systeme
-testen".
+[JavaSPEKTRUM](http://www.javaspektrum.de/) article
+"Der Praktiker: Jepsen - verteilte Systeme testen".
 
 You can read it online
 [here](https://www.innoq.com/de/articles/2017/11/jepsen-verteilte-systeme-testen/)
-or download as PDF [here](http://www.sigs.de/publications/download/Artikel/vitz_JS_06_17_shfz.pdf).
+or download as PDF
+[here](http://www.sigs.de/publications/download/Artikel/vitz_JS_06_17_shfz.pdf).
 
 
 ## License
